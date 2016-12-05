@@ -16,10 +16,10 @@
 title: Édouard Rousseau
 email: edouard.rousseau@u-psud.fr
 description: > # this means to ignore newlines until "baseurl:"
-        Édouard Rousseau's personnal webpage. Created with help of Jekyll and hoted on github.
+        Édouard Rousseau's personnal webpage. Created with help of Jekyll and hosted on github.
 baseurl: # the subpath of your site, e.g. /blog
 url: "http://edouardrousseau.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: edouardRousseau
+# twitter_username: edouardRousseau
 github_username:  edouardRousseau
 
 # Build settings

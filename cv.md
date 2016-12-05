@@ -1,10 +1,8 @@
 ---
 layout: page
-title: CV 
+title: Curriculum vitæ 
 permalink: /cv/
 ---
-
-# Curriculum vitæ 
 
 ### Education
 
