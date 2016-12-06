@@ -7,7 +7,7 @@ layout: page
 
 ### About me
 
-Hi, I am Édouard, a master student in computer algebra at *Université de
+Hi, I am Édouard, a master student in applied algebra at *Université de
 Versailles*. I am interested in almost everything related to mathematics,
 computer science, and teaching. My main domain of interest are computer algebra,
 finite fields, field extensions, coding theory, and cryptography. On top of
@@ -19,4 +19,4 @@ vitæ section.
 ### Teaching
 
 I teach in the french system
-[CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), you can look at it the teaching section (in french).
+[CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), you can look at it in the teaching section (in french).
