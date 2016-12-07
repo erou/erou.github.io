@@ -28,7 +28,7 @@ last year of magistère.
 * Operating systems
 	* Linux
 	* Windows
-* \$$ \LaTeX $$
+* \\( \LaTeX \\)
 * Markdown
 * HTML/CSS
 
@@ -37,6 +37,8 @@ last year of magistère.
 * French : mother tongue
 * English : advanced
 * Spanish and arabic : beginner
+
+### Grants
 
 ## Professionnal experience
 
@@ -47,7 +49,7 @@ Feo](http://www.defeo.lu).
 June -- July 2014, [Laboratoire de Recherche en
 Informatique](https://www.lri.fr/presentation_en.php) (Université Paris-Sud),
 *Study and implementation of a bijection between 2n-gones and reduced words of
-the symmetric group of n elements $$ \mathfrak{S}_n $$*, internship supervised by [Nicolas M.
+the symmetric group of n elements \\( \mathfrak{S}_n \\)*, internship supervised by [Nicolas M.
 Thiéry](http://nicolas.thiery.name/).
 
 ## Teaching
