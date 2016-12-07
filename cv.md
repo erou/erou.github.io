@@ -17,7 +17,7 @@ last year of magistère.
 
 2013 -- 2014 Université Paris-Sud, **bachelor (licence 3) in mathematics**, first year of [magistère](https://www.math.u-psud.fr/-Magistere-?lang=fr) (three-years optionnal process), *grade : Assez Bien.*
 
-#### Computer skills
+### Computer skills
 
 * Programming
 	* C
@@ -32,7 +32,11 @@ last year of magistère.
 * Markdown
 * HTML/CSS
 
-#### Language skills
+### Language skills
+
+* French : mother tongue
+* English : advanced
+* Spanish and arabic : beginner
 
 ## Professionnal experience
 
@@ -52,3 +56,12 @@ Thiéry](http://nicolas.thiery.name/).
 2).
 
 2013 -- 2014 Tutor for first-year students in physics (PCSI).
+
+## Miscellanous interests
+
+* Improvisational theatre : member of a french company ([Les Gibbons
+  Masqués](http://gibbonsmasques.com/))
+* Sport : jogging mostly
+* Cinema, music, reading
+
+
