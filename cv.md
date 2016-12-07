@@ -28,7 +28,7 @@ last year of magistère.
 * Operating systems
 	* Linux
 	* Windows
-* $ \LaTeX $
+* $$ \LaTeX $$
 * Markdown
 * HTML/CSS
 
