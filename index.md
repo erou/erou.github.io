@@ -8,8 +8,8 @@ layout: default
 ## About me
 
 Hi, I am Édouard, a master student in applied algebra at *Université de
-Versailles*. I am interested in almost everything related to mathematics,
-computer science, and teaching. My main domain of interest are computer algebra,
+Versailles*. I am curious about almost everything related to mathematics,
+computer science, and teaching. My main domains of interest are computer algebra,
 finite fields, field extensions, coding theory, and cryptography. On top of
 that, I like to spread the idea of free software and free licenses in general.
 

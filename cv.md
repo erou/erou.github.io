@@ -36,9 +36,9 @@ last year of magistère.
 
 ### Language skills
 
-* French : mother tongue
-* English : advanced
-* Spanish and arabic : beginner
+* French : mother tongue.
+* English : advanced.
+* Spanish and arabic : beginner.
 
 ### Grants
 
