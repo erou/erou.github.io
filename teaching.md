@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: default
 title: Teaching
 permalink: /teaching/
 ---
 
-### Khôlles
+## Khôlles
 
 Je donne des khôlles (ou colles) au [lycée Jacques
 Prévert](http://bcpst.prevert.free.fr/) en classe de BCPST 2. Ci-dessous les
