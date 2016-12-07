@@ -50,7 +50,7 @@ July -- August 2016 Université de Versailles, *Julia implementation of fast
 algorithms for computing in the algebraic closure of finite fields*, internship supervised by [Luca De
 Feo](http://www.defeo.lu).
 
-June -- July 2014, [Laboratoire de Recherche en
+June -- July 2014 [Laboratoire de Recherche en
 Informatique](https://www.lri.fr/presentation_en.php) (Université Paris-Sud),
 *Study and implementation of a bijection between 2n-gones and reduced words of
 the symmetric group of n elements*, internship supervised by [Nicolas M.
