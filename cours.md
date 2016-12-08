@@ -30,8 +30,8 @@ On fait par dichotomie comme pour la factorisation.
 
 ### Méthode du calcul d'indice
 
-*But :* calculer le logarithme de $y$ en base $g$ modulo $p$ *i.e.$
+*But :* calculer le logarithme de $y$ en base $g$ modulo $p$ *i.e.*
 trouver $x$ tel que $g^x = y \mod p$.
 
-On pose $B = \{-1,p_1,\dots,p_h\}$ et on a comme objectif de trouver les
+On pose $B = \\{-1,p_1,\dots,p_h\\}$ et on a comme objectif de trouver les
 logarithmes discrets de $p_j$ pour $1\leq j \leq h$. 
