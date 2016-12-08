@@ -17,3 +17,13 @@ multiplication matricielle. On peut utiliser [l'algorithme de
 Strassen](https://fr.wikipedia.org/wiki/Algorithme_de_Strassen) ou
 [l'algorithme de
 Coppersmith](https://en.wikipedia.org/wiki/Coppersmith%E2%80%93Winograd_algorithm).
+
+## Logarithme discret
+
+### Complexité
+
+**LOG** Instance : $p,g,y,t$, $g$ générateur de $\mathbb{F}_p^*$.
+
+Question : $ y = g^x \mod p $ a-t-il une solution $x\leq t$ ?
+
+Supposons qu'on dispose d'un algo $\mathfrak A$ pour ce pb de décision. 
