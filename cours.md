@@ -22,7 +22,7 @@ Coppersmith](https://en.wikipedia.org/wiki/Coppersmith%E2%80%93Winograd_algorith
 
 ### Complexité
 
-|**LOG** | Instance :| $p,g,y,t$, $g$ générateur de $\mathbb{F}_p^*$.
-||Question :| $ y = g^x \mod p $ a-t-il une solution $x\leq t$ ?
+|**LOG** | Instance :| $p,g,y,t$, $g$ générateur de $\mathbb{F}_p^*$.|
+||Question :| $ y = g^x \mod p $ a-t-il une solution $x\leq t$ ?|
 
 Supposons qu'on dispose d'un algo $\mathfrak A$ pour ce pb de décision. 
