@@ -12,6 +12,8 @@ internet.
 
 ## Pivot de Gauss
 
-On peut améliorer le pivot de Gauss en $\oldstylenums{1969}$.
-
-Alors la haine Sim ?
+On peut améliorer le pivot de Gauss en améliorant les algoritmes de
+multiplication matricielle. On peut utiliser [l'algorithme de
+Strassen](https://fr.wikipedia.org/wiki/Algorithme_de_Strassen) ou
+[l'algorithme de
+Coppersmith](https://en.wikipedia.org/wiki/Coppersmith%E2%80%93Winograd_algorithm).
