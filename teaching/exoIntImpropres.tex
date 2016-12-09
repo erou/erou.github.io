@@ -1,0 +1,165 @@
+\documentclass[a4paper,12pt,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath,amssymb,amsthm,amsopn}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%\usepackage{tikz}
+%\usepackage{array}
+\usepackage[landscape]{geometry}
+%\usepackage{listings}
+%\usepackage{xcolor}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{BCPST 2 - Lycée Jacques Prévert}
+\fancyhead[R]{Intégrales impropres}
+\pagenumbering{gobble}
+
+% Création des labels Théorème, Lemme, etc...
+
+\newtheoremstyle{break}%
+{}{}%
+{\itshape}{}%
+{\bfseries}{}%  % Note that final punctuation is omitted.
+{\newline}{}
+
+\newtheoremstyle{sc}%
+{}{}%
+{}{}%
+{\scshape}{}%  % Note that final punctuation is omitted.
+{\newline}{}
+
+\theoremstyle{break}
+\newtheorem{thm}{Théorème}[section]
+\newtheorem{lm}[thm]{Lemme}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollaire}
+
+\theoremstyle{sc}
+\newtheorem{exo}{Exercice}
+
+\theoremstyle{definition}
+\newtheorem{defi}[thm]{Définition}
+\newtheorem{ex}[thm]{Exemple}
+
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remarque}
+
+% Raccourcis pour les opérateurs mathématiques (les espaces avant-après sont modifiés pour mieux rentrer dans les codes mathématiques usuels)
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Img}{Im}
+\DeclareMathOperator{\Card}{Card}
+\DeclareMathOperator{\Vect}{Vect}
+
+
+% Nouvelles commandes
+\newcommand{\ps}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\ent}[2]{[\![#1,#2]\!]}
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+
+% opening
+%\title{}
+%\author{}
+
+
+
+\begin{document}
+
+%\maketitle
+
+%\begin{abstract}
+
+%\end{abstract}
+
+%\tableofcontents
+
+%\clearpage
+
+\begin{exo}
+  Soit $f:[0,+\infty[\rightarrow\mathbb{R}$ une fonction continue admettant une
+    limite $\ell$ en $+\infty$. Montrer que $\int_0^{+\infty}f(t)\diff t$ est
+    divergente si $\ell\neq0$.
+\end{exo}
+
+\begin{exo}
+  Démontrer que $\int_0^\infty f(t)\diff t$ est convergente. On pourra
+  faire une intégration par partie.
+\end{exo}
+
+\begin{exo}
+  Soit $\alpha\in\mathbb{R}$, déterminer une condition nécessaire et
+  suffisante sur $\alpha$ pour que $\int_0^\infty
+  t^{\alpha-1}e^{-t}\diff t$ soit convergente.
+\end{exo}
+
+\begin{exo}
+  Soit $f:[0,1]\rightarrow\mathbb{R}$ une fonction continue.
+  \begin{enumerate}
+    \item Montrer que $\int_0^1\frac{f(x)}{\sqrt x}\diff x$ est
+      convergente. On pourra utiliser le théorème sur l'image d'un
+      segment par une fonction continue.
+    \item Montrer que si $f$ est strictement positive,
+      $\int_0^1\frac{f(x)}{x}\diff x$ est divergente.
+    \item Établir la même conclusion en supposant seulement que
+      $f(0)>0$.
+  \end{enumerate}
+\end{exo}
+
+\begin{exo}
+  Pour $x>0$, on note $\Gamma(x)=\int_0^\infty t^{x-1}e^{-t}\diff t$.
+  \begin{enumerate}
+    \item Montrer que cette intégrale est bien définie pour tout $x>0$.
+    \item Justifier $\forall x>1,\; \Gamma(x)=(x-1)\Gamma(x-1)$ et calculer
+      $\Gamma(n)$ pour $n\in\mathbb{N}^*$.
+  \end{enumerate}
+\end{exo}
+
+\begin{exo}
+  Calculer les intégrales suivantes :
+  \[
+    \int_0^\infty \frac{\diff
+    t}{(t+1)(t+2)}\phantom{ainsi que}\int_0^\infty\frac{\diff t}{(e^t+1)(e^{-t}+1)}
+  \]
+  \[
+    \int_0^\infty\ln(1+\frac{1}{t^2})\diff t\phantom{ainsi
+    que}\int_0^\infty\exp(-\sqrt t)\diff t
+  \]
+  \[
+    \int_0^\infty \frac{\diff t}{\sqrt{e^t+1}}\phantom{ainsi
+    que}\int_0^\infty\frac{\diff t}{\mathrm{sh}(t)}
+  \]
+  \[
+    \int_0^1\frac{\ln(t)}{\sqrt t}\diff t
+  \]
+\end{exo}
+
+\begin{exo}
+  Soit $f:[0,+\infty[\rightarrow\mathbb{R}$ de classe $\mathcal C^1$
+    telle que $f$ et $f'$ soient intégrables sur $[0,+\infty[$. Montrer
+      que $f$ tend vers $0$ en $+\infty$.
+\end{exo}
+
+\begin{exo}
+  Soit $f:[0,+\infty[$ une fonction continue par morceaux. On suppose
+    que $\int_0^\infty f(t)\diff t$ est convergente. Montrer que
+    $\int_x^{x+1}f(t)\diff
+    t\;\underset{x\rightarrow+\infty}{\longrightarrow}0$
+\end{exo}
+
+\begin{exo}
+  Montrer l'existence et déterminer la valeur de
+  $I(a)=\int_0^\infty\sin(t)e^{-at}.$
+\end{exo}
+
+\begin{exo}
+  Soit $f$ définie par $f(a)=\int_1^\infty \frac{\diff t}{t^a+1}$.
+  \begin{enumerate}
+    \item Pour quelles valeurs de $a$ $f$ est-elle bien définie ?
+    \item Montrer que $f$ est décroissante de limite nulle.
+  \end{enumerate}
+\end{exo}
+
+\end{document}
