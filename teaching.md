@@ -7,14 +7,16 @@ permalink: /teaching/
 ## Khôlles
 
 Je donne des khôlles (ou colles) au [lycée Jacques
-Prévert](http://bcpst.prevert.free.fr/) en classe de BCPST 2. Ci-dessous les
-exercices proposés, regroupés par sujets (ie. quinzaine de jour). Je n'ai pas
-encore transformé les premiers sujets en format .pdf.
+Prévert](http://bcpst.prevert.free.fr/) en classe de BCPST 2. Vous pouvez
+retrouver les exercices proposés (et même un peu plus) ci-dessous, ils sont
+regroupés par sujet (*i.e.* quinzaine de jour). Si vous avez une question ou
+constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter par
+[e-mail](mailto:edouard.rousseau@u-psud.fr). Amusez-vous bien !
 
-1. *Rappels d'analyse*, à venir.
-2. *Intégrales impropres*, à venir.
-3. *Espaces vectoriels*, à venir.
-4. *Variables aléatoires à densité*, à venir.
-5. *Séries et applications linéaires*, à venir.
-6. [Espaces probabilisés](exo.pdf).
+1. [Rappels d'analyse](exoRappelsAnalyse.pdf).
+2. [Intégrales impropres](exoIntImpropres.pdf).
+3. [Espaces vectoriels](exoEspacesVectoriels.pdf).
+4. [Variables aléatoires à densité](exoVariablesDensite.pdf).
+5. [Séries et applications linéaire](exoSeriesAppliLin.pdf).
+6. [Espaces probabilisés](exoEspacesProba.pdf).
 
