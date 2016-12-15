@@ -160,9 +160,17 @@ attention à ce que le déchiffrement se passe correctement.
 
 #### d. Théorème de [Coppersmith](https://en.wikipedia.org/wiki/Don_Coppersmith)
 
-*Théorème (Coppersmith, 1997)*
+**Théorème (Coppersmith, 1997)**
 
-Soit $N$ un entier, $f\in\mathbb Z[X]$ un polynôme de degré $d$ et
+Soit $N$ un entier, $\varepsilon>0$, $f\in\mathbb Z[X]$ un polynôme de degré $d$ et
 $B=N^{1/d-\varepsilon}$. Alors, étant donné $f$ et $N$, on peut trouver
 en temps polynômial tous les entiers $x_0$ tels que $|x_0|<B$ et
 $f(x_0)=0\mod N$.
+
+*Remarque :* Dans le cas $F(X)=X^e-y$, cela redonne l'attaque du
+paragraphe a.
+
+*Remarque :* C'est facile si $N$ est premier. On peut résoudre les
+équations polynômiale dans $\mathbb Z/p\mathbb Z$ : on veut résoudre
+quelque chose de la forme $f(x)=0\mod p$ mais on sait aussi que $x^p=x$,
+les racines sont donc les racines de pgcd($f(x),x^p-x$)
