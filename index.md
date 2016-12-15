@@ -13,8 +13,9 @@ computer science, and teaching. My main domains of interest are computer algebra
 finite fields, field extensions, coding theory, and cryptography. On top of
 that, I like to spread the idea of free software and free licenses in general.
 
-If you want to know more, you can send me an e-mail or look at the curriculum
-vitæ section.
+If you want to know more, you can send me an
+[e-mail](mailto:edouard.rousseau@u-psud.fr) or look at my [curriculum
+vitæ](cv).
 
 ## Teaching
 
