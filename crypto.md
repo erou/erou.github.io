@@ -112,6 +112,20 @@ SHA-3 | $224$ | $2^{112}$ |
 Les algorithmes SHA-256, SHA-384, SHA-512 sont de la même famille,
 appelée famille SHA-2. KECCAK = SHA-3 est un algorithme qui a gagné un
 concours organisé par le NIST en 2008. Des versions en $\ell =
-256,384,512$ et avec des attaques via le paradoxe des anniversaires
-correspondantes.
+256,384,512$ (et avec des attaques via le paradoxe des anniversaires
+correspondantes) de SHA-3 existent.
 
+On signe donc en faisant $S=h(M)^d\mod n$. $h(M)$ fait par exemple 256
+bits et donc tous les messages, quelles que soient leurs tailles,
+peuvent être signé par RSA. $h$ n'est pas multiplicative, en général
+$h(M\times M')\neq h(M)h(M')$, ainsi toutes les attaques dont on avait
+parlé qui se basaient sur la multiplicativité de RSA ne fonctionnent
+plus.
+
+### 2. Chiffrement
+
+On a envie de dire que le chiffré est simplement $C=M^e\mod n$.
+
+#### a. Attaque sur les petits messages
+
+Si $M<^e\sqrt n$ alors $C=M^e\mod n=M^e$. Donc $M=^e\sqrt C$.
