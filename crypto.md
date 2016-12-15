@@ -49,3 +49,13 @@ difficile* de construire $(M,S)$ avec $M\notin \\{M_1,\dots,M_n\\}$ et
 $S$ une signature valide de $M$.
 
 La méthode $S=M^d\mod n$ n'est pas sûre.
+
+### Méthode "hash and sign"
+
+*Définition :* $h:\\{0,1\\}^*\rightarrow\\{0,1\\}^l$ est dite **fonction
+de hachage** si et seulement si elle vérifie les trois propriétés
+suivantes :
+1. $h$ est à sens unique (*one way*) : $\forall y \in \\{0,1\\}^l$, il
+   est calculatoirement difficile de trouver un antécédent
+$x\in\\{0,1\\}^*$ tel que $h(x)=y$
+2.  
