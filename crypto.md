@@ -63,8 +63,7 @@ $M$ --> $h$ --> RSA --> $S$.
 1. $h$ est à sens unique (*one way*) : $\forall y \in \\{0,1\\}^l$, il
    est calculatoirement difficile de trouver un antécédent
    $x\in\\{0,1\\}^*$ tel que $h(x)=y$ .
-2. $h$ est à collision faibles difficiles (*second preimage resistant*)
-   : étant donné $x\in\\{0,1\\}^* $ et $y=h(x)$, il est calculatoirement
+2. $h$ est à collision faibles difficiles (*second preimage resistant*) : étant donné $x\in\\{0,1\\}^* $ et $y=h(x)$, il est calculatoirement
    difficile de trouver $x'\neq x$ tel que $h(x')=y$. 
 3. $h$ est à collisions fortes difficiles (*collision resistant*) : il
    est calculatoirement difficile de trouver $x,x'\in\\{0,1\\}^*$ avec
