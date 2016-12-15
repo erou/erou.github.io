@@ -137,3 +137,25 @@ déstinataires. On note $y_i=x^3\mod n_i$ et $n_i=p_iq_i$ avec $0\leq
 x<n_i$. On a alors $0\leq x^3<n_1n_2n_3$. Mais comme on connaît $x^3$
 modulo $n_1n_2n_3$, on peut retrouver $x$ en faisant une simple racine
 cubique. Ensuite d'après les restes chinois on peut retrouver $x$.
+
+De manière générale on peut retrouver $x$ si le message est envoyé à $e$
+personnes différents.
+
+#### c. Déterminisme
+
+Un autre défaut encore plus intrinsèque est que le protocol est
+déterministe, cela veut dire qu'un même message aura toujours le même
+chiffré, et donc on peut avoir des problèmes si on envoie souvent des
+messages identiques. On introduit donc de l'aléat dans les protocols.
+
+Dans les systèmes comme AES, on fait du CBC *Cypher Block Chaining* : on
+XOR le fin du block $i$ avec l'entrée du block $i+1$ et on XOR également
+la toute première entrée avec une IV *initial value* aléatoire. Si
+jamais le message ne fait pas un nombre de bit multiple de 128 (par
+exemple) on peut ajouter que des zéros jusqu'à ce que le nombre de bit
+soit bon. Et si le message complet est déjà bon, on ajoute un nouveau
+bloc avec un 1 et que des zéros. Comme ça quand on déchiffre on peut
+bien retomber sur le message. De manière générale il faut faire
+attention à ce que le déchiffrement se passe correctement.
+
+#### d. Théorème de [Coppersmith](https://en.wikipedia.org/wiki/Don_Coppersmith)
