@@ -81,4 +81,7 @@ Complexité en moyenne $O(2^l)$.
 **Algo 3 :** Générer des messages $x_1,\dots,x_n$ (tous distincts) et
 les hachés $y_i=h(x_i)$ jusqu'à trouver $i\neq j$ tel que $y_i=y_j$.
 
-Appelons $P$ la probabilité qu'une collision apparaisse.
+Appelons $P$ la probabilité qu'une collision apparaisse. On va plutôt
+calculer $1-P$. Notons $p_i$ la probabilité que le $i$-ième message
+provoque une collision. On a $p_1=1$, $p_2=1-1/2^l$, $p_n=1-(n-1)/2^l$.
+On a ainsi $1-P=p_1\times\dots\times p_n$
