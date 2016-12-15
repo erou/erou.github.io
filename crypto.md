@@ -93,3 +93,15 @@ On en déduit $P = 1-\exp(-n(n-1)/2^{l+1}) $. En inversant la formule, on
 a également $n\approx 2^{l/2}\sqrt{2\ln(\frac{1}{1-P})}$. Il y a un
 violent changement de situation aux alentours de $2^{l/2}$, c'est ce
 qu'on appelle le *paradoxe des anniversaires*. 
+
+Comment fait-on pour trouver deux valeurs identiques dans un tableau ?
+On trie en $n\ln(n)$, puis les deux valeurs identiques sont côte à côte
+donc cela devient facile.
+
+**Quelques fonctions de hachage :**
+
+Nom | $\ell$ | Anniversaires | Meilleure attaque connue
+MD4 (1990, Rivest) | $128$ | $2^{64}$ |
+MD5 (1991, Rivest) | $128$ | $2^{64}$ |
+SHA (1993, NIST) | $160$ | $2^80$ |
+SHA-1 (1994, NIST) | $160$ | $2^80$ |
