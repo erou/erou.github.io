@@ -1,4 +1,5 @@
 ---
+title: Cryptographie
 layout: default
 permalink:/crypto
 ---
