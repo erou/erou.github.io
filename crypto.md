@@ -5,7 +5,7 @@ permalink: /crypto/
 visible: false
 ---
 
-Voici mes notes de cours de cryptographie, elles contiennent probablement des erreurs. Il manque également le début du cours.
+Voici mes notes de cours de cryptographie, elles contiennent probablement des erreurs.
 
 ## Utilisation du RSA
 
