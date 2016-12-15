@@ -1,5 +1,5 @@
 ---
-title:
+title: Cryptographie
 layout: default
 permalink: /crypto/
 visible: false
