@@ -108,4 +108,8 @@ SHA-1 (1994, NIST) | $160$ | $2^{80}$ |
 SHA-256 (NIST, 2002) | $256$ | $2^{128}$ | 2005-2006, Wang --> collision en $2^{69}$
 SHA-384 (NIST, 2002) | $384$ | $2^{192}$ | 
 SHA-512 (NIST, 2002) | $512$ | $2^{256}$ | 
+SHA-3 | $224,256,384,512$ | $2^{112}, 2^{128}, 2^{192}, 2^{256} |
+
+Les algorithmes SHA-256, SHA-384, SHA-512 sont de la même famille,
+appelée famille SHA-2.
 
