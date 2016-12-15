@@ -78,4 +78,7 @@ succès $\approx 1/2^l$. Complexité en moyenne $O(2^l)$.
 **Algo 2 :** Tirer des $x'\neq x$ aléatoires jusqu'à ce que $h(x')=y$.
 Complexité en moyenne $O(2^l)$.
 
-**Algo 3 :** 
+**Algo 3 :** Générer des messages $x_1,\dots,x_n$ (tous distincts) et
+les hachés $y_i=h(x_i)$ jusqu'à trouver $i\neq j$ tel que $y_i=y_j$.
+
+Appelons $P$ la probabilité qu'une collision apparaisse.
