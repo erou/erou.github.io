@@ -181,11 +181,11 @@ savoir trouver le pgcd simplement (il faut mieux que l'algorithme d'Euclide).
 Notations : $h(x) = \sum a_i x^i \in \mathbb Z[x]$, $||h||^2 = \sum |a_i|$
 
 **Lemme :** Soit $h(x)\in\mathbb Z[x]$ de degré $d$, $B>0$ entier.
-Supposons $||h(B\dot)||<\frac{N}{\sqrt{d+1}}. Si $|x_0|<B$ satisfait
+Supposons $||h(B\dot)||<\frac{N}{\sqrt{d+1}}$. Si $|x_0|<B$ satisfait
 $h(x_0)=0\mod N$ alors $h(x_0)=0$ sur les entiers.
 
 *Preuve du lemme :* 
 
 $|h(x_0)|=|\sum_{i=0}^d a_i x_0^i|\leq \sum_{i=0}^d |a_iB^i|$ par
 inégalité triangulaire. Puis via l'inégalité de Cauchy-Schwarz on a
-$|h(x_0)|\leq \sqrt{d+1}||h(B\dot)||<N 
+$|h(x_0)|\leq \sqrt{d+1}||h(B\dot)||<N$
