@@ -128,4 +128,10 @@ On a envie de dire que le chiffré est simplement $C=M^e\mod n$.
 
 #### a. Attaque sur les petits messages
 
-Si $M<^e\sqrt n$ alors $C=M^e\mod n=M^e$. Donc $M=^e\sqrt C$.
+Si $M<\sqrt[e] n$ alors $C=M^e\mod n=M^e$. Donc $M=\sqrt[e] C$.
+
+#### b. Attaque de Hastad
+
+On prend $e=3$, on suppose qu'Alice envoit le même message à plusieurs
+déstinataires. On note $y_i=x^3\mod n_i$ et $n_i=p_iq_i$ avec $0\leq
+x<n_i$
