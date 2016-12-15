@@ -4,8 +4,7 @@ layout: default
 permalink: /crypto/
 ---
 
-Voici mes notes de cours de cryptographie, il contient probablement des
-erreurs.
+Voici mes notes de cours de cryptographie, elles contiennent probablement des erreurs.
 
 ## Utilisation du RSA
 
@@ -108,8 +107,11 @@ SHA-1 (1994, NIST) | $160$ | $2^{80}$ |
 SHA-256 (NIST, 2002) | $256$ | $2^{128}$ | 2005-2006, Wang --> collision en $2^{69}$
 SHA-384 (NIST, 2002) | $384$ | $2^{192}$ | 
 SHA-512 (NIST, 2002) | $512$ | $2^{256}$ | 
-SHA-3 | $224,256,384,512$ | $2^{112}, 2^{128}, 2^{192}, 2^{256}$ |
+SHA-3 | $224$ | $2^{112}$ |
 
 Les algorithmes SHA-256, SHA-384, SHA-512 sont de la même famille,
-appelée famille SHA-2.
+appelée famille SHA-2. KECCAK = SHA-3 est un algorithme qui a gagné un
+concours organisé par le NIST en 2008. Des versions en $\ell =
+256,384,512$ et avec des attaques via le paradoxe des anniversaires
+correspondantes.
 
