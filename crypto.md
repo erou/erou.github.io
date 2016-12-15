@@ -60,7 +60,7 @@ de hachage** si et seulement si elle vérifie les trois propriétés
 suivantes :
 1. $h$ est à sens unique (*one way*) : $\forall y \in \\{0,1\\}^l$, il
    est calculatoirement difficile de trouver un antécédent
-   $x\in\\{0,1\\}^*$ tel que $h(x)=y$
+   $x\in\\{0,1\\}^*$ tel que $h(x)=y$ .
 2. $h$ est à collision faibles difficiles (*second preimage resistant*)
    : étant donné $x\in\\{0,1\\}^* $ et $y=h(x)$, il est calculatoirement
 difficile de trouver $x'\neq x$ tel que $h(x')=y$. 
@@ -71,3 +71,11 @@ difficile de trouver $x'\neq x$ tel que $h(x')=y$.
 La fonction $h$ n'est pas injective mais la propriété 3 dit qu'il est en
 pratique difficile de trouver un exemple de non-injectivité. On a
 $3\Rightarrow 2 \Rightarrow 1$.
+
+**Algo 1 :** Tirer $x$ aléatoirement jusqu'à ce que $h(x)=y$. Proba de
+succès $\approx 1/2^l$. Complexité en moyenne $O(2^l)$.
+
+**Algo 2 :** Tirer des $x'\neq x$ aléatoires jusqu'à ce que $h(x')=y$.
+Complexité en moyenne $O(2^l)$.
+
+**Algo 3 :** 
