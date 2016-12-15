@@ -181,11 +181,30 @@ savoir trouver le pgcd simplement (il faut mieux que l'algorithme d'Euclide).
 Notations : $h(x) = \sum a_i x^i \in \mathbb Z[x]$, $||h||^2 = \sum |a_i|$
 
 **Lemme :** Soit $h(x)\in\mathbb Z[x]$ de degré $d$, $B>0$ entier.
-Supposons $||h(B\dot)||<\frac{N}{\sqrt{d+1}}$. Si $|x_0|<B$ satisfait
+Supposons $||h(B\cdot)||<\frac{N}{\sqrt{d+1}}$. Si $|x_0|<B$ satisfait
 $h(x_0)=0\mod N$ alors $h(x_0)=0$ sur les entiers.
 
 *Preuve du lemme :* 
 
 $|h(x_0)|=|\sum_{i=0}^d a_i x_0^i|\leq \sum_{i=0}^d |a_iB^i|$ par
 inégalité triangulaire. Puis via l'inégalité de Cauchy-Schwarz on a
-$|h(x_0)|\leq \sqrt{d+1}||h(B\dot)||<N$
+$|h(x_0)|\leq \sqrt{d+1}||h(B\cdot)||<N$
+
+On a $h(x_0)=0\mod N$ et $h(x_0)<N$ donc $h(x_0)=0$.
+
+Reprennons la preuve du théorème. On a donc $f(x_0)=0\mod N$ et
+$|x_0|<B=N^{1/d-\varepsilon}$.
+
+*Idée :* trouver d'autres polynômes que $f$ 
+
+* ayant également $x_0$ comme solution $\mod N$
+* satisfaisant la confition de norme du lemme
+
+*1e idée :* $f, xf, x^2f, \dots$ puis combinaisons linéaires.
+
+*2e idée :* si $f(x_0)=0\mod N$, alors f(x_0)^k=0\mod N^k$.
+
+$g_{u,v}(x)=N^{m-v}x^uf(x)^v$ pour un $m$ fixé. avec $u\geq0$ et $0\leq
+v \leq m$ Si $x_0$ est racine de $f$ \mod N$ alors $x_0$ est racine de
+$g_{u,v}\mod N^m$. Reste à trouver une combinaison linéaire h des
+$g_{u,v}$ telle que $||h(B\cdot)||<\frac{N}{\sqrt{d°h+1}}$ 
