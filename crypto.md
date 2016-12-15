@@ -102,10 +102,10 @@ donc cela devient facile.
 
 Nom | $\ell$ | Anniversaires | Meilleure attaque connue
 MD4 (1990, Rivest) | $128$ | $2^{64}$ | 1995, Dobberton --> collision
-MD5 (1991, Rivest) | $128$ | $2^{64}$ |
+MD5 (1991, Rivest) | $128$ | $2^{64}$ | 2005, Wang --> collision en $2^{20}$
 SHA (1993, NIST) | $160$ | $2^{80}$ | 2004, Joux --> collision en $2^{51}$
 SHA-1 (1994, NIST) | $160$ | $2^{80}$ |
-SHA-256 | $256$ | $2^{128}$ | 2005-2006, Wang --> collision en $2^{69}$
-SHA-384 | $384$ | $2^{192}$ | 
-SHA-512| $512$ | $2^{256}$ | 
+SHA-256 (NIST, 2002) | $256$ | $2^{128}$ | 2005-2006, Wang --> collision en $2^{69}$
+SHA-384 (NIST, 2002) | $384$ | $2^{192}$ | 
+SHA-512 (NIST, 2002) | $512$ | $2^{256}$ | 
 
