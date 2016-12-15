@@ -159,3 +159,10 @@ bien retomber sur le message. De manière générale il faut faire
 attention à ce que le déchiffrement se passe correctement.
 
 #### d. Théorème de [Coppersmith](https://en.wikipedia.org/wiki/Don_Coppersmith)
+
+*Théorème (Coppersmith, 1997)*
+
+Soit $N$ un entier, $f\in\mathbb Z[X]$ un polynôme de degré $d$ et
+$B=N^{1/d-\varepsilon}$. Alors, étant donné $f$ et $N$, on peut trouver
+en temps polynômial tous les entiers $x_0$ tels que $|x_0|<B$ et
+$f(x_0)=0\mod N$.
