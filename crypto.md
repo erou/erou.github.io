@@ -200,9 +200,9 @@ $|x_0|<B=N^{1/d-\varepsilon}$.
 * ayant également $x_0$ comme solution $\mod N$
 * satisfaisant la confition de norme du lemme
 
-*1e idée :* $f, xf, x^2f, \dots$ puis combinaisons linéaires.
+*1ère idée :* $f, xf, x^2f, \dots$ puis combinaisons linéaires.
 
-*2e idée :* si $f(x_0)=0\mod N$, alors f(x_0)^k=0\mod N^k$.
+*2ème idée :* si $f(x_0)=0\mod N$, alors $f(x_0)^k=0\mod N^k$.
 
 $g_{u,v}(x)=N^{m-v}x^uf(x)^v$ pour un $m$ fixé. avec $u\geq0$ et $0\leq
 v \leq m$ Si $x_0$ est racine de $f$ \mod N$ alors $x_0$ est racine de
