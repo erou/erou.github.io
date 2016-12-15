@@ -86,6 +86,7 @@ calculer $1-P$. Notons $p_i$ la probabilité que le $i$-ième message
 provoque une collision. On a $p_1=1$, $p_2=1-1/2^l$, $p_n=1-(n-1)/2^l$.
 On a ainsi $1-P=p_1\times\dots\times p_n$. On a $\ln(1-u)\sim -u$, et in
 fine $\ln(1-P)\approx -1/2^l-2/2^l-\dots-(n-1)/2^l)$. D'où
-$\ln(1-P)\approx -n(n-1)/2^{l+1}$ et 1-P\approx \exp(-n(n-1)/2^{l+1})$.
+$\ln(1-P)\approx -n(n-1)/2^{l+1}$ et $1-P\approx \exp(-n(n-1)/2^{l+1})$.
 
-On en déduit $P = 1-\exp(-n(n-1)/2^{l+1}) $.
+On en déduit $P = 1-\exp(-n(n-1)/2^{l+1}) $. En inversant la formule, on
+a également $n\approx 2^{l/2}\sqrt{2\ln(\frac{1}{1-P})} $
