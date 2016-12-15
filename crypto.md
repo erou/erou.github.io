@@ -69,20 +69,6 @@ difficile de trouver $x'\neq x$ tel que $h(x')=y$.
 3. $h$ est à collisions fortes difficiles (*collision resistant*) : il
    est calculatoirement difficile de trouver $x,x'\in\\{0,1\\}^*$ avec
    $x\neq x'$ et $h(x)=h(x')$.
- 
-
-*Définition :* $h:\\{0,1\\}^*\rightarrow\\{0,1\\}^l$ est dite **fonction
-de hachage** si et seulement si elle vérifie les trois propriétés
-suivantes :
-1. $h$ est à sens unique (*one way*) : $\forall y \in \\{0,1\\}^l$, il
-   est calculatoirement difficile de trouver un antécédent
-   $x\in\\{0,1\\}^*$ tel que $h(x)=y$ .
-2. $h$ est à collision faibles difficiles (*second preimage resistant*)
-   : étant donné $x\in\\{0,1\\}^* $ et $y=h(x)$, il est calculatoirement
-difficile de trouver $x'\neq x$ tel que $h(x')=y$. 
-3. $h$ est à collisions fortes difficiles (*collision resistant*) : il
-   est calculatoirement difficile de trouver $x,x'\in\\{0,1\\}^*$ avec
-   $x\neq x'$ et $h(x)=h(x')$.
 
 La fonction $h$ n'est pas injective mais la propriété 3 dit qu'il est en
 pratique difficile de trouver un exemple de non-injectivité. On a
