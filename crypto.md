@@ -45,7 +45,7 @@ considère quand même que l'algorithme de signature n'est pas bon.
 *Définition :* On dit qu'un algorithme de signature est **sûr** si et
 seulement si pour un attaquant qui choisit $M_1,\dots,M_n$ et obtient
 leurs signatures $S_1,\dots,S_n$, il doit être *calculatoirement
-difficile$ de construire $(M,S)$ avec $M\notin \\{M_1,\dots,M_n\\}$ et
+difficile* de construire $(M,S)$ avec $M\notin \\{M_1,\dots,M_n\\}$ et
 $S$ une signature valide de $M$.
 
 La méthode $S=M^d\mod n$ n'est pas sûre.
