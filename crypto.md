@@ -53,7 +53,12 @@ La méthode $S=M^d\mod n$ n'est pas sûre.
 
 ### Méthode "hash and sign"
 
+Avant de signer le message, on va le passer dans une fonction de
+hachage, cela rendra le protocole plus sûr.
+
 $M$ --> $h$ --> RSA --> $S$.
+
+*Définition :* une fonction $h:\\{0,1\\}^*\rightarrow\\{0,1\\}^l$ est appelée **fonction de hachage**.
 
 *Définition :* $h:\\{0,1\\}^*\rightarrow\\{0,1\\}^l$ est dite **fonction
 de hachage** si et seulement si elle vérifie les trois propriétés
@@ -89,4 +94,6 @@ fine $\ln(1-P)\approx -1/2^l-2/2^l-\dots-(n-1)/2^l)$. D'où
 $\ln(1-P)\approx -n(n-1)/2^{l+1}$ et $1-P\approx \exp(-n(n-1)/2^{l+1})$.
 
 On en déduit $P = 1-\exp(-n(n-1)/2^{l+1}) $. En inversant la formule, on
-a également $n\approx 2^{l/2}\sqrt{2\ln(\frac{1}{1-P})} $
+a également $n\approx 2^{l/2}\sqrt{2\ln(\frac{1}{1-P})}$. Il y a un
+violent changement de situation aux alentours de $2^{l/2}$, c'est ce
+qu'on appelle le *paradoxe des anniversaires*. 
