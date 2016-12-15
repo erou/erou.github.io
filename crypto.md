@@ -62,11 +62,12 @@ suivantes :
    est calculatoirement difficile de trouver un antécédent
    $x\in\\{0,1\\}^*$ tel que $h(x)=y$
 2. $h$ est à collision faibles difficiles (*second preimage resistant*)
-   : étant donné $x\in\\{0,1\\}^*$ et $y=h(x)$, il est calculatoirement
+   : étant donné $x\in\\{0,1\\}^* $ et $y=h(x)$, il est calculatoirement
 difficile de trouver $x'\neq x$ tel que $h(x')=y$. 
 3. $h$ est à collisions fortes difficiles (*collision resistant*) : il
    est calculatoirement difficile de trouver $x,x'\in\\{0,1\\}^*$ avec
    $x\neq x'$ et $h(x)=h(x')$.
 
 La fonction $h$ n'est pas injective mais la propriété 3 dit qu'il est en
-pratique difficile de trouver un exemple de non-injectivité.
+pratique difficile de trouver un exemple de non-injectivité. On a
+$3\Rightarrow 2 \Rightarrow 1$.
