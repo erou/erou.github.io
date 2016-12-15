@@ -2,6 +2,7 @@
 title: Cryptographie
 layout: default
 permalink: /crypto/
+visible: false
 ---
 
 Voici mes notes de cours de cryptographie, elles contiennent probablement des erreurs.
@@ -178,7 +179,8 @@ savoir trouver le pgcd simplement (il faut mieux que l'algorithme d'Euclide).
 
 *Démonstration de Coppersmith :*
 
-Notations : $h(x) = \sum a_i x^i \in \mathbb Z[x]$, $||h||^2 = \sum |a_i|$
+Notations : $h(x) = \sum a_i x^i \in \mathbb Z[x],
+|| h ||^2 = \sum |a_i|$
 
 **Lemme :** Soit $h(x)\in\mathbb Z[x]$ de degré $d$, $B>0$ entier.
 Supposons $||h(B\cdot)||<\frac{N}{\sqrt{d+1}}$. Si $|x_0|<B$ satisfait
@@ -200,11 +202,12 @@ $|x_0|<B=N^{1/d-\varepsilon}$.
 * ayant également $x_0$ comme solution $\mod N$
 * satisfaisant la confition de norme du lemme
 
-*1e idée :* $f, xf, x^2f, \dots$ puis combinaisons linéaires.
+*1ère idée :* $f, xf, x^2f, \dots$ puis combinaisons linéaires.
 
-*2e idée :* si $f(x_0)=0\mod N$, alors f(x_0)^k=0\mod N^k$.
+*2ème idée :* si $f(x_0)=0\mod N$, alors $f(x_0)^k=0\mod N^k$.
 
 $g_{u,v}(x)=N^{m-v}x^uf(x)^v$ pour un $m$ fixé. avec $u\geq0$ et $0\leq
-v \leq m$ Si $x_0$ est racine de $f$ \mod N$ alors $x_0$ est racine de
+v \leq m$ Si $x_0$ est racine de $f\mod N$ alors $x_0$ est racine de
 $g_{u,v}\mod N^m$. Reste à trouver une combinaison linéaire h des
-$g_{u,v}$ telle que $||h(B\cdot)||<\frac{N}{\sqrt{d°h+1}}$ 
+$g_{u,v}$ telle que $||h(B\cdot)||<\frac{N}{\sqrt{d°h+1}}$ où $d°h$ est le
+degré de $h$.
