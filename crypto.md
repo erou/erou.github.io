@@ -67,3 +67,6 @@ difficile de trouver $x'\neq x$ tel que $h(x')=y$.
 3. $h$ est à collisions fortes difficiles (*collision resistant*) : il
    est calculatoirement difficile de trouver $x,x'\in\\{0,1\\}^*$ avec
    $x\neq x'$ et $h(x)=h(x')$.
+
+La fonction $h$ n'est pas injective mais la propriété 3 dit qu'il est en
+pratique difficile de trouver un exemple de non-injectivité.
