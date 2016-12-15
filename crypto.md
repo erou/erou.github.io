@@ -134,4 +134,6 @@ Si $M<\sqrt[e] n$ alors $C=M^e\mod n=M^e$. Donc $M=\sqrt[e] C$.
 
 On prend $e=3$, on suppose qu'Alice envoit le même message à plusieurs
 déstinataires. On note $y_i=x^3\mod n_i$ et $n_i=p_iq_i$ avec $0\leq
-x<n_i$
+x<n_i$. On a alors $0\leq x^3<n_1n_2n_3$. Mais comme on connaît $x^3$
+modulo $n_1n_2n_3$, on peut retrouver $x$ en faisant une simple racine
+cubique. Ensuite d'après les restes chinois on peut retrouver $x$.
