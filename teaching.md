@@ -2,7 +2,6 @@
 layout: default
 title: Teaching
 permalink: /teaching/
-visible: true
 ---
 
 ## Khôlles
