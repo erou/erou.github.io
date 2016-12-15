@@ -2,6 +2,10 @@
 layout: default
 permalink:/crypto
 ---
+
+Voici mes notes de cours de cryptographie, il contient probablement des
+erreurs.
+
 ## Utilisation du RSA
 
 ### Signatures
@@ -37,3 +41,11 @@ considère quand même que l'algorithme de signature n'est pas bon.
   $(M_i,S_i)$
 * attaque à *messages choisis* : l'attaquant peut choisir des messages
   $M_i$, et obtenir leurs signatures $S_i$
+
+*Définition :* On dit qu'un algorithme de signature est **sûr** si et
+seulement si pour un attaquant qui choisit $M_1,\dots,M_n$ et obtient
+leurs signatures $S_1,\dots,S_n$, il doit être *calculatoirement
+difficile$ de construire $(M,S)$ avec $M\notin \\{M_1,\dots,M_n\\}$ et
+$S$ une signature valide de $M$.
+
+La méthode $S=M^d\mod n$ n'est pas sûre.
