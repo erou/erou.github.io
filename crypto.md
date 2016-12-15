@@ -173,4 +173,19 @@ paragraphe a.
 *Remarque :* C'est facile si $N$ est premier. On peut résoudre les
 équations polynômiale dans $\mathbb Z/p\mathbb Z$ : on veut résoudre
 quelque chose de la forme $f(x)=0\mod p$ mais on sait aussi que $x^p=x$,
-les racines sont donc les racines de pgcd($f(x),x^p-x$)
+les racines sont donc les racines de pgcd($f(x),x^p-x$). Ensuite il faut
+savoir trouver le pgcd simplement (il faut mieux que l'algorithme d'Euclide).
+
+*Démonstration de Coppersmith :*
+
+Notations : $h(x) = \sum a_i x^i \in \mathbb Z[x]$, $||h||^2 = \sum |a_i|$
+
+**Lemme :** Soit $h(x)\in\mathbb Z[x]$ de degré $d$, $B>0$ entier.
+Supposons $||h(B\dot)||<\frac{N}{\sqrt{d+1}}. Si $|x_0|<B$ satisfait
+$h(x_0)=0\mod N$ alors $h(x_0)=0$ sur les entiers.
+
+*Preuve du lemme :* 
+
+$|h(x_0)|=|\sum_{i=0}^d a_i x_0^i|\leq \sum_{i=0}^d |a_iB^i|$ par
+inégalité triangulaire. Puis via l'inégalité de Cauchy-Schwarz on a
+$|h(x_0)|\leq \sqrt{d+1}||h(B\dot)||<N 
