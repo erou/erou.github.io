@@ -1,7 +1,7 @@
 ---
 title: Cryptographie
 layout: default
-permalink:/crypto
+permalink: /crypto/
 ---
 
 Voici mes notes de cours de cryptographie, il contient probablement des
