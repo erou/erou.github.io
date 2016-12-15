@@ -1,3 +1,7 @@
+---
+layout: default
+permalink:/crypto
+---
 ## Utilisation du RSA
 
 ### Signatures
@@ -25,3 +29,11 @@ considère quand même que l'algorithme de signature n'est pas bon.
 	* forge universelle : quel que soit $M$, l'attaquant est capable
 	  de trouver une signature valide $S$ de ce message $M$
 2. Trouver la clé secrète. 
+
+**Informations dont dispose l'attaquant :**
+
+* clé publique "no message attack"
+* attaque à *messages connus* : l'attaquant connaît des couples
+  $(M_i,S_i)$
+* attaque à *messages choisis* : l'attaquant peut choisir des messages
+  $M_i$, et obtenir leurs signatures $S_i$
