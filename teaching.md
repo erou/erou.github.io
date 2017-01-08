@@ -20,4 +20,5 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
 4. [Variables aléatoires à densité](exoVariablesDensite.pdf).
 5. [Séries et applications linéaire](exoSeriesAppliLin.pdf).
 6. [Espaces probabilisés](exoEspacesProba.pdf).
+7. [Variables aléatoires discrètes](exoVariablesDiscretes.pdf).
 
