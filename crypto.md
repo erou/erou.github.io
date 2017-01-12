@@ -223,3 +223,7 @@ $u_1,\dots,u_\omega$.
 *Définition :* Le déterminant de $L=\det(L)$ est le déterminant de la
 matrice $\omega\times\omega$ dont les lignes sont les vecteurs
 $u_1,\dots,u_\omega$.
+
+**Théorème :** (Hermite) Tout réseau $L$ de dimension $\omega$ contient
+un vecteur $v\in L\setminus\\{0\\}$ tel que $||v||\leq\gamma_\omega(\det
+L)^{1/\omega}$.
