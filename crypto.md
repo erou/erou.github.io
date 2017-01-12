@@ -287,7 +287,13 @@ Standard
 PKCS#1 v1.5
 
 $ C = (\mu(M))^e\mod N $ où
-$$ \mu(M) = \varnothing\varnothing\varnothing 2
-||r||\varnothing\varnothing || M $$
+$ \mu(M) = \varnothing\varnothing\varnothing 2
+||r||\varnothing\varnothing || M $ et où $ r $ est aléatoire et fait au
+moins 8 octects.
 
 Alice --> Bob
+
+$ C^d \mod N = \varnothing\varnothing\varnothing 2 \\[ \neq 0 \\]
+\varnothing\varnothing M $.
+
+*Exemple simplifié :$
