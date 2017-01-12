@@ -297,3 +297,6 @@ $ C^d \mod N = \varnothing\varnothing\varnothing 2 \[ \neq 0 \]
 \varnothing\varnothing M $.
 
 *Exemple simplifié :*
+
+On suppose qu'on a un *oracle* $ \mathcal A $ qui nous donne la parité du clair
+correspondant au chiffré qu'on envoie.
