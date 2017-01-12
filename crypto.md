@@ -268,13 +268,14 @@ On a $ g(M) = 0 $, et $ M < N_i $ pour $ 1 \leq i \leq k $. Donc $ M^k < \bar N 
 
 *Attaque (Coppersmith)* sur la méthode "short pad"
 
-$C = (M || r)^e \mod N $ où $r$ a été choisi au hasard et $ r < \lfloor n/e \rfloor $ où $n$ est le nombre de bits de $r$. À partir de deux $C_i$ définit comme ça, on peut retrouver $M$ en temps polynomial.
+$ C = (M || r)^e \mod N $ où $r$ a été choisi au hasard et $ r < \lfloor n/e \rfloor $ où $n$ est le nombre de bits de $r$. À partir de deux $C_i$ définit comme ça, on peut retrouver $M$ en temps polynomial.
 
 $C = M^e \mod N$, pareil pour $C_i$.
-$$ x\mapsto g_1(x,y) = x^e - C_1 $$
-$$ x\mapsto g_2(x,y) = (x + y)^e - C_2 $$
+$ x\mapsto g_1(x,y) = x^e - C_1 $
+$ x\mapsto g_2(x,y) = (x + y)^e - C_2 $
 
 On veut voir si on a des racines communes entre les $g_i$, pour cela on
 regarde le résultant de ces deux polynômes $Res_x(g_1,g_2) = h(y)$.
 $\Delta = r_2-r_1$ annule $h$ et $|\Delta| < N^{1/e^2}$. 
 
+#### d) Attaque de Bleichenbacker
