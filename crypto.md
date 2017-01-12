@@ -287,5 +287,7 @@ Standard
 PKCS#1 v1.5
 
 $ C = (\mu(M))^e\mod N $ où
-\[ \mu(M) = \varnothing\varnothing\varnothing 2
-||r||\varnothing\varnothing || M \]
+$$ \mu(M) = \varnothing\varnothing\varnothing 2
+||r||\varnothing\varnothing || M $$
+
+Alice --> Bob
