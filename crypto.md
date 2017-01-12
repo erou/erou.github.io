@@ -308,3 +308,19 @@ $ \mathcal A(2^e C_0 \mod N) = 0$ si $ 0\leq M_0 \leq N/2 $, $ =1 $
 sinon. Ça nous permet d'avoir un intervalle dans lequel se trouve $ M_0
 $. On continue avec $ 4^e, 8^e $ etc ... Par dichotomie, on retrouve
 exactement $ M_0 $.
+
+### Attaques physiques
+
+Dans une carte bleu (*i.e.* carte à microprocesseurs) il y a : des poules des canards des oies. CPU
+(unité centrale), ROM (mémoire sans ré-écritude),
+RAM (mémoire volatile), EEPROM (mémoires où on met les clés).
+
+Dans tous les livres de crypto, on considère la carte bleu comme un
+boite noire. Mais Paul Kocher, dans les années 90, s'est dit que ces
+calculs n'étaient pas des choses abstraites, et qu'on pouvait peut-être
+trouver d'autres informations en mesurant des données physiques :
+
+* consommation électrique
+* blabla
+* blibnli
+
