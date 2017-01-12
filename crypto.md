@@ -296,7 +296,15 @@ Alice --> Bob
 $ C^d \mod N = \varnothing\varnothing\varnothing 2 \[ \neq 0 \]
 \varnothing\varnothing M $.
 
-*Exemple simplifié :*
+*Exemple simplifié :* clé publique $ e, N $
 
 On suppose qu'on a un *oracle* $ \mathcal A $ qui nous donne la parité du clair
 correspondant au chiffré qu'on envoie.
+
+Supposons que l'attaquant connaisse le chiffré $ C_0 $ d'un message $
+M_0 $. Comment peut-il retrouver $ M_0 $ ? 
+
+$ \mathcal A(2^e C_0 \mod N) = 0$ si $ 0\leq M_0 \leq N/2 $, $ =1 $
+sinon. Ça nous permet d'avoir un intervalle dans lequel se trouve $ M_0
+$. On continue avec $ 4^e, 8^e $ etc ... Par dichotomie, on retrouve
+exactement $ M_0 $.
