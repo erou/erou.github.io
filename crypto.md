@@ -245,3 +245,18 @@ $d°g_{u,v}\leq u + dv \leq d-1+dm=\omega-1$.
 D'après le lemme, si $x_0$ est une racine modulo $N^m$ d'une combinaison
 linéaire des $g_{u,v}(B)$, avec $|x_0|< B$ de norme inférieure à $
 2^{\omega/4}(\det L)^{1/\omega}$. 
+
+On peut montrer qu'on a l'inégalité voulue pour un choix de
+$m=O(1/d\min(1/\varepsilon,ln(N))$.
+
+*Application :* Attaque de Hastad généralisée.
+
+On a des $C_i = (f_i(M))^e \mod N_i$. Le destinataire numéro $i$ donne
+sa clé publique $(e_i, N_i)$ et le polynôme $f_i$.
+
+*Attaque :* $\bar N = N_1\times\dots\times N_k$ ; $g_i = (f_i)^e-C_i$ et
+$d°g_i\leq d$ et $k\geq d$ et $\forall i,\; g_i(M) = 0 \mod N$. On peut
+supposer les $g_i$ unitaires. En effet, si un $g_i$ ne l'est pas, on le
+normalise en divisant par son coefficient dominant. Si jamais le
+coefficient dominant *n'est pas inversible*, alors on a trouvé un
+facteur de $N$. 
