@@ -259,4 +259,10 @@ $d°g_i\leq d$ et $k\geq d$ et $\forall i,\; g_i(M) = 0 \mod N$. On peut
 supposer les $g_i$ unitaires. En effet, si un $g_i$ ne l'est pas, on le
 normalise en divisant par son coefficient dominant. Si jamais le
 coefficient dominant *n'est pas inversible*, alors on a trouvé un
-facteur de $N$. 
+facteur de $N$. On peut supposer que pour tout $i$, on a $d°g_i = d$,
+quitte à multiplier au besoin par un monôme. On pose $g(x) =
+\sum_{i=1}^k T_ig_i(x)$ avec $T_i=0\mod N_j$ ($j\neq i$) et $T_i = 1
+\mod N_i $. $T_i$ existe et est unique d'après le théorème chinois.
+
+On a $ g(M) = 0 $, et $ M < N_i $ pour $ 1 \leq i \leq k $. Donc $ M^k < \bar N \Longrightarrow M < \bar N^{1/k} \leq \bar N^{1/d} \Longrightarrow $ on trouve $M$ en temps polynomial (via Coppersmith).
+
