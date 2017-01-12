@@ -224,6 +224,14 @@ $u_1,\dots,u_\omega$.
 matrice $\omega\times\omega$ dont les lignes sont les vecteurs
 $u_1,\dots,u_\omega$.
 
-**Théorème :** (Hermite) Tout réseau $L$ de dimension $\omega$ contient
+**Théorème** (Hermite) : Tout réseau $L$ de dimension $\omega$ contient
 un vecteur $v\in L\setminus\\{0\\}$ tel que $||v||\leq\gamma_\omega(\det
 L)^{1/\omega}$.
+C'est un résultat d'existence, mais on aimerait avoir une façon
+algorithmique pour construire le vecteur $v$ dont parle le théorème. En
+fait Hermite dans sa preuve, avait déjà un algorithme. Mais cet
+algorithme n'était pas très performant. 
+
+L'algotihme qu'on utilise est l'algorithme LLL (1982) de Lenstra,
+Lenstra, et Lovasz. Il permet de trouver $v\in L\setminus\\{0\\}$ tel
+que $||v||\leq 2^{\omega/4}(\det L)^{1/\omega}$ en temps polynomial.
