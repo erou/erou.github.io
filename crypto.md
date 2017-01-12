@@ -293,7 +293,7 @@ moins 8 octects.
 
 Alice --> Bob
 
-$ C^d \mod N = \varnothing\varnothing\varnothing 2 \\[ \neq 0 \\]
+$ C^d \mod N = \varnothing\varnothing\varnothing 2 \[ \neq 0 \]
 \varnothing\varnothing M $.
 
-*Exemple simplifié :$
+*Exemple simplifié :*
