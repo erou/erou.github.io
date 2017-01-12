@@ -241,3 +241,7 @@ que $||v||\leq 2^{\omega/4}(\det L)^{1/\omega}$ en temps polynomial.
 réseau engendré par les $g_{u,v}$ avec $0\leq u\leq d-1$ et $0\leq v
 \leq m$ et $\omega=d(m+1)$ est la dimension du réseau. On a
 $d°g_{u,v}\leq u + dv \leq d-1+dm=\omega-1$.
+
+D'après le lemme, si $x_0$ est une racine modulo $N^m$ d'une combinaison
+linéaire des $g_{u,v}(B)$, avec $|x_0|< B$ de norme inférieure à $
+2^{\omega/4}(\det L)^{1/\omega}$. 
