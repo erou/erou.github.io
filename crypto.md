@@ -211,3 +211,5 @@ v \leq m$ Si $x_0$ est racine de $f\mod N$ alors $x_0$ est racine de
 $g_{u,v}\mod N^m$. Reste à trouver une combinaison linéaire h des
 $g_{u,v}$ telle que $||h(B\cdot)||<\frac{N}{\sqrt{d°h+1}}$ où $d°h$ est le
 degré de $h$.
+
+**Cours du 12 Janvier**
