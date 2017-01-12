@@ -213,3 +213,13 @@ $g_{u,v}$ telle que $||h(B\cdot)||<\frac{N}{\sqrt{d°h+1}}$ où $d°h$ est le
 degré de $h$.
 
 **Cours du 12 Janvier**
+
+## Réseaux
+
+*Définition :* Un réseau $L$ engendré par $(u_1, \dots, u_\omega)$ est
+l'ensemble des combinaisons linéaires à coefficients entiers de
+$u_1,\dots,u_\omega$.
+
+*Définition :* Le déterminant de $L=\det(L)$ est le déterminant de la
+matrice $\omega\times\omega$ dont les lignes sont les vecteurs
+$u_1,\dots,u_\omega$.
