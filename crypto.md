@@ -321,6 +321,22 @@ calculs n'étaient pas des choses abstraites, et qu'on pouvait peut-être
 trouver d'autres informations en mesurant des données physiques :
 
 * consommation électrique
-* blabla
-* blibnli
+* champ électro-magnétique 
+* température
+
+et inversement on peut se demander si on peut modifier le fonctionnement
+d'une carte en modifiant des paramètres physiques, comme avec :
+
+* changement d'alimentation
+* laser
+* chauffer
+* champs électromagnétique (courrants de Foucault)
+* coups de cutter
+
+**1. SPA Simple Power Analysis** (Kocher, 1998)
+
+Quand on faisait des *square and multiply*, en fonction de la parité du
+bit $i$ de la clé, la consommation électrique n'était pas la même. Donc
+avec un oscilloscope, on pouvait retrouver tous les bits de la clé.
+Gênant.
 
