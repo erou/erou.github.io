@@ -280,3 +280,12 @@ regarde le résultant de ces deux polynômes $Res_x(g_1,g_2) = h(y)$.
 $\Delta = r_2-r_1$ annule $h$ et $|\Delta| < N^{1/e^2}$. 
 
 #### d) Attaque de Bleichenbacker
+
+**Standard PKCS** (RSA Data Security) : Public Key Cryptographic
+Standard
+
+PKCS#1 v1.5
+
+$ C = (\mu(M))^e\mod N $ où
+\[ \mu(M) = \varnothing\varnothing\varnothing 2
+||r||\varnothing\varnothing || M \]
