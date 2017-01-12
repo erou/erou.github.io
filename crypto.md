@@ -340,3 +340,7 @@ bit $i$ de la clé, la consommation électrique n'était pas la même. Donc
 avec un oscilloscope, on pouvait retrouver tous les bits de la clé.
 Gênant.
 
+Du coup on fait un *square and multiply always*, on fait les mêmes
+calculs à chaque fois, comme ça il est impossible de différencier les
+bits de la clé.
+
