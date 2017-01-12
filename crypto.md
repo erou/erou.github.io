@@ -237,6 +237,7 @@ Lenstra, et Lovasz. Il permet de trouver $v\in L\setminus\\{0\\}$ tel
 que $||v||\leq 2^{\omega/4}(\det L)^{1/\omega}$ en temps polynomial.
 
 *Revenons à la démonstration du théorème de Coppersmith.* On veut
-$2^{\omega/4}(\det L)^{1/\omega)< N^m/\sqrt\omega$. On considère le
+ $ N^m/\sqrt\omega > 2^{\omega/4}(\det L)^{1/\omega)$. On considère le
 réseau engendré par les $g_{u,v}$ avec $0\leq u\leq d-1$ et $0\leq v
-\leq n$ et $\omega=d(n+1)$ est la dimension du réseau.
+\leq m$ et $\omega=d(m+1)$ est la dimension du réseau. On a
+$d°g_{u,v}\leq u + dv \leq d-1+dm=\omega-1$.
