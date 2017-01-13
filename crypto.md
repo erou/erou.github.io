@@ -379,7 +379,7 @@ On choisit $n$ message aléatoires $ M_1,\cdots, M_n $ et $\left\\{ i,
 \right\\}$ et pareil pour $B$ avec 1. On fait la même chose qu'avec le
 temps mais avec le courant.
 
-Quels sont les solutions ?
+Quelles sont les solutions ?
 
 On va randomiser le calcul, on va calculer $S = m^d \mod N =
 \frac{(\lambda M)^d}{\lambda^d}$. Donc on doit calculer deux RSA et
@@ -408,3 +408,10 @@ exemple utiliser :
 * chauffer/refroidir
 * champs électromagnétique
 * rayon laser
+
+En 1997, Boneh, De Millo, Lipton, ont fait la première attaque par faute
+sur le RSA. Pour faire cette attaque, ils ont supposé que le RSA était
+implémenté en utilisant les restes chinois. C'est-à-dire en calculant
+$S_p = M^{d_p} \mod p$ et $S_q = M^{d_q} \mod q$ où $d_p = d\mod (p-1)$
+et où $d_q = d \mod (q-1)$, on récupère ensuite $S$ avec l'isomorphisme
+du théorème des restes chinois.
