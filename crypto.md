@@ -381,4 +381,5 @@ temps mais avec le courant.
 
 Quels sont les solutions ?
 
-On va randomiser le calcul
+On va randomiser le calcul, on va calculer $S = m^d \mod N =
+\frac{(\lambda M)^d}{\lambda^d}$
