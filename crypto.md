@@ -386,4 +386,4 @@ On va randomiser le calcul, on va calculer $S = m^d \mod N =
 faire une division, c'est plus couteux mais personne ne peut prédire les
 calculs qui vont être faits.
 
-Si on veut rendre la consommation constante
+Si on veut rendre la consommation constante on peut
