@@ -374,6 +374,6 @@ est aléatoire et d'une moyenne constante.)
 
 **3. DPA Differential Power Analysis** (Paul Kocher, 1998)
 
-On choisit $n$ message aléatoires $ M_1,\cdots, M_n $ et \left\\{ i,
+On choisit $n$ message aléatoires $ M_1,\cdots, M_n $ et $\left\\{ i,
   1\leq i\leq n | \text{bit de poids faible}(M_i^2\times M_i) = 0
-\right\\} et pareil pour $B$ avec 1.
+\right\\}$ et pareil pour $B$ avec 1.
