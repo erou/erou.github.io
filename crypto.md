@@ -365,4 +365,9 @@ On va choisir plein de messages $ M_1, \dots, M_n $ et on considère
 $A = \\{i |$ temps $(M_i^2\times M_i)=T_1\\}$ et $B$ le même ensemble
 avec $T_2$. On chronomètre le temps total $\tau_i$ du calcul $ M_i^d\mod N $
 
-On a $\cfrac{1}{A}\sum_{i\in A} \tau_i = \tau_A, \tau_i=T_1 +$ random et pareil avec $B$.
+On a $\cfrac{1}{A}\sum_{i\in A} \tau_i = \tau_A, \tau_i=T_1 +$ random et
+pareil avec $B$. Mais cela n'est vrai que si à la première séparation 
+dans le graphe des appels, on a que le 1022ème bit est un 1. Sinon on ne
+pourra pas distinguer de différence significative dans les temps de
+codage. (On considère que le temps que prennent les autres opérations
+est aléatoire et d'une moyenne constante.)
