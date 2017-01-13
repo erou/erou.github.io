@@ -386,7 +386,9 @@ On va randomiser le calcul, on va calculer $S = m^d \mod N =
 faire une division, c'est plus couteux mais personne ne peut prédire les
 calculs qui vont être faits.
 
-Si on veut rendre la consommation constante on peut
+Si on veut rendre la consommation constante on peut faire une opération
+puis une autre qui est l'inverse, mais cela crée un champs
+électromagnétique qui peut lui aussi être exploitée. Pas de bol.
 
 **4. DEMO Differential Electro Magnetic Attack**
 
@@ -395,3 +397,14 @@ C'est autrement plus compliqué parce qu'on a quelque chose de dimension
 
 Toutes ces attaques sont appelées des *attaques par canaux auxiliaires* 
 et sont des attaques *passives*.
+
+**5. DFA (Differential Fault Analysis)**
+
+C'est une attaque *active* où l'on va provoquer des erreurs de calcul.
+Pour y parvenir, on va modifier l'environnement de la carte, on peut par
+exemple utiliser :
+
+* pics d'alimentaton électrique
+* chauffer/refroidir
+* champs électromagnétique
+* rayon laser
