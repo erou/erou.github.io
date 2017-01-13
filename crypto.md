@@ -387,3 +387,11 @@ faire une division, c'est plus couteux mais personne ne peut prédire les
 calculs qui vont être faits.
 
 Si on veut rendre la consommation constante on peut
+
+**4. DEMO Differential Electro Magnetic Attack**
+
+C'est autrement plus compliqué parce qu'on a quelque chose de dimension
+3 !
+
+Toutes ces attaques sont appelées des *attaques par canaux auxiliaires* 
+et sont des attaques *passives*.
