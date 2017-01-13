@@ -346,4 +346,17 @@ bits de la clé.
 
 **13 Janvier**
 
-Hmm hmm
+**2. Timing attacks** (Kocher, 1996)
+
+En mesurant le temps que prends le codage, on peut récupérer le nombre
+de 0 et le nombre de 1. Car le temps pris par la machine dépend du
+nombre de 1, c'est-à-dire du poids de Hamming. C'est le cas car les
+opérations de multiplications coûtent moins cher (en temps) que le
+square. 
+
+Le temps d'une multiplication $ a \times b \mod N $ peut dépendre de $
+a $ et $ b $.
+
+*Exemple :* multiplication de Montgomery
+
+
