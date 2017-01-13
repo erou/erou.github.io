@@ -378,3 +378,7 @@ On choisit $n$ message aléatoires $ M_1,\cdots, M_n $ et $\left\\{ i,
   1\leq i\leq n | \text{bit de poids faible}(M_i^2\times M_i) = 0
 \right\\}$ et pareil pour $B$ avec 1. On fait la même chose qu'avec le
 temps mais avec le courant.
+
+Quels sont les solutions ?
+
+On va randomiser le calcul
