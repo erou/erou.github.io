@@ -424,3 +424,27 @@ théorème chinois ne coûte quasiment rien).
 erreur de calcul. On considère qu'on a $S = S_p \mod p$, $S = S_q \mod
 q$ et $S' = S'_p\neq S_p\mod p$ et $S'_q = S_q \mod q$. Ainsi on peut
 récupérer un facteur via pcgd$(S-S', N) = q$.
+
+*Attaque n°2 :* l'attaquant ne connait que $S', N, M, e$, alors on a
+encore pgcd$(S'^e - M, N) = q$. Contre-mesure :
+
+* à la fin du calcul, vérifier que $S^e = M\mod N$
+* si on ne connaît pas $e$, on prend $\lambda$ aléatoire et premier, et on fait une
+implémentation différente toujours basée sur les restes chinois, on
+calcul $M_{\lambda p} = M \mod \lambda p$, puis $S_{\lambda p} =
+M_{\lambda p}^{d_{\lambda p}} \mod \lambda p$ (où $d_{\lambda p} =d\mod
+(p-1)(\lambda-1)$ et enfin $S_p =
+S_{\lambda p} \mod p$. On fait la même chose pour $q$ et on retrouve
+$S$. Au milieu on teste si $S_{\lambda p}\mod \lambda = S_{\lambda
+q}\mod\lambda$.
+
+*Remarque : safe errors*
+
+Dans un *square and multiply always*, si l'attaquant observe qu'une
+faute n'a pas eu de conséquences, il peut en déduire qu'une opération
+était inutile et donc qu'on a un 0 à l'endroit où on a provoqué la
+faute. C'est donc un peu un casse-tête chinois (comme le théorème) car
+on avait justement créé cette version du square and multiply pour
+résoudre un autre problème...
+
+**7. Bug attack (Shamir)**
