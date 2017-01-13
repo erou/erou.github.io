@@ -452,4 +452,6 @@ résoudre un autre problème...
 On suppose qu'on a une multiplication buggée $M(a,b) = a\times b$ si
 $(a,b)\neq(a_0,b_0)$ et $M(a,b)\neq a\times b$ si $(a,b) = (a_0,b_0)$.
 On suppose qu'on utilise RSA avec les restes chinois (comme le
-casse-tête).
+casse-tête). On a $N = p\times q$ et on prend $M$ et $p < M < q$.
+Ensuite on ne change que les derniers bits de $M$, on met ceux de $a_0$
+et $b_0$. On récupère $p$ en calculant le pgcd de $S'^e-M$ et $N$. 
