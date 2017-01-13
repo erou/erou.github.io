@@ -448,3 +448,8 @@ on avait justement créé cette version du square and multiply pour
 résoudre un autre problème...
 
 **7. Bug attack (Shamir)**
+
+On suppose qu'on a une multiplication buggée $M(a,b) = a\times b$ si
+$(a,b)\neq(a_0,b_0)$ et $M(a,b)\neq a\times b$ si $(a,b) = (a_0,b_0)$.
+On suppose qu'on utilise RSA avec les restes chinois (comme le
+casse-tête).
