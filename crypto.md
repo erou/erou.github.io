@@ -344,3 +344,4 @@ Du coup on fait un *square and multiply always*, on fait les mêmes
 calculs à chaque fois, comme ça il est impossible de différencier les
 bits de la clé.
 
+** 13 Janvier **
