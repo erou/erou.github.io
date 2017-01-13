@@ -371,3 +371,9 @@ dans le graphe des appels, on a que le 1022ème bit est un 1. Sinon on ne
 pourra pas distinguer de différence significative dans les temps de
 codage. (On considère que le temps que prennent les autres opérations
 est aléatoire et d'une moyenne constante.)
+
+**3. DPA Differential Power Analysis** (Paul Kocher, 1998)
+
+On choisit $n$ message aléatoires $ M_1,\cdots, M_n $ et \left\{ i,
+  1\leq i\leq n | \text{bit de poids faible}(M_i^2\times M_i) = 0
+\right\}
