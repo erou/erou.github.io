@@ -414,4 +414,13 @@ sur le RSA. Pour faire cette attaque, ils ont supposé que le RSA était
 implémenté en utilisant les restes chinois. C'est-à-dire en calculant
 $S_p = M^{d_p} \mod p$ et $S_q = M^{d_q} \mod q$ où $d_p = d\mod (p-1)$
 et où $d_q = d \mod (q-1)$, on récupère ensuite $S$ avec l'isomorphisme
-du théorème des restes chinois.
+du théorème des restes chinois. Comme un RSA est en fait un square and
+multiply d'un nombre de $k$ bit, ce qui coûte en gros $O(k^3)$, donc en
+réduisant les tailles de moité, on gagne un facteur 8, et comme on doit
+le faire deux fois on gagne un facteur 4 *in fine* (on considère que le
+théorème chinois ne coûte quasiment rien). 
+
+*Attaque n°1 :* l'attaquant connaît $S = M^d \mod N$ et $S^*$ avec
+erreur de calcul. On considère qu'on a $S = S_p \mod p$, $S = S_q \mod
+q$ et $S^* = S^*_p\neq S_p\mod p$ et $S^*_q = S_q \mod q$. Ainsi on peut
+récupérer un facteur via pcgd$(S-S^*, N) = q$.
