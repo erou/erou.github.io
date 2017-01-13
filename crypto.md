@@ -357,6 +357,12 @@ square.
 Le temps d'une multiplication $ a \times b \mod N $ peut dépendre de $
 a $ et $ b $.
 
-*Exemple :* multiplication de Montgomery
+*Exemple :* multiplication de Montgomery. Le temps peut-être $ T_1 $ ou
+$ T_2 $. On essaie de retrouver le graphe des multiplications/square qui
+ont lieu. 
+
+On va choisir plein de messages $ M_1, \dots, M_n $ et on considère
+$A = \\{i |$ temps $(M_i^2\times M_i)=T_1\\}$ et $B$ le même ensemble
+avec $T_2$.
 
 
