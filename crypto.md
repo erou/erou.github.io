@@ -345,3 +345,5 @@ calculs à chaque fois, comme ça il est impossible de différencier les
 bits de la clé.
 
 ** 13 Janvier **
+
+Hmm
