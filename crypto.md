@@ -382,4 +382,6 @@ temps mais avec le courant.
 Quels sont les solutions ?
 
 On va randomiser le calcul, on va calculer $S = m^d \mod N =
-\frac{(\lambda M)^d}{\lambda^d}$
+\frac{(\lambda M)^d}{\lambda^d}$. Donc on doit calculer deux RSA et
+faire une division, c'est plus couteux mais personne ne peut prédire les
+calculs qui vont être faits.
