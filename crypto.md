@@ -363,6 +363,6 @@ ont lieu.
 
 On va choisir plein de messages $ M_1, \dots, M_n $ et on considère
 $A = \\{i |$ temps $(M_i^2\times M_i)=T_1\\}$ et $B$ le même ensemble
-avec $T_2$.
+avec $T_2$. On chronomètre le temps total $\tau_i$ du calcul $ M_i^d\mod N $
 
-
+On a $\cfrac{1}{A}\sum_{i\in A} \tau_i = \tau_A, \tau_i=T_1 +$ random et pareil avec $B$.
