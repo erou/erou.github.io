@@ -420,7 +420,7 @@ réduisant les tailles de moité, on gagne un facteur 8, et comme on doit
 le faire deux fois on gagne un facteur 4 *in fine* (on considère que le
 théorème chinois ne coûte quasiment rien). 
 
-*Attaque n°1 :* l'attaquant connaît $S = M^d \mod N$ et $S$ avec
+*Attaque n°1 :* l'attaquant connaît $S = M^d \mod N$ et $S'$ avec
 erreur de calcul. On considère qu'on a $S = S_p \mod p$, $S = S_q \mod
-q$ et $S^* = S^*_p\neq S_p\mod p$ et $S^*_q = S_q \mod q$. Ainsi on peut
-récupérer un facteur via pcgd$(S-S^*, N) = q$.
+q$ et $S' = S'_p\neq S_p\mod p$ et $S'_q = S_q \mod q$. Ainsi on peut
+récupérer un facteur via pcgd$(S-S', N) = q$.
