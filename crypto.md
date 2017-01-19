@@ -589,4 +589,19 @@ $\mathcal L(1/3)$.
 Mais sur une courbe elliptique la meilleure technique connue est en
 $O(\sqrt{|G|}$.
 
-**Cardinal de $E$ **
+**Cardinal de ** $E$
+
+**Propriété 1 :** Dans $(\mathbb{Z}/p\mathbb{Z})^*$, il y a $(p-1)/2$
+carrés.
+
+**Propriété 2 :** Soit $v\in(\mathbb{Z}/p\mathbb{Z})^*$, $v$ est un
+carré ssi $v^{\cfrac{p-1}{2}} = 1\mod p$.
+
+*Preuve :* tous les carrés sont solutions du polynôme $X^{(p-1)/2}$ et
+il n'y a pas plus de carrés. 
+
+**Propriété 3 :** On suppose $p=3\mod4$, si $v$ est un carré alors
+$v=u^2\mod p$ avec $u=v^{(p+1)/4}$.
+
+**Théorème de Hasse** (1940) : $p+1-2\sqrt{p}\leq |E| \leq
+p+1+2\sqrt{p}$.
