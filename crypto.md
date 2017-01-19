@@ -605,3 +605,10 @@ $v=u^2\mod p$ avec $u=v^{(p+1)/4}$.
 
 **Théorème de Hasse** (1940) : $p+1-2\sqrt{p}\leq |E| \leq
 p+1+2\sqrt{p}$.
+
+*Remarque :* Il existe des algorithmes efficaces pour compter le nombre
+de points d'une courbe elliptique (Schoof, Elkies, Atkin).
+
+| **DH** | **ECDH** |
+| $g^a\mod p\;O(k^3)$ | $aP$ |
+| $(g^b)^a\mod p\;O(k^3)$ | $a(bP)$ |
