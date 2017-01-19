@@ -497,3 +497,10 @@ vérifier cela, on regarde les dérivées partielles, on résout le système
 et trouve que l'existence d'un point où les deux dérivées partielles
 s'annulent implique $4a^2+27b^2=0$. On va donc prendre des courbes *qui
 ne vérifient pas* cette équation.
+
+Pour le cas où $\Delta$ est vertical, on va introduire un point à
+l'infini $\mathcal O$ vérifiant
+
+* $ P + \mathcal O = P $
+* $ \mathcal O + P = P $
+* $ \mathcal O + \mathcal O = \mathcal O $
