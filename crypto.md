@@ -455,3 +455,15 @@ On suppose qu'on utilise RSA avec les restes chinois (comme le
 casse-tête). On a $N = p\times q$ et on prend $M$ et $p < M < q$.
 Ensuite on ne change que les derniers bits de $M$, on met ceux de $a_0$
 et $b_0$. On récupère $p$ en calculant le pgcd de $S'^e-M$ et $N$. 
+
+## Courbes elliptiques
+
+### Rappels sur les courbes elliptiques
+
+* degré 1 : droites
+* degré 2 : coniques 
+  * paraboles : $y=ax^2$
+  * hyperboles : $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$
+  * ellipses : $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$
+* cubiques : dont les courbes elliptiques
+
