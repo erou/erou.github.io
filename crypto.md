@@ -572,6 +572,14 @@ Méthode naïve (recherche exhaustive) en $O(|G|)$.
 
     Baby step Giant step
 
-    a = dq + r (division euclidienne)
-    d = $\lfloor \sqrt{|G|} \rfloor$
-    void main error
+$ a = dq +r $ (division euclienne) ; $ d = \lfloor\sqrt{|G|}\rfloor $ ;
+$0\leq r < d$ ; $ 0\leq
+q=\frac{a-r}{d}\leq\frac{a}{d}\leq\frac{|G|-1}{\sqrt{|G|}-1}$
+
+Ensuite on remarque que $g^a=y\Leftrightarrow g^{dq}=yg^{-r}$. On
+construit deux tables pour les $g^{dq}$ et pour les $yg^{-r}$ (ces
+tables sont de l'ordre de $\sqrt{|G|}$), puis on trie les tables et on
+regarde les collisions. Ça donne un algorithme en
+$O(\sqrt{|G|}\ln\sqrt{|G|}$.
+
+*Remarque :* dans le cas de $G = (\mathbb{Z}/p\mathbb{Z})^*$
