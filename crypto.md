@@ -471,3 +471,10 @@ On part d'une équation $ E: y^2 + a_1xy + a_3y = x^3 + a_2x^2 +a_4x +a_6
 $. En caractéristique différente de $2$ et $3$, on peut simplifier en
 l'équation $ y^2 = x^3 + ax + b $.
 
+En caractérique 2, on a
+
+* *cas super-singulier* $y^2+a_3y = x^3 +ax +b$
+* *cas non super-singulier* $y^2 +a_1xy = x^3 +ax +b$
+
+et en caractéristique 3 on a $ y^2 = x^3 + ax^2 + b $.
+
