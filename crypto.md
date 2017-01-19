@@ -524,3 +524,17 @@ calculs faits ne dépendent pas du corps.
 
 On va prendre dans ce qui suit $\mathbb{K}=\mathbb{F}_p$ où $p$ premier
 $>3$ et $E=\left\\{  (x,y)\in(\mathbb{F}_p)^2 \;|\; y^2=x^3+ax+b\right\\}$.
+
+On peut aussi utiliser les coordonnées projectives pour éviter de faire
+des divisions et gagner en performance, comme dans MECM.
+
+### Diffie-Hellman
+
+Protocole de Diffie-Hellman : 1976 ``New directions in cryptography``
+
+*Remarque :* dériver une clé $K$ (128 bits) à partir d'un entier de 1024
+bits n'est pas forcément trivial. 
+
+*Sécurité de Diffie-Hellman*
+
+* sécurité contre un attaquant ``passif''
