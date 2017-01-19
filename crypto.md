@@ -533,8 +533,15 @@ des divisions et gagner en performance, comme dans MECM.
 Protocole de Diffie-Hellman : 1976 ``New directions in cryptography``
 
 *Remarque :* dériver une clé $K$ (128 bits) à partir d'un entier de 1024
-bits n'est pas forcément trivial. 
+bits n'est pas forcément trivial. Dans les faits, on va utiliser une
+fonction de hachage.
 
-*Sécurité de Diffie-Hellman*
+*Sécurité de Diffie-Hellman contre un attaquant ``passif'' :*
 
-* sécurité contre un attaquant ``passif''
+**Problème DH calculatoire :** à partir de $p, g, g^a \mod p$ et
+$g^b\mod p$,trouver $g^{ab}\mod p$
+
+**Problème de log discret :** à partir de $p, g, g^a\mod p$, trouver
+$a$.
+
+Savoir résoudre DL implique savoir résoudre DH
