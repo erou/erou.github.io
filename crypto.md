@@ -554,4 +554,4 @@ peut pas vérifier qui envoit les messages. Pour contrer cette attaque,
 on peut signer les messages avec des algorithmes de signatures
 quelconques. Pour s'échanger la clé publique de signature d'Alice, il
 faut *certifier* que c'est bien la bonne clé. Pour faire ça, il faut
-qu'une *autorité* signe un message du type ```Alice''||PK_A`
+qu'une *autorité* signe un message du type `Alice||PK_A`
