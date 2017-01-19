@@ -530,7 +530,7 @@ des divisions et gagner en performance, comme dans MECM.
 
 ### Diffie-Hellman
 
-Protocole de Diffie-Hellman : 1976 ``New directions in cryptography``
+Protocole de Diffie-Hellman : 1976 ``New directions in cryptography''
 
 *Remarque :* dériver une clé $K$ (128 bits) à partir d'un entier de 1024
 bits n'est pas forcément trivial. Dans les faits, on va utiliser une
@@ -544,4 +544,14 @@ $g^b\mod p$,trouver $g^{ab}\mod p$
 **Problème de log discret :** à partir de $p, g, g^a\mod p$, trouver
 $a$.
 
-Savoir résoudre DL implique savoir résoudre DH
+Savoir résoudre DL implique savoir résoudre DH. Mais on ne sait pas si
+les deux problèmes sont équivalents.
+
+*Sécurité de Diffie-Hellman contre un attaquant ``actif'' :*
+
+Attaque ``man in the middle''. Cette attaque est possible parce qu'on ne
+peut pas vérifier qui envoit les messages. Pour contrer cette attaque,
+on peut signer les messages avec des algorithmes de signatures
+quelconques. Pour s'échanger la clé publique de signature d'Alice, il
+faut *certifier* que c'est bien la bonne clé. Pour faire ça, il faut
+qu'une *autorité* signe un message du type ```Alice''||PK_A`
