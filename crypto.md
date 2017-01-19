@@ -564,3 +564,14 @@ Ce genre d'architecture s'appelle PKI (Public Key Infrastructure)
 
 La complexité du log discret dans un groupe
 $G=(\mathbb{Z}/p\mathbb{Z})^*$ est en $\mathcal L(1/3)$.
+
+**Algorithme baby step giant step** : données $g$, $g^a$, sur un groupe
+$G$ quelconque. Problème : trouver $a$. 
+
+Méthode naïve (recherche exhaustive) en $O(|G|)$.
+
+    Baby step Giant step
+
+    a = dq + r (division euclidienne)
+    d = $\lfloor \sqrt{|G|} \rfloor$
+    void main error
