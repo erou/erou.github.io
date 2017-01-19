@@ -504,3 +504,17 @@ l'infini $\mathcal O$ vérifiant
 * $ P + \mathcal O = P $
 * $ \mathcal O + P = P $
 * $ \mathcal O + \mathcal O = \mathcal O $
+
+**Théorème :** $(E,+)$ est un groupe commutatif.
+
+L'associativité est le seul point difficile.
+
+Pour essayer de le résoudre, on va passer au point de vue calculatoire
+(comme René Descartes). Si on a $ P = (x_P, y_P) $ et $ Q = (x_Q, y_Q)
+$, et $ R = P+Q = (x_R, y_R) $. On a $\Delta : y = ux + v$ où $ u
+=\cfrac{y_Q - y_P}{x_Q - x_P} $ (c'est la pente) et $v=y_P - ux_P$ (on
+dit juste que $P$ est sur la droite).
+
+Puis on résout le système $y = ux + v$, $y^2 = x^3 +ax+b$ et on a $x_R =
+u^2 - x_P - x_Q$, $y_R = -(ux_R+v)$ (dans les cas ordinaires, sinon il y
+a d'autres calculs) et on peut vérifier l'associativité par calcul.
