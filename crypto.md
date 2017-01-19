@@ -467,3 +467,7 @@ et $b_0$. On récupère $p$ en calculant le pgcd de $S'^e-M$ et $N$.
   * ellipses : $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$
 * cubiques : dont les courbes elliptiques
 
+On part d'une équation $ E: y^2 + a_1xy + a_3y = x^3 + a_2x^2 +a_4x +a_6
+$. En caractéristique différente de $2$ et $3$, on peut simplifier en
+l'équation $ y^2 = x^3 + ax + b $.
+
