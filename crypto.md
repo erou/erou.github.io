@@ -478,3 +478,22 @@ En caractérique 2, on a
 
 et en caractéristique 3 on a $ y^2 = x^3 + ax^2 + b $.
 
+On définit une loi de groupe sur la courbe d'équation $ y^2 = x^3 + ax +
+b $ de manière géométrique. Pour construire $ P + Q $, on trace la
+droite $\Delta$ passant par ces deux points, on pose $R$ le troisième
+point d'intersection entre $\Delta$ et la courbe $\mathcal C $, et on
+pose enfin $ P + Q $ le symétrique de $R$ par rapport à l'axe des
+abcisses.
+
+Il y a une série de problèmes :
+
+* que vaut $ P + P $ ?
+* y a-t-il toujours un troisième point d'intersection ?
+* que se passe-t-il si la droite $\Delta$ est verticale ?
+
+Pour résoudre le problème $ P + P $, on considère la tangente à la
+courbe $\mathcal C$ en $P$. Mais y a-t-il toujours une tangente ? Pour
+vérifier cela, on regarde les dérivées partielles, on résout le système
+et trouve que l'existence d'un point où les deux dérivées partielles
+s'annulent implique $4a^2+27b^2=0$. On va donc prendre des courbes *qui
+ne vérifient pas* cette équation.
