@@ -519,7 +519,7 @@ Puis on résout le système $y = ux + v$, $y^2 = x^3 +ax+b$ et on a $x_R =
 u^2 - x_P - x_Q$, $y_R = -(ux_R+v)$ (dans les cas ordinaires, sinon il y
 a d'autres calculs) et on peut vérifier l'associativité par calcul.
 
-On remplace $\mathbb{K} = \mathbb{R}$ par $\mathbb{K} = \mathbb{F}_p$
+On remplace $\mathbb{K} = \mathbb{R}$ par $\mathbb{K} = \mathbb{F}_{p}$
 ou $\mathbb{F}_{p^r}$.
 
 On va prendre dans ce qui suit $\mathbb{K}=\mathbb{F}_p$ où $p$ premier
