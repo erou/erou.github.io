@@ -580,6 +580,13 @@ Ensuite on remarque que $g^a=y\Leftrightarrow g^{dq}=yg^{-r}$. On
 construit deux tables pour les $g^{dq}$ et pour les $yg^{-r}$ (ces
 tables sont de l'ordre de $\sqrt{|G|}$), puis on trie les tables et on
 regarde les collisions. Ça donne un algorithme en
-$O(\sqrt{|G|}\ln\sqrt{|G|}$.
+$O(\sqrt{|G|}\ln\sqrt{|G|})$.
 
-*Remarque :* dans le cas de $G = (\mathbb{Z}/p\mathbb{Z})^*$
+*Remarque :* dans le cas de $G = (\mathbb{Z}/p\mathbb{Z})^*$ on a aussi
+la technique du calcul d'indice (la meilleure connue) qui est en
+$\mathcal L(1/3)$.
+
+Mais sur une courbe elliptique la meilleure technique connue est en
+$O(\sqrt{|G|}$.
+
+**Cardinal de $E$ **
