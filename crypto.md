@@ -344,3 +344,271 @@ Du coup on fait un *square and multiply always*, on fait les mêmes
 calculs à chaque fois, comme ça il est impossible de différencier les
 bits de la clé.
 
+**13 Janvier**
+
+**2. Timing attacks** (Kocher, 1996)
+
+En mesurant le temps que prends le codage, on peut récupérer le nombre
+de 0 et le nombre de 1. Car le temps pris par la machine dépend du
+nombre de 1, c'est-à-dire du poids de Hamming. C'est le cas car les
+opérations de multiplications coûtent moins cher (en temps) que le
+square. 
+
+Le temps d'une multiplication $ a \times b \mod N $ peut dépendre de $
+a $ et $ b $.
+
+*Exemple :* multiplication de Montgomery. Le temps peut-être $ T_1 $ ou
+$ T_2 $. On essaie de retrouver le graphe des multiplications/square qui
+ont lieu. 
+
+On va choisir plein de messages $ M_1, \dots, M_n $ et on considère
+$A = \\{i |$ temps $(M_i^2\times M_i)=T_1\\}$ et $B$ le même ensemble
+avec $T_2$. On chronomètre le temps total $\tau_i$ du calcul $ M_i^d\mod N $
+
+On a $\cfrac{1}{A}\sum_{i\in A} \tau_i = \tau_A, \tau_i=T_1 +$ random et
+pareil avec $B$. Mais cela n'est vrai que si à la première séparation 
+dans le graphe des appels, on a que le 1022ème bit est un 1. Sinon on ne
+pourra pas distinguer de différence significative dans les temps de
+codage. (On considère que le temps que prennent les autres opérations
+est aléatoire et d'une moyenne constante.)
+
+**3. DPA Differential Power Analysis** (Paul Kocher, 1998)
+
+On choisit $n$ message aléatoires $ M_1,\cdots, M_n $ et $\left\\{ i,
+  1\leq i\leq n | \text{bit de poids faible}(M_i^2\times M_i) = 0
+\right\\}$ et pareil pour $B$ avec 1. On fait la même chose qu'avec le
+temps mais avec le courant.
+
+Quelles sont les solutions ?
+
+On va randomiser le calcul, on va calculer $S = m^d \mod N =
+\frac{(\lambda M)^d}{\lambda^d}$. Donc on doit calculer deux RSA et
+faire une division, c'est plus couteux mais personne ne peut prédire les
+calculs qui vont être faits.
+
+Si on veut rendre la consommation constante on peut faire une opération
+puis une autre qui est l'inverse, mais cela crée un champs
+électromagnétique qui peut lui aussi être exploitée. Pas de bol.
+
+**4. DEMO Differential Electro Magnetic Attack**
+
+C'est autrement plus compliqué parce qu'on a quelque chose de dimension
+3 !
+
+Toutes ces attaques sont appelées des *attaques par canaux auxiliaires* 
+et sont des attaques *passives*.
+
+**5. DFA (Differential Fault Analysis)**
+
+C'est une attaque *active* où l'on va provoquer des erreurs de calcul.
+Pour y parvenir, on va modifier l'environnement de la carte, on peut par
+exemple utiliser :
+
+* pics d'alimentaton électrique
+* chauffer/refroidir
+* champs électromagnétique
+* rayon laser
+
+En 1997, Boneh, De Millo, Lipton, ont fait la première attaque par faute
+sur le RSA. Pour faire cette attaque, ils ont supposé que le RSA était
+implémenté en utilisant les restes chinois. C'est-à-dire en calculant
+$S_p = M^{d_p} \mod p$ et $S_q = M^{d_q} \mod q$ où $d_p = d\mod (p-1)$
+et où $d_q = d \mod (q-1)$, on récupère ensuite $S$ avec l'isomorphisme
+du théorème des restes chinois. Comme un RSA est en fait un square and
+multiply d'un nombre de $k$ bit, ce qui coûte en gros $O(k^3)$, donc en
+réduisant les tailles de moité, on gagne un facteur 8, et comme on doit
+le faire deux fois on gagne un facteur 4 *in fine* (on considère que le
+théorème chinois ne coûte quasiment rien). 
+
+*Attaque n°1 :* l'attaquant connaît $S = M^d \mod N$ et $S'$ avec
+erreur de calcul. On considère qu'on a $S = S_p \mod p$, $S = S_q \mod
+q$ et $S' = S'_p\neq S_p\mod p$ et $S'_q = S_q \mod q$. Ainsi on peut
+récupérer un facteur via pcgd$(S-S', N) = q$.
+
+*Attaque n°2 :* l'attaquant ne connait que $S', N, M, e$, alors on a
+encore pgcd$(S'^e - M, N) = q$. Contre-mesure :
+
+* à la fin du calcul, vérifier que $S^e = M\mod N$
+* si on ne connaît pas $e$, on prend $\lambda$ aléatoire et premier, et on fait une
+implémentation différente toujours basée sur les restes chinois, on
+calcul $M_{\lambda p} = M \mod \lambda p$, puis $S_{\lambda p} =
+M_{\lambda p}^{d_{\lambda p}} \mod \lambda p$ (où $d_{\lambda p} =d\mod
+(p-1)(\lambda-1)$ et enfin $S_p =
+S_{\lambda p} \mod p$. On fait la même chose pour $q$ et on retrouve
+$S$. Au milieu on teste si $S_{\lambda p}\mod \lambda = S_{\lambda
+q}\mod\lambda$.
+
+*Remarque : safe errors*
+
+Dans un *square and multiply always*, si l'attaquant observe qu'une
+faute n'a pas eu de conséquences, il peut en déduire qu'une opération
+était inutile et donc qu'on a un 0 à l'endroit où on a provoqué la
+faute. C'est donc un peu un casse-tête chinois (comme le théorème) car
+on avait justement créé cette version du square and multiply pour
+résoudre un autre problème...
+
+**7. Bug attack (Shamir)**
+
+On suppose qu'on a une multiplication buggée $M(a,b) = a\times b$ si
+$(a,b)\neq(a_0,b_0)$ et $M(a,b)\neq a\times b$ si $(a,b) = (a_0,b_0)$.
+On suppose qu'on utilise RSA avec les restes chinois (comme le
+casse-tête). On a $N = p\times q$ et on prend $M$ et $p < M < q$.
+Ensuite on ne change que les derniers bits de $M$, on met ceux de $a_0$
+et $b_0$. On récupère $p$ en calculant le pgcd de $S'^e-M$ et $N$. 
+
+## Courbes elliptiques
+
+### Rappels sur les courbes elliptiques
+
+* degré 1 : droites
+* degré 2 : coniques 
+  * paraboles : $y=ax^2$
+  * hyperboles : $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$
+  * ellipses : $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$
+* cubiques : dont les courbes elliptiques
+
+On part d'une équation $ E: y^2 + a_1xy + a_3y = x^3 + a_2x^2 +a_4x +a_6
+$. En caractéristique différente de $2$ et $3$, on peut simplifier en
+l'équation $ y^2 = x^3 + ax + b $.
+
+En caractérique 2, on a
+
+* *cas super-singulier* $y^2+a_3y = x^3 +ax +b$
+* *cas non super-singulier* $y^2 +a_1xy = x^3 +ax +b$
+
+et en caractéristique 3 on a $ y^2 = x^3 + ax^2 + b $.
+
+On définit une loi de groupe sur la courbe d'équation $ y^2 = x^3 + ax +
+b $ de manière géométrique. Pour construire $ P + Q $, on trace la
+droite $\Delta$ passant par ces deux points, on pose $R$ le troisième
+point d'intersection entre $\Delta$ et la courbe $\mathcal C $, et on
+pose enfin $ P + Q $ le symétrique de $R$ par rapport à l'axe des
+abcisses.
+
+Il y a une série de problèmes :
+
+* que vaut $ P + P $ ?
+* y a-t-il toujours un troisième point d'intersection ?
+* que se passe-t-il si la droite $\Delta$ est verticale ?
+
+Pour résoudre le problème $ P + P $, on considère la tangente à la
+courbe $\mathcal C$ en $P$. Mais y a-t-il toujours une tangente ? Pour
+vérifier cela, on regarde les dérivées partielles, on résout le système
+et trouve que l'existence d'un point où les deux dérivées partielles
+s'annulent implique $4a^2+27b^2=0$. On va donc prendre des courbes *qui
+ne vérifient pas* cette équation.
+
+Pour le cas où $\Delta$ est vertical, on va introduire un point à
+l'infini $\mathcal O$ vérifiant
+
+* $ P + \mathcal O = P $
+* $ \mathcal O + P = P $
+* $ \mathcal O + \mathcal O = \mathcal O $
+
+**Théorème :** $(E,+)$ est un groupe commutatif.
+
+L'associativité est le seul point difficile.
+
+Pour essayer de le résoudre, on va passer au point de vue calculatoire
+(comme René Descartes). Si on a $ P = (x_P, y_P) $ et $ Q = (x_Q, y_Q)
+$, et $ R = P+Q = (x_R, y_R) $. On a $\Delta : y = ux + v$ où $ u
+=\cfrac{y_Q - y_P}{x_Q - x_P} $ (c'est la pente) et $v=y_P - ux_P$ (on
+dit juste que $P$ est sur la droite).
+
+Puis on résout le système $y = ux + v$, $y^2 = x^3 +ax+b$ et on a $x_R =
+u^2 - x_P - x_Q$, $y_R = -(ux_R+v)$ (dans les cas ordinaires, sinon il y
+a d'autres calculs) et on peut vérifier l'associativité par calcul.
+
+On peut remplacer $\mathbb{K}$ par n'importe quel corps, car tous les
+calculs faits ne dépendent pas du corps.
+
+On va prendre dans ce qui suit $\mathbb{K}=\mathbb{F}_p$ où $p$ premier
+$>3$ et $E=\left\\{  (x,y)\in(\mathbb{F}_p)^2 \;|\; y^2=x^3+ax+b\right\\}$.
+
+On peut aussi utiliser les coordonnées projectives pour éviter de faire
+des divisions et gagner en performance, comme dans MECM.
+
+### Diffie-Hellman
+
+Protocole de Diffie-Hellman : 1976 ``New directions in cryptography''
+
+*Remarque :* dériver une clé $K$ (128 bits) à partir d'un entier de 1024
+bits n'est pas forcément trivial. Dans les faits, on va utiliser une
+fonction de hachage.
+
+*Sécurité de Diffie-Hellman contre un attaquant ``passif'' :*
+
+**Problème DH calculatoire :** à partir de $p, g, g^a \mod p$ et
+$g^b\mod p$,trouver $g^{ab}\mod p$
+
+**Problème de log discret :** à partir de $p, g, g^a\mod p$, trouver
+$a$.
+
+Savoir résoudre DL implique savoir résoudre DH. Mais on ne sait pas si
+les deux problèmes sont équivalents.
+
+*Sécurité de Diffie-Hellman contre un attaquant ``actif'' :*
+
+Attaque ``man in the middle''. Cette attaque est possible parce qu'on ne
+peut pas vérifier qui envoit les messages. Pour contrer cette attaque,
+on peut signer les messages avec des algorithmes de signatures
+quelconques. Pour s'échanger la clé publique de signature d'Alice, il
+faut *certifier* que c'est bien la bonne clé. Pour faire ça, il faut
+qu'une *autorité* signe un message du type `Alice||PK_A`
+
+Ce genre d'architecture s'appelle PKI (Public Key Infrastructure)
+
+### Diffie-Hellman sur les courbes elliptiques
+
+#### Log discret
+
+La complexité du log discret dans un groupe
+$G=(\mathbb{Z}/p\mathbb{Z})^*$ est en $\mathcal L(1/3)$.
+
+**Algorithme baby step giant step** : données $g$, $g^a$, sur un groupe
+$G$ quelconque. Problème : trouver $a$. 
+
+Méthode naïve (recherche exhaustive) en $O(|G|)$.
+
+    Baby step Giant step
+
+$ a = dq +r $ (division euclienne) ; $ d = \lfloor\sqrt{|G|}\rfloor $ ;
+$0\leq r < d$ ; $ 0\leq
+q=\frac{a-r}{d}\leq\frac{a}{d}\leq\frac{|G|-1}{\sqrt{|G|}-1}$
+
+Ensuite on remarque que $g^a=y\Leftrightarrow g^{dq}=yg^{-r}$. On
+construit deux tables pour les $g^{dq}$ et pour les $yg^{-r}$ (ces
+tables sont de l'ordre de $\sqrt{|G|}$), puis on trie les tables et on
+regarde les collisions. Ça donne un algorithme en
+$O(\sqrt{|G|}\ln\sqrt{|G|})$.
+
+*Remarque :* dans le cas de $G = (\mathbb{Z}/p\mathbb{Z})^*$ on a aussi
+la technique du calcul d'indice (la meilleure connue) qui est en
+$\mathcal L(1/3)$.
+
+Mais sur une courbe elliptique la meilleure technique connue est en
+$O(\sqrt{|G|}$.
+
+**Cardinal de ** $E$
+
+**Propriété 1 :** Dans $(\mathbb{Z}/p\mathbb{Z})^*$, il y a $(p-1)/2$
+carrés.
+
+**Propriété 2 :** Soit $v\in(\mathbb{Z}/p\mathbb{Z})^*$, $v$ est un
+carré ssi $v^{\cfrac{p-1}{2}} = 1\mod p$.
+
+*Preuve :* tous les carrés sont solutions du polynôme $X^{(p-1)/2}$ et
+il n'y a pas plus de carrés. 
+
+**Propriété 3 :** On suppose $p=3\mod4$, si $v$ est un carré alors
+$v=u^2\mod p$ avec $u=v^{(p+1)/4}$.
+
+**Théorème de Hasse** (1940) : $p+1-2\sqrt{p}\leq |E| \leq
+p+1+2\sqrt{p}$.
+
+*Remarque :* Il existe des algorithmes efficaces pour compter le nombre
+de points d'une courbe elliptique (Schoof, Elkies, Atkin).
+
+| **DH** $k=1024$ | **ECDH** $k=160$ |
+| $g^a\mod p\;O(k^3)$ | $aP$ |
+| $(g^b)^a\mod p\;O(k^3)$ | $a(bP)$ |
