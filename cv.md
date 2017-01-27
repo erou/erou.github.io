@@ -42,7 +42,7 @@ last year of magistère.
 
 ### Grants
 
-2016 -- 2017 Sophie Germain Master Scholarchip : internationnal scolarship delivered by the [FMJH](https://www.fondation-hadamard.fr/en).
+2016 -- 2017 Sophie Germain Master Scholarchip : international scolarship delivered by the [FMJH](https://www.fondation-hadamard.fr/en).
 
 ## Professionnal experience
 
