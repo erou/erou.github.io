@@ -694,8 +694,8 @@ dernier) et de donner $2l$ clés $K_1^0, K_1^1, K_2^0, K_2^1, \cdots,
 K_l^0, K_l^1$.
 
 Chaque utilisateur possède une clé de la forme
-$(K_1^{a_{i1}},\ldots,K_l^{a_{il}})$ où les $a_{ij}\in\left\{ 0,1
-\right\}$.
+$(K_1^{a_{i1}},\ldots,K_l^{a_{il}})$ où les $a_{ij}\in\left\\{ 0,1
+\right\\}$.
 
 On diffuse $E_{K_1^0}(x_1), E_{K_1^1}(x_1), \cdots, E_{K_l^0}(x_l),
 E_{K_l^1}(x_l)$. L'utilisateur ne pourra pas tout décoder mais il pourra
@@ -728,7 +728,7 @@ n,\;e_i\in\left\\{x_i, y_i  \right\\}$.
 *Définition :* on dit que $C$ est une partie indentifiante (ou code
 identifiant) si pour tout descendant $e$ d'une paire d'éléments de $C$
 l'ensemble $P_e$ des paires $P$ dont $e$ est un descendant est
-d'intersection non vide. $bigcap_{P\in P_e}P\neq\nothing$.
+d'intersection non vide. $\bigcap_{P\in P_e}P\neq\emptyset$.
 
 **Proposition :** Soit $C$ un code de $\mathbb{F}_q$ de longueur $n$ et
 de distance minimale $d$. Si $d>3n/4$ alors $C$ est une partie
@@ -754,4 +754,4 @@ n-(k-1)$.
 
 # Chiffrement homomorphe
 
-On a $c_i=E(m_i)$, on voudrait que $c_1\square c_2=E(m_1\square m_2)$.
+On a $c_i=E(m_i)$, on voudrait que $c_1\circ c_2=E(m_1\circ m_2)$.
