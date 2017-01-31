@@ -745,7 +745,7 @@ une contradiction. *Deuxième cas.* On a un système en triangle $x,y,z$
 où il y a toujours un élément en commun mais pas le même à chaque fois.
 On fait la même chose qu'avant avec $2d\leq d(x,y)+d(y,z)+d(x,z)$. 
 
-*Codes de Reed-Salomon.* On prend $n$ élements distincts $\alpha_1,
+*Codes de Reed-Solomon.* On prend $n$ élements distincts $\alpha_1,
 \cdots, \alpha_n$ de $\mathbb{F}_q$. On prend le code $C=\left\\{
   x\;|\;\exists Q, Q(\alpha_i)=x_i \right\\}$.
 
@@ -755,3 +755,13 @@ n-(k-1)$.
 # Chiffrement homomorphe
 
 On a $c_i=E(m_i)$, on voudrait que $c_1\circ c_2=E(m_1\circ m_2)$.
+
+Graig Gentry (IBM) 2009
+
+On code en faisant $c=m+2e+\lambda p$ (avec $e$ et $\lambda$ random) On décode en faisant $\mod
+p\mod2$. C'est homomorphe mais attention à l'aléat !
+
+*Bootstrapping (Gentry, 2009)*
+
+On a $f_c(p):=D_p(C)=(c\mod p)\mod 2=m$. Il vient $f(E(p))=E(m)=c'$.
+C'est un nouveau chiffré dont le niveau de bruit est plus bas.
