@@ -633,3 +633,24 @@ $\left\{ 0,1 \right\}^*$ dans $\mathbb{Z}/(p-1)\mathbb{Z}$.
 
 *Remarque :* Si jamais $k$ était pris constant, on pourrait retrouver $x$ en
 signant seulement deux messages (deux inconnues et deux équations).
+
+**DSA :** (DSA standard du NIST). C'est un peu un El Gamal où on se
+place sur un sous-groupe de $(\mathbb{Z}/p\mathbb{Z})^*$ d'ordre $q$. On
+prend le générateur $g^{\frac{p-1}{q}}$
+
+**ECSDA :** $E$ courbe elliptique, $P$ un point de la courbe. On
+considère $\langle P\rangle$ (où ce groupe a $2^{160}$)
+
+Clé secrète : $x$
+
+Clé publique : $Q=xP$
+
+**Signature de M**
+
+* $k$ aléatoire
+* $R=kP$
+* $r$ l'abcisse de $R$
+* $s=\cfrac{h(M)+xr}{k}\mod(p-1)$
+
+La signature est $(r,s)$. on vérifie que l'abcisse de
+$(\frac{h(M)}{s}P+\frac{r}{s}Q)$ est $r$.
