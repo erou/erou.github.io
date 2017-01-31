@@ -610,5 +610,23 @@ p+1+2\sqrt{p}$.
 de points d'une courbe elliptique (Schoof, Elkies, Atkin).
 
 | **DH** $k=1024$ | **ECDH** $k=160$ |
-| $g^a\mod p\;O(k^3)$ | $aP$ |
-| $(g^b)^a\mod p\;O(k^3)$ | $a(bP)$ |
+| $g^a\mod p\;O(k^3)$ | $aP\;O(k^3)$ |
+| $(g^b)^a\mod p\;O(k^3)$ | $a(bP)\;O(k^3)$ |
+
+## Signature sur courbe elliptique
+
+**El Gamal**
+
+On prend $g$ un générateur de $(\mathbb{Z}/p\mathbb{Z})^*$. La clé
+secrète est $x$ et la clé publique est $y=g^x\mod p$
+
+**Signature d'un message M**
+
+* Choisir $k$ aléatoire
+* Calculer $r=g^k\mod p$
+* Calculer $s=\frac{h(M)-xr}{k}\mod(p-1)$
+
+Où $h$ est une fonction de hachage de $\left\{ 0,1 \right\}^*$ dans
+$\mathbb{Z}/(p-1)\mathbb{Z}$.
+
+**Vérification :** on calcul $y^rr^s=g^{h(M)}\mod p$.
