@@ -654,3 +654,66 @@ Clé publique : $Q=xP$
 
 La signature est $(r,s)$. on vérifie que l'abcisse de
 $(\frac{h(M)}{s}P+\frac{r}{s}Q)$ est $r$.
+
+# Chasse aux traitres (Traitor tracing)
+
+## Diffusion de contenu vidéo
+
+Schéma DVB (Digital Video Brodcast). Un émetteur diffuse un message $M$,
+mais il doit être codé en un certain $E_{CW}(M)$ où CW (control word)
+change toutes les dix secondes. Les mots de contrôle sont transmis de
+manière codée également, on transmet $F_{K_c}(CW)$ où $K_c$ est une clé
+symétrique qui change tous les mois. Et on transmet $K_c$ via une mise à
+jour personnelle pour chaque utilisateur.
+
+**Attaque n°1 :** rediffuser M. Solutions : TV intégrant le décodage,
+watermarking
+
+**Attaque n°2 :** rediffuser CW (typiquement 128 bits toutes les dix
+secondes). En temps réel ou en différé. Solution : ne pas faire passer
+CW en clair, donc mettre $F^{-1}$ et $E^{-1}$ dans le même composant.
+Mais ça coûte cher.
+
+**Attaque n°3 :** Diffuser $K_c$ (obtenu via une attaque physique)
+
+**Attaque n°4 :** Diffuser $KU_i$ (obtenu via attaque physique)
+
+L'algorithme $E$ est appelé *scrambling algorithm* : DVBCSA (Common
+Scrambling Algorithm).
+
+**Méthode de Chor Fiat Naor :**
+
+**Méthode simple :** tout le monde a la même clé.
+
+**Méthode lourde :** avoir une clé par personne. Mais ça fait vraiment
+trop de données à transmettre.
+
+L'idée de Chor Fiat Naor, c'est d'écrire $x=x_1\oplus
+x_2\oplus\cdots\oplus x_l$ où les $x_i$ sont pris au hasard (sauf le
+dernier) et de donner $2l$ clés $K_1^0, K_1^1, K_2^0, K_2^1, \cdots,
+K_l^0, K_l^1$.
+
+Chaque utilisateur possède une clé de la forme
+$(K_1^{a_{i1}},\ldots,K_l^{a_{il}})$ où les $a_{ij}\in\left\{ 0,1
+\right\}$.
+
+On diffuse $E_{K_1^0}(x_1), E_{K_1^1}(x_1), \cdots, E_{K_l^0}(x_l),
+E_{K_l^1}(x_l)$. L'utilisateur ne pourra pas tout décoder mais il pourra
+décoder suffisemment pour reconstruire $x$.
+
+## Codes correcteurs d'erreurs
+
+*Définition :* un code linéaire binaire (ou code) de longueur $n$ est
+une partie $C$ de $\mathbb{F}_2^n$ stable par addition (sev). Un vecteur
+de $C$ est appelé un mot de $C$. Le support de $x=(x_1, \cdots, x_n)$
+est l'ensemble des indices tels que $x_i\neq 0$. Le poids de $x$ est le
+cardinal du support. La distance de Hamming entre $x$ et $y$ est le
+poids du vecteur $x-y$. Distance minimale d'un code $C$. Paramètre d'un
+code $[n,k,d]$ où $n$ est la longueur, $k$ la dimension, $d$ la distance
+minimale.
+
+*Décodage :* trouver le mot ayant la distance de Hamming la plus petite
+avec le mot qu'on a reçu.
+
+**Théorème :** Si le code $C$ a une petite distance minimale $d$ et si
+le nb d'erreur est inférieur $(d-1)/2$ alors on peut décoder.
