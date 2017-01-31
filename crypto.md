@@ -717,3 +717,41 @@ avec le mot qu'on a reçu.
 
 **Théorème :** Si le code $C$ a une petite distance minimale $d$ et si
 le nb d'erreur est inférieur $(d-1)/2$ alors on peut décoder.
+
+Reformulation du problème des décodeurs pirates. Chaque décodeur est un
+mot de $C$, $C$ est l'ensemble des décodeurs légaux. 
+
+*Définition :* on dit que $e=(e_1, \cdots, e_n)$ est un descendant de la
+paire $\left\\{ x,y \right\\}$ ssi pour tout $1\leq i \leq
+n,\;e_i\in\left\\{x_i, y_i  \right\\}$.
+
+*Définition :* on dit que $C$ est une partie indentifiante (ou code
+identifiant) si pour tout descendant $e$ d'une paire d'éléments de $C$
+l'ensemble $P_e$ des paires $P$ dont $e$ est un descendant est
+d'intersection non vide. $bigcap_{P\in P_e}P\neq\nothing$.
+
+**Proposition :** Soit $C$ un code de $\mathbb{F}_q$ de longueur $n$ et
+de distance minimale $d$. Si $d>3n/4$ alors $C$ est une partie
+identifiante de $\mathbb{F}_q^n$.
+
+*Preuve :* par l'absurde. Supposons que $C$ n'est pas une partie
+identifiante de $\mathbb{F}_q$, il existe $e$ tel que $P_e$ est non vide
+et l'intersection de toutes les paires est vide. *Premier cas.* Il
+existe $\left\\{x,y  \right\\}$ et $\left\\{ x',y' \right\\}$
+d'intersection vide. Parmi $x_i-x_i'$, $x_i-y_i'$, $y_i-x_i'$,
+$y_i-y_i'$, au moins des nul, donc on a $4d\leq
+d(x,x)+d(x,y)+d(y,x')+d(y,y')\leq3n$, ce qui implique que $d\leq 3n/4$,
+une contradiction. *Deuxième cas.* On a un système en triangle $x,y,z$
+où il y a toujours un élément en commun mais pas le même à chaque fois.
+On fait la même chose qu'avant avec $2d\leq d(x,y)+d(y,z)+d(x,z)$. 
+
+*Codes de Reed-Salomon.* On prend $n$ élements distincts $\alpha_1,
+\cdots, \alpha_n$ de $\mathbb{F}_q$. On prend le code $C=\left\\{
+  x\;|\;\exists Q, Q(\alpha_i)=x_i \right\\}$.
+
+**Propriété :** la distance minimale $d$ du code $C$ vérifie $d\geq
+n-(k-1)$.
+
+# Chiffrement homomorphe
+
+On a $c_i=E(m_i)$, on voudrait que $c_1\square c_2=E(m_1\square m_2)$.
