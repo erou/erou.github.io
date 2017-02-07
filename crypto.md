@@ -627,7 +627,7 @@ secrète est $x$ et la clé publique est $y=g^x\mod p$
 * Calculer $s=\frac{h(M)-xr}{k}\mod(p-1)$
 
 La signature est $(r,s)$. Où $h$ est une fonction de hachage de
-$\left\{ 0,1 \right\}^*$ dans $\mathbb{Z}/(p-1)\mathbb{Z}$.
+$\left\\{ 0,1 \right\\}^*$ dans $\mathbb{Z}/(p-1)\mathbb{Z}$.
 
 **Vérification :** on calcul $y^rr^s=g^{h(M)}\mod p$.
 
