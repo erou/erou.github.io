@@ -14,7 +14,7 @@ regroupés par sujet. Si vous avez une question ou
 constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter par
 [e-mail](mailto:edouard.rousseau@u-psud.fr). Amusez-vous bien !
 
-*À partir du mois du mois de Mars, les colles seront assurées par Pascal
+*Les colles sont désomais assurées par Pascal
 Fong. Je continuerai de publier les exercices de colle sur cette page.*  
 
 1. [Rappels d'analyse](exoRappelsAnalyse.pdf).
@@ -26,3 +26,4 @@ Fong. Je continuerai de publier les exercices de colle sur cette page.*
 7. [Variables aléatoires discrètes](exoVariablesDiscretes.pdf).
 8. [Réduction des endomorphismes](exoReductionEndomorphismes.pdf).
 9. [Couples aléatoires discrets](exoCoupleDiscret.pdf).
+10. [Produit scalaire](exoProduitScalaire.pdf).
