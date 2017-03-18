@@ -5,12 +5,15 @@
 layout: default
 ---
 
+This site is mostly experimental, the real goal is just to share the exercices
+with the students.
+
 ## About me
 
 Hi, I am Édouard, a master student in applied algebra at *Université de
 Versailles*. I am curious about almost everything related to mathematics,
 computer science, and teaching. My main domains of interest are computer algebra,
-finite fields, field extensions, coding theory, and cryptography. On top of
+finite fields, coding theory, and cryptography. On top of
 that, I like to spread the idea of free software and free licenses in general.
 
 If you want to know more, you can send me an
