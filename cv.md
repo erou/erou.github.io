@@ -56,6 +56,10 @@ Informatique](https://www.lri.fr/presentation_en.php) (Université Paris-Sud),
 the symmetric group of n elements*, internship supervised by [Nicolas M.
 Thiéry](http://nicolas.thiery.name/).
 
+## Participations
+
+* Sage days 75 : coding theory
+
 ## Teaching
 
 2016 -- 2017 Oral examiner (colleur) for second-year students in biology (BCPST

@@ -5,8 +5,8 @@
 layout: default
 ---
 
-This site is mostly experimental, the real goal is just to share the exercices
-with the students.
+This site is mostly experimental, the real goal is just to share exercices
+with students.
 
 ## About me
 
@@ -17,8 +17,7 @@ finite fields, coding theory, and cryptography. On top of
 that, I like to spread the idea of free software and free licenses in general.
 
 If you want to know more, you can send me an
-[e-mail](mailto:edouard.rousseau@u-psud.fr) or look at my [curriculum
-vitæ](cv).
+[e-mail](mailto:edouard.rousseau@u-psud.fr) !
 
 ## Teaching
 
