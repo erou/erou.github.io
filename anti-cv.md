@@ -12,10 +12,11 @@ permalink: /anti-cv/
 2015 : Admitted to ENS Cachan/Rennes second entry examination, but did not go because I
 thought I would fail.
 
-2013 : Rejected by Rennes University (bachelor)
+2013 : Rejected by Rennes University (bachelor), rejected by ENS Cachan, Lyon,
+Rennes, Paris.
 
 2011 : Rejected by [Lycée
-Clémenceau](https://en.wikipedia.org/wiki/Lyc%C3%A9e_Georges_Clemenceau_(Nantes)) ([CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles)
+Clémenceau](https://en.wikipedia.org/wiki/Lyc%C3%A9e_Georges_Clemenceau_(Nantes)) ([CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles)).
 
 ### Computer skills
 
@@ -41,13 +42,13 @@ Clémenceau](https://en.wikipedia.org/wiki/Lyc%C3%A9e_Georges_Clemenceau_(Nantes
 
 ## Projects
 
-2014 : Transcendance of $e$ and $\pi$. I finally proved that $e$ is irrationnal.
+2015 : “About Gabriel's theorem”. I was able to prove it. In one way. I guess.
+
+2014 : “Transcendance of $e$ and $\pi$”. I finally proved that $e$ is irrationnal.
 
 ## Miscellanous interests
 
-* Improvisational theatre : member of a french company ([Les Gibbons
-  Masqués](http://gibbonsmasques.com/))
-* Sport : jogging mostly
-* Cinema, music, reading
-
-
+* Reading : Tried to read “For Whom the Bell Tolls” and eventually gave up.
+  Three times.
+* Sport : jogging, when the weather is nice, meaning between 20°C and 21°C, in
+  July.
