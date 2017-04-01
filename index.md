@@ -21,5 +21,5 @@ If you want to know more, you can send me an
 
 ## Teaching
 
-I teach in the french system
+I am an oral examiner in 
 [CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), you can look at it in the teaching section (in french).
