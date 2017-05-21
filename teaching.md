@@ -27,3 +27,4 @@ Fong. Je continuerai de publier les exercices de colle sur cette page.*
 8. [Réduction des endomorphismes](exoReductionEndomorphismes.pdf).
 9. [Couples aléatoires discrets](exoCoupleDiscret.pdf).
 10. [Produit scalaire](exoProduitScalaire.pdf).
+11. [Révisions](exoRev1.pdf)
