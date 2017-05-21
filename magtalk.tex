@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  This Beamer template was created by Cameron Bracken.
+%%  Anyone can freely use or modify it for any purpose
+%%  without attribution.
+%%
+%%  Last Modified: January 9, 2009
+%%
+
+\documentclass[xcolor=x11names,compress]{beamer}
+
+%% General document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath,amssymb,amsthm,amsopn}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{tikz}
+%\usepackage{array}
+%\usepackage[top=1cm,bottom=1cm]{geometry}
+%\usepackage{listings}
+%\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=red,
+}
+
+\newtheoremstyle{break}%
+{}{}%
+{\itshape}{}%
+{\bfseries}{}%  % Note that final punctuation is omitted.
+{\newline}{}
+
+\newtheoremstyle{sc}%
+{}{}%
+{}{}%
+{\scshape}{}%  % Note that final punctuation is omitted.
+{\newline}{}
+
+\theoremstyle{break}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lm}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\theoremstyle{sc}
+\newtheorem{exo}{Exercice}
+
+\theoremstyle{definition}
+\newtheorem{defi}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+
+% Raccourcis pour les opérateurs mathématiques (les espaces avant-après sont
+% modifiés pour mieux rentrer dans les codes mathématiques usuels)
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Img}{Im}
+\DeclareMathOperator{\Card}{Card}
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Mod}{mod}
+\DeclareMathOperator{\Ord}{Ord}
+\DeclareMathOperator{\ppcm}{ppcm}
+
+
+% Nouvelles commandes
+\newcommand{\ps}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\ent}[2]{[\![#1,#2]\!]}
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+\newcommand{\ie}{\emph{i.e. }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Beamer Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\useoutertheme[subsection=false,shadow]{miniframes}
+\useinnertheme{default}
+\usefonttheme{serif}
+\usepackage{palatino}
+
+\setbeamerfont{title like}{shape=\scshape}
+\setbeamerfont{frametitle}{shape=\scshape}
+
+\setbeamercolor*{lower separation line head}{bg=DeepSkyBlue4} 
+% \setbeamercolor*{normal text}{fg=black,bg=white} 
+% \setbeamercolor*{alerted text}{fg=red} 
+% \setbeamercolor*{example text}{fg=black} 
+% \setbeamercolor*{structure}{fg=black} 
+%  
+\setbeamercolor*{palette tertiary}{fg=black,bg=black!10} 
+\setbeamercolor*{palette quaternary}{fg=black,bg=black!10} 
+% 
+% \renewcommand{\(}{\begin{columns}}
+% \renewcommand{\)}{\end{columns}}
+% \newcommand{\<}[1]{\begin{column}{#1}}
+% \renewcommand{\>}{\end{column}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \title{Logarithme discret dans les corps finis de petite charactéristique}
+%\subtitle{SUBTITLE}
+\author{
+Édouard Rousseau\\
+{\it Université de Versailles\\}
+}
+\date{\today}
+\titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Table des matières}
+\tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\scshape Introduction}
+\subsection{Le problème du logarithme discret}
+\begin{frame}{Contexte}
+  Soit $G$ un groupe cyclique engendré par un élément $g$, et notons $N$ le
+  cardinal de $G$. On a alors une \emph{bijection}
+  \[
+    \begin{array}{cccc}
+      exp_g: & \mathbb{Z}/N\mathbb{Z} & \to & G \\
+      & \bar n & \mapsto & g^n
+    \end{array}.
+  \]
+
+  On note la bijection récriproque $log_g$. 
+\end{frame}
+
+\begin{frame}{Le problème du logarithme discret}
+  \begin{itemize}
+    \item En pratique, étant donné un entier $n$, on dispose d'algorithmes efficaces
+  pour calculer $g^n$.
+\item Étant donné $x = g^n\in G$, \emph{on ne dispose pas} d'algorithmes efficaces
+  pour retrouver $n$.
+  \end{itemize}
+  C'est ce problème, « Comment retrouver $n$ ? », qu'on appelle \emph{Problème
+  du logarithme discret}.
+\end{frame}
+
+\begin{frame}{Intérêt en cryptographie}
+  En cryptographie, $exp_g$ est appelée \emph{fonction à sens unique} car
+  \begin{itemize}
+    \item $exp_g$ est facile à calculer
+    \item sa réciproque, $log_g$, est difficile à calculer.
+  \end{itemize}
+
+  Ces fonctions sont très étudiées en cryptographie car elles permettent
+  typiquement de rendre l'opération de cryptage simple et l'opération de
+  décryptage longue et compliquée.
+\end{frame}
+
+\subsection{Historique}
+\begin{frame}{Bref historique du problème}
+  Pour exprimer la difficulté d'un problème, on parle de sa complexité et on
+  utilise la notation 
+  \[
+    L_N(\alpha, c) = \exp((c+o(1))(\log N)^\alpha(\log\log N)^{1-\alpha}).
+  \]
+  On note aussi $L_N(\alpha)$ quand on ne veut pas préciser la constante.
+
+  On distingue deux types d'algorithmes :
+  \begin{itemize}
+    \item Les algorithmes ``génériques'' en $O(\sqrt N)$
+    \item Les algorithmes de calcul d'indice, qui exploitent la structure de
+      groupes issus de corps finis : $\mathbb{F}_{q}^\times$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Bref historique du problème}
+  \begin{itemize}
+    \item Apparition dans ``New directions in cryptography'' de Diffie et
+      Hellman (1976)
+    \item Premier algorithme sous-exponentiel : Adleman (1979), complexité en
+      $L_N(1/2)$
+  \item Premier algorithme en $L(1/3)$ dans les corps finis binaires : Coppersmith (1984)
+  \item Crible algébrique dans les corps premiers : 1993,
+    $L(1/3)$
+  \item Crible géométrique, utilisable en petite caractéristique : 1994,
+    généralisations en 1999, 2002, 2006; $L(1/3)$
+  \item Généralisation du crible algébrique en 2006, on peut dès lors résoudre
+    des logarithmes discret en $L(1/3)$ dans tout type de corps fini
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Bref historique du problème}
+  Et plus récemment, dans les corps finis de petite caractéristique :
+  \begin{itemize}
+    \item Nouvel algorithme dû à Joux (2013) en $L(1/4)$
+    \item Algorithme \emph{quasi-polynomial} dû à Barbulescu, Gaudry, Joux et
+      Thomé en 2014
+    \item Second algorithme quasi-polynomial dû à Granger, Kleinjung et
+      Zumbrägel en 2014
+  \end{itemize}
+\end{frame}
+
+\section{\scshape Calcul d'indice}
+\begin{frame}{Principe général}
+  \begin{itemize}
+    \item bla
+  \end{itemize}
+\end{frame}
+
+\section{\scshape Algorithmes quasi-polynomiaux}
+\begin{frame}{Définition}
+ Bla 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
