@@ -220,7 +220,7 @@
     \item On exprime $h$ en fonction des éléments de $F$
   \end{enumerate}
   Les étapes $1, 2$ et $3$ dépendent du groupe $G$ et de sa représentation, et
-  donnent lieu à des compléxités différentes selon les cas.
+  donnent lieu à des complexités différentes selon les cas.
 \end{frame}
 \begin{frame}{Un exemple}
   \emph{Contexte :}
@@ -278,7 +278,7 @@
     \item Mais quand $|F|$ est grand, il faut résoudre un système linéaire plus
       grand également.
   \end{itemize}
-  In fine, avec un choix judicieux de $B$, on trouve une compléxité en
+  In fine, avec un choix judicieux de $B$, on trouve une complexité en
   $L(1/2)$.
 \end{frame}
 
@@ -309,8 +309,115 @@
 \subsection{Algorithme de Barbulescu, Gaudry, Joux et Thomé}
 
 \begin{frame}{Contexte}
- Bla 
+  On note $\mathbb{K}$ le corps fini dans lequel on veut travailler.
+
+  \begin{defi}[représentation via sous-corps creux moyen]
+    On dit que $\mathbb{K}$ admet une \emph{représentation via sous-corps creux
+    moyen} si
+    \begin{itemize}
+      \item $\mathbb{K}$ a un sous-corps contenant $q^2$ éléments, avec $q$ une
+        puissance de nombre premier, \ie
+        $\mathbb{K}$ est isomorphe à $\mathbb{F}_{q^{2k}}$
+      \item Il existe deux polynômes $h_0$ et $h_1$ dans $F_{q^2}[X]$ de petit
+        degré, tel que $h_1X^q-h_0$ ait un facteur irréductible de degré $k$,
+        qu'on notera $I_X$ dans la suite.
+    \end{itemize}
+  \end{defi}
 \end{frame}
+
+\begin{frame}{Contexte}
+  Dans la pratique :
+  \begin{enumerate}
+    \item On a $\deg h_0 \leq 2$ et $\deg h_1 \leq 2$
+    \item On considère $q \approx k$, ce qui implique $q\approx \log|\mathbb{K}|$
+  \end{enumerate}
+
+Le point $2$ est le cas optimal pour cet algorithme, tandis que le point $1$
+constitue une \emph{heuristique}. Il y a plusieurs heuristiques dans cet
+algorithme, et, plus généralement, dans les algorithmes de logarithme discret.
+\end{frame}
+
+\begin{frame}{L'algorithme}
+  On considère $\mathbb{K} = \mathbb{F}_{q^2}[X]/(I_X)$, \ie on voit les
+  éléments de $\mathbb{K}$ comme des polynômes à coefficient dans
+  $\mathbb{F}_{q^2}$ de degré au plus $k$. Notre ensemble $F$ sera ici les
+  polynômes de degré $1$.
+
+  \begin{prop}
+    Soit $\mathbb{K}$ un corps fini admettant une représentation via sous-corps
+    creux moyen, il existe (sous certaines heuristiques) un algorithme de
+    complexité polynomiale en $q$ et $k$ tel que :
+    \begin{itemize}
+      \item étant donné un élément de $\mathbb{K}$ représenté par un polynôme
+        $P$, avec $2\leq \deg P \leq k-1$, on obtient $\log P$ en fonction d'au
+        plus $O(kq^2)$ logarithmes $\log P_i$, avec $\deg P_i \leq \left\lceil
+        \frac{1}{2}\deg P\right\rceil$, et de $\log h_1$
+      \item on peut calculer le logarithme de $h_1(X)$ et des éléments de la
+        forme $X+a$ où $a\in \mathbb{F}_{q^2}$
+    \end{itemize}
+  \end{prop}
+  
+\end{frame}
+
+\begin{frame}{La complexité de la descente}
+ L'algorithme issu de la proposition précédente est appelé algorithme de
+ descente, on l'applique reccursivement jusqu'à obtenir $\log P$ en fonction des
+ $\log(X + a_i)$.
+
+ On obtient un arbre de descente dont chaque nœud correspond à un appel à
+ l'algorithme de descente. L'arité de l'arbre est $O(q^2k)$ et sa profondeur
+ $O(\log k)$. Le nombre de nœud est donc $(q^2k)^{O(\log k)}$.
+\end{frame}
+
+\begin{frame}{La descente}
+ On va utiliser l'équation 
+ \[
+   X^q - X = \prod_{a\in\mathbb{F}_q}(X-a)
+ \]
+ qu'on transorme en
+ \begin{equation}
+   X^qY - XY^q = \prod_{(\alpha, \beta)\in\mathcal S}(\beta X - \alpha Y)
+   \label{keyeq}
+ \end{equation}
+ où $\mathcal S$ est un ensemble de représentants des $q+1$ points de la droite
+ projective $\mathbb{P}^1(\mathbb{F}_q)$ choisi tel que l'équation
+ (\ref{keyeq}) soit vraie.
+\end{frame}
+
+\begin{frame}{La descente}
+  Supposons qu'on souhaite appliquer l'algorithme à un élément $P$. On va
+  générer des relations en substituant $aP + b$ à $X$ et $cP + d$ à $Y$ dans l'équation
+  (\ref{keyeq}), avec $a, b, c, d \in \mathbb{F}_{q^2}$, on obtient une nouvelle
+  équation $(E_{a, b, c, d})$. Il vient 
+  \begin{eqnarray*}
+ \prod_{(\alpha, \beta)\in\mathcal S}\beta (aP + b) - \alpha (cP + d) &=&
+ \prod_{(\alpha, \beta)\in\mathcal S}(-c\alpha + a\beta)P - (d\alpha - b\beta) \\
+ &=& \lambda \prod_{(\alpha, \beta)\in\mathcal S}(P-\mu_{\alpha, \beta})
+  \end{eqnarray*}
+  pour le côté droit, avec $\lambda, \mu_{\alpha, \beta}\in\mathbb{F}_{q^2}$.
+  
+\end{frame}
+
+\begin{frame}{La descente}
+  Pour le côté gauche, remarquons que $X^q = \frac{h_0(X)}{h_1(X)} \mod I_X$,
+  ainsi $P(X)^q = \tilde P(X^q) = \tilde P(\frac{h_0(X)}{h_1(X)})$, où $\tilde
+  P$ est le
+  polynôme $P$ dont tous les coefficients ont été élevés à la puissance $q$.
+  Cette astuce permet d'avoir un numérateur de degré au plus $3\deg P$ au lieu
+  de $(q+1)\deg P$.
+
+  On garde seulement les équations $(E_{a, b, c, d})$ dont le côté gauche est
+  $\left\lceil \frac{\deg P}{2}\right\rceil$-friable et on combine ces équations
+  pour que le côté droit, composé des translatés de $P$, ne fasse intervenir que
+  $P$.
+
+  La combinaison de ces équations donne alors un côté gauche composé seulement
+  de polynômes de degré au plus $\left\lceil \frac{\deg P}{2}\right\rceil$.
+  \begin{itemize}
+    \item Attention aux heuristiques !
+  \end{itemize}
+\end{frame}
+
 
 \subsection{Algorithme de Granger, Kleinjung et Zumbrägel}
 
