@@ -211,16 +211,114 @@
 \end{frame}
 
 \section{\scshape Calcul d'indice}
+\subsection{Principe général}
 \begin{frame}{Principe général}
+  Supposons qu'on veuille trouver $log_g(h)$ où $h\in G$. On choisit $F\subset G$ tel que $\left\langle F \right\rangle = G$.
+  \begin{enumerate}
+    \item On trouve des relations linéaires entre les éléments de F
+    \item On résout le système linéaire engendré par ces relations
+    \item On exprime $h$ en fonction des éléments de $F$
+  \end{enumerate}
+  Les étapes $1, 2$ et $3$ dépendent du groupe $G$ et de sa représentation, et
+  donnent lieu à des compléxités différentes selon les cas.
+\end{frame}
+\begin{frame}{Un exemple}
+  \emph{Contexte :}
   \begin{itemize}
-    \item bla
+    \item On considère $G = \mathbb{F}_p^\times$ pour un nombre premier $p$, on
+      a toujours $N = |G|$
+    \item On considère $F = \left\{\, f \;|\; f \leq B,\; f \text{ premier} \right\}$ pour
+      une certaine borne $B$
+    \item On suppose que $g\in F$, sinon on rajoute $g$ dans $F$.
   \end{itemize}
 \end{frame}
 
+\subsection{Un exemple}
+\begin{frame}{Un exemple}
+  \emph{Étape 1 : génération des relations}
+  \begin{itemize}
+    \item On choisi $e\in \mathbb{Z}/N\mathbb{Z}$ aléatoirement
+    \item On calcule $g^e$
+    \item On teste si $g^e$, vu comme entier, est $B$-friable, \ie n'a que des
+      diviseurs premiers inférieurs à $B$
+    \item Si c'est le cas, on a une relation dans $G$ :
+      \[ 
+        g^e = \prod_{f\in F}f^{e_f}, \text{ où } e_f\in \mathbb{N}
+      \]
+      qui se traduit en 
+      \[
+        e = \sum_{f\in F}e_f\log_g(f).
+      \]
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Un exemple}
+  \emph{Étape 2 : algèbre linéaire.} Une fois qu'on a assez de relations, \ie au
+  moins $|F|$, on résout le système linéaire obtenu dans
+  $\mathbb{Z}/N\mathbb{Z}$ pour obtenir tous les $\log_g(f)$ pour $f\in F$.
+
+  \emph{Étape 3 : exprimer $h$ en fonction des éléments de $F$ :}
+  \begin{itemize}
+    \item On choisi $e\in \mathbb{Z}/N\mathbb{Z}$ aléatoirement
+    \item On calcule $hg^e$
+    \item On teste si $hg^e$ est $B$-friable
+    \item Si c'est le cas, on a une relation
+      \[
+      \log_g(h) = \sum_{f\in F}e_f\log_g(f) - e
+      \]
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Un exemple}
+  Cet algorithme dépend du choix de $B$ :
+  \begin{itemize}
+    \item Lorsque $B$ est grand, $\left\langle F \right\rangle$ est plus grand
+      donc il est plus simple de trouver des relations
+    \item Mais quand $|F|$ est grand, il faut résoudre un système linéaire plus
+      grand également.
+  \end{itemize}
+  In fine, avec un choix judicieux de $B$, on trouve une compléxité en
+  $L(1/2)$.
+\end{frame}
+
 \section{\scshape Algorithmes quasi-polynomiaux}
-\begin{frame}{Définition}
+\subsection{Terminologie}
+\begin{frame}{Définitions}
+  Avant d'entrer dans le cœur du sujet, revenons sur quelques points de
+  terminologie. Lorsque l'on considère le problème du logarithme discret dans
+  une famille de corps finis $\mathbb{F}_{q}$, où $q=p^n$ et $q\to\infty$, les
+  algorithmes dépendent de la grandeur relative de $p$ et $n$, si
+  $p=L_q(\alpha)$ :
+  \begin{itemize}
+    \item Si $\alpha>\frac{2}{3}$, on parle de \emph{grande caractéristique}
+    \item Si $\frac{1}{3} <\alpha<\frac{2}{3}$, on parle de \emph{moyenne caractéristique}
+    \item Si $0 <\alpha<\frac{1}{3}$, on parle de \emph{petite-moyenne caractéristique}
+    \item Si $\alpha = 0$, on parle de \emph{petite caractéristique}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Définitions}
+ Toujours dans le cadre d'une famille de corps finis $F_q$, un algorithme dont
+ la complexité est  $\log q^{O(\log q)}$ est dit \emph{quasi-polynomial}. Cette
+ complexité est plus petite que toutes les complexités $L(\varepsilon)$ pour
+ $\varepsilon>0$ mais plus grande que tout polynôme en $\log q$.
+\end{frame}
+
+\subsection{Algorithme de Barbulescu, Gaudry, Joux et Thomé}
+
+\begin{frame}{Contexte}
  Bla 
 \end{frame}
+
+\subsection{Algorithme de Granger, Kleinjung et Zumbrägel}
+
+\begin{frame}{Contexte}
+ Bla 
+\end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
