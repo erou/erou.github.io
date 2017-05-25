@@ -422,9 +422,26 @@ algorithme, et, plus généralement, dans les algorithmes de logarithme discret.
 \subsection{Algorithme de Granger, Kleinjung et Zumbrägel}
 
 \begin{frame}{Contexte}
- Bla 
+  Ici $\mathbb{K}=\mathbb{F}_{q^k}$ et comme avant on voit $\mathbb{K}$ comme
+  $\mathbb{F}_q[X]/(I_X)$ où $I_X$ est un polynôme de degré $k$ qui divise
+  $h_1X^q-h_0$. L'algorithme suit le même principe que juste avant mais la phase
+  de descente est différente. 
 \end{frame}
 
+\begin{frame}{Élimination ``à la volée''}
+  Supposons $Q\in \mathbb{F}_{q^m}[X]$ et $\deg Q = 2$. Cette élimination se base
+  sur le fait que le polynôme $P = X^{q+1}+aX^q+bX+c$ se scinde complètement pour
+  environ $q^{m-3}$ triplets $(a, b, c)$. Or 
+  \[
+    P = \frac{1}{h_1}((X+a)h_0 + (bX+c)h_1)\mod I_X
+  \]
+  Donc si $Q| (X+a)h_0 + (bX+c)h_1$ (polynôme de degré $3$), on a 
+  \[
+    h_1P=QL \mod I_X
+  \]
+  où $L$ est de degré $1$ et $P$ se scinde complètement.
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
