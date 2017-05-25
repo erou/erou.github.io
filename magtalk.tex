@@ -443,6 +443,22 @@ algorithme, et, plus généralement, dans les algorithmes de logarithme discret.
 
 \end{frame}
 
+\begin{frame}{Descente}
+  Supposons maintenant $Q\in\mathbb{F}_{q}[X]$, irreductible et de degré $2d$.
+  \[
+    Q=\prod_{i=1}^d Q_i
+  \]
+  où les $Q_i$ sont des polynômes irreductibles de degré $2$ dans
+  $\mathbb{F}_{q^d}$ et sont tous conjugués. On applique alors
+  l'élimination ``à la volée'' avec $Q_1$ pour obtenir $\log Q_1$ en fonction
+  de $O(q)$ $\log P_i$ où les $P_i\in \mathbb{F}_{q^d}[X]$ sont de degré $1$.
+  
+  La norme d'un polynôme linéaire dans $\mathbb{F}_{q^d}[X]$ est un polynôme
+  irréductible de de degré $d_1$ à la puissance $d_2$, avec $d_1d_2 = d$.
+  \emph{On a ainsi exprimé $\log Q$ en fonction de $O(q)$ $\log R_i$, où $\deg
+  R_i | d$}
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
