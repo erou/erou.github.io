@@ -301,7 +301,7 @@
 
 \begin{frame}{Définitions}
  Toujours dans le cadre d'une famille de corps finis $F_q$, un algorithme dont
- la complexité est  $\log q^{O(\log q)}$ est dit \emph{quasi-polynomial}. Cette
+ la complexité est  $\log q^{O(\log\log q)}$ est dit \emph{quasi-polynomial}. Cette
  complexité est plus petite que toutes les complexités $L(\varepsilon)$ pour
  $\varepsilon>0$ mais plus grande que tout polynôme en $\log q$.
 \end{frame}
@@ -310,54 +310,21 @@
 
 \begin{frame}{Algorithme de Barbulescu, Gaudry, Joux et Thomé}
   On note $\mathbb{K}$ le corps fini dans lequel on veut travailler.
-  On suppose $\mathbb{K}=\mathbb{F}_{q^{2k}}$ et on on représente
-  $\mathbb{K}$ par $\mathbb{F}_{q^2}[X]/(I_X)$, où $I_X$ est un polynôme
-  irréductible de degré $k$ divisant $h_1X^q-h_0$.
+  \begin{itemize}
+    \item On suppose $\mathbb{K}=\mathbb{F}_{q^{2k}}$ et on on représente
+  $\mathbb{K}$ par $\mathbb{F}_{q^2}[X]/(I_X)$ où $I_X$ est un polynôme
+  irréductible de degré $k$ divisant $h_1X^q-h_0$ et $\deg h_i\leq 2$
+  (l'existence des $h_i$ est heuristique).
+    \item L'ensemble $F$ est l'ensemble des polynômes de degré $1$.
+\end{itemize}
 
-\end{frame}
-
-\begin{frame}{Contexte}
-  Dans la pratique :
-  \begin{enumerate}
-    \item On a $\deg h_0 \leq 2$ et $\deg h_1 \leq 2$
-    \item On considère $q \approx k$, ce qui implique $q\approx \log|\mathbb{K}|$
-  \end{enumerate}
-
-Le point $2$ est le cas optimal pour cet algorithme, tandis que le point $1$
-constitue une \emph{heuristique}. Il y a plusieurs heuristiques dans cet
-algorithme, et, plus généralement, dans les algorithmes de logarithme discret.
-\end{frame}
-
-\begin{frame}{L'algorithme}
-  On considère $\mathbb{K} = \mathbb{F}_{q^2}[X]/(I_X)$, \ie on voit les
-  éléments de $\mathbb{K}$ comme des polynômes à coefficient dans
-  $\mathbb{F}_{q^2}$ de degré au plus $k$. Notre ensemble $F$ sera ici les
-  polynômes de degré $1$.
-
-  \begin{prop}
-    Soit $\mathbb{K}$ un corps fini admettant une représentation via sous-corps
-    creux moyen, il existe (sous certaines heuristiques) un algorithme de
-    complexité polynomiale en $q$ et $k$ tel que :
+    L'algorithme se base sur une \emph{descente} : on exprime le logarithme d'un
+    polynôme en fonction de $O(q^2k)$ logarithmes de polynômes de degré deux
+    fois plus petit, jusqu'à n'obtenir que des polynômes dans $F$.
     \begin{itemize}
-      \item étant donné un élément de $\mathbb{K}$ représenté par un polynôme
-        $P$, avec $2\leq \deg P \leq k-1$, on obtient $\log P$ en fonction d'au
-        plus $O(kq^2)$ logarithmes $\log P_i$, avec $\deg P_i \leq \left\lceil
-        \frac{1}{2}\deg P\right\rceil$, et de $\log h_1$
-      \item on peut calculer le logarithme de $h_1(X)$ et des éléments de la
-        forme $X+a$ où $a\in \mathbb{F}_{q^2}$
+      \item Complexité : $(q^2k)^{O(\log k)}$.
     \end{itemize}
-  \end{prop}
-  
-\end{frame}
 
-\begin{frame}{La complexité de la descente}
- L'algorithme issu de la proposition précédente est appelé algorithme de
- descente, on l'applique reccursivement jusqu'à obtenir $\log P$ en fonction des
- $\log(X + a_i)$.
-
- On obtient un arbre de descente dont chaque nœud correspond à un appel à
- l'algorithme de descente. L'arité de l'arbre est $O(q^2k)$ et sa profondeur
- $O(\log k)$. Le nombre de nœud est donc $(q^2k)^{O(\log k)}$.
 \end{frame}
 
 \begin{frame}{La descente}
@@ -381,31 +348,29 @@ algorithme, et, plus généralement, dans les algorithmes de logarithme discret.
   (\ref{keyeq}), avec $a, b, c, d \in \mathbb{F}_{q^2}$, on obtient une nouvelle
   équation $(E_{a, b, c, d})$. Il vient 
   \begin{eqnarray*}
- \prod_{(\alpha, \beta)\in\mathcal S}\beta (aP + b) - \alpha (cP + d) &=&
- \prod_{(\alpha, \beta)\in\mathcal S}(-c\alpha + a\beta)P - (d\alpha - b\beta) \\
- &=& \lambda \prod_{(\alpha, \beta)\in\mathcal S}(P-\mu_{\alpha, \beta})
+    \frac{1}{h_1^D}\mathcal L_{a, b, c, d} &=& \lambda \prod_{(\alpha, \beta)\in\mathcal S}(P-\mu_{\alpha, \beta})
   \end{eqnarray*}
-  pour le côté droit, avec $\lambda, \mu_{\alpha, \beta}\in\mathbb{F}_{q^2}$.
+  où $\lambda, \mu_{\alpha, \beta}\in\mathbb{F}_{q^2}$ et $\mathcal L_{a, b, c,
+  d}$ est un polynôme de degré $D\leq 3\deg P$, obtenu en utilisant l'égalité $X^q =
+  \frac{h_0}{h_1}\mod I_X$.
   
 \end{frame}
 
 \begin{frame}{La descente}
-  Pour le côté gauche, remarquons que $X^q = \frac{h_0(X)}{h_1(X)} \mod I_X$,
-  ainsi $P(X)^q = \tilde P(X^q) = \tilde P(\frac{h_0(X)}{h_1(X)})$, où $\tilde
-  P$ est le
-  polynôme $P$ dont tous les coefficients ont été élevés à la puissance $q$.
-  Cette astuce permet d'avoir un numérateur de degré au plus $3\deg P$ au lieu
-  de $(q+1)\deg P$.
-
-  On garde seulement les équations $(E_{a, b, c, d})$ dont le côté gauche est
+  On garde seulement les équations $(E_{a, b, c, d})$ dont le côté gauche
+  $\mathcal L_{a, b, c, d}$ est
   $\left\lceil \frac{\deg P}{2}\right\rceil$-friable et on combine ces équations
   pour que le côté droit, composé des translatés de $P$, ne fasse intervenir que
   $P$.
 
   La combinaison de ces équations donne alors un côté gauche composé seulement
-  de polynômes de degré au plus $\left\lceil \frac{\deg P}{2}\right\rceil$.
+  de polynômes $\mathcal L_{a, b, c, d}$ de degré au plus $\left\lceil \frac{\deg P}{2}\right\rceil$.
   \begin{itemize}
-    \item Attention aux heuristiques !
+    \item Certaines hypothèses sont heuristiques !
+      \begin{itemize}
+        \item Existence de la combinaison
+        \item Friabilité des polynômes $\mathcal L_{a, b, c, d}$
+      \end{itemize}
   \end{itemize}
 \end{frame}
 
