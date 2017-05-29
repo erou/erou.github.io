@@ -188,14 +188,14 @@
     \item First appearance in ``New directions in cryptography'' (Diffie, Hellman; 1976)
     \item First sub-exponential algorithm (Adleman; 1979) with complexity
       $L(1/2)$
-  \item First algorithm in $L(1/3)$ binary finite fields
+  \item First algorithm in $L(1/3)$ in binary finite fields
     (Coppersmith; 1984)
   \item Number field sieve in prime fields in 1993,
     $L(1/3)$
   \item Function field sieve in small characteristic in 1994,
     generalisations in 1999, 2002, 2006; $L(1/3)$
   \item Generalisation of the number field sieve in 2006, every finite
-    field is now cover by a $L(1/3)$ algorithm
+    field is now covered by a $L(1/3)$ algorithm
   \end{itemize}
 \end{frame}
 
@@ -216,7 +216,7 @@
   \begin{enumerate}
     \item We find multiplicative relations between the elements in $F$
     \item We solve the linear system arising from these relations
-    \item We express $h$ in function of elements of $F$
+    \item We express $h$ as a product of elements in $F$
   \end{enumerate}
   The steps $1$ and $3$ depends on the representation of the finite field, and
   give different complexities.
@@ -228,7 +228,7 @@
   \begin{itemize}
     \item We considere $G = \mathbb{F}_p^\times$ for a prime integer $p$ and we
       still have $N = |G|$
-    \item We choose $F = \left\{\, f \;|\; f \leq B,\; f \text{ premier}
+    \item We choose $F = \left\{\, f \;|\; f \leq B,\; f \text{ prime}
     \right\}$ for a chosen integer $B$
   \item We assume that $g\in F$, otherwise we add it to $F$.
   \end{itemize}
@@ -273,7 +273,7 @@
 \begin{frame}{An example}
   This algorithm depends on the choice of $B$ :
   \begin{itemize}
-    \item The larger $B$ is, the larger $\left\langle F \right\rangle$ is, qnd
+    \item The larger $B$ is, the larger $\left\langle F \right\rangle$ is, and
       the easier it is to find relations
     \item But when $|F|$ is large, we need to solve a large linear system
   \end{itemize}
@@ -289,7 +289,7 @@
   \begin{itemize}
     \item We assume that $\mathbb{K}=\mathbb{F}_{q^{2k}}$ and we represent
       $\mathbb{K}$ by $\mathbb{F}_{q^2}[X]/(I_X)$ where $I_X$ is an irreducible
-      polynomial od degree $k$ dividing $h_1X^q-h_0$ and $\deg h_i\leq 2$.
+      polynomial of degree $k$ dividing $h_1X^q-h_0$ and $\deg h_i\leq 2$.
       \begin{itemize}
         \item The existence of suitable $h_i$ is heuristic
       \end{itemize}
@@ -317,7 +317,7 @@ times smaller, until we have only polynomials in $F$.
  \end{equation}
  where $\mathcal S$ is a set of representatives of the $q+1$ points of the
  projective line $\mathbb{P}^1(\mathbb{F}_q)$ chosen such that the equality
- $\ref{keyeq}$ is true.
+ (\ref{keyeq}) is true.
 \end{frame}
 
 \begin{frame}{The descent}
@@ -338,7 +338,7 @@ times smaller, until we have only polynomials in $F$.
   We keep only the equations $(E_{a, b, c, d})$ where
   $\mathcal L_{a, b, c, d}$ is
   $\left\lceil \frac{\deg P}{2}\right\rceil$-smooth and we combine these equations
-  in order to keep only $P$ in that the right hand side.
+  in order to keep only $P$ in the right hand side.
 
   The left hand side is then composed of polynomials $\mathcal L_{a, b, c, d}$
   of degree at most $\left\lceil \frac{\deg P}{2}\right\rceil$.
@@ -347,7 +347,7 @@ times smaller, until we have only polynomials in $F$.
     \item There are also heuristics
       \begin{itemize}
         \item The existence of the combination
-        \item The smoothmess of the polynomials $\mathcal L_{a, b, c, d}$
+        \item The smoothness of the polynomials $\mathcal L_{a, b, c, d}$
       \end{itemize}
   \end{itemize}
 \end{frame}
@@ -357,7 +357,7 @@ times smaller, until we have only polynomials in $F$.
 
 \begin{frame}{Granger, Kleinjung and Zumbrägel algorithm}
   Here $\mathbb{K}=\mathbb{F}_{q^k}$ and we see $\mathbb{K}$ as
-  $\mathbb{F}_q[X]/(I_X)$ where $I_X$ is q polynomial of degree $k$ dividing
+  $\mathbb{F}_q[X]/(I_X)$ where $I_X$ is a polynomial of degree $k$ dividing
   $h_1X^q-h_0$. The algorithm follows the same steps as the latter, but the
   descent is different.
 \end{frame}
@@ -384,12 +384,12 @@ times smaller, until we have only polynomials in $F$.
   \[
     Q=\prod_{i=1}^d Q_i
   \]
-  where the $Q_i$'s are irreducible polynomial od degree $2$ in
+  where the $Q_i$'s are irreducible polynomial of degree $2$ in
   $\mathbb{F}_{q^d}[X]$ and are all conjugates. We then apply the ``on the fly''
   elimination to $Q_1$ to obtain $\log Q_1$ as a linear combination of 
   $O(q)$ $\log P_i$ where the $P_i\in \mathbb{F}_{q^d}[X]$ are all of degree $1$.
   
-  Recall that The norm of a linear polynomial in $\mathbb{F}_{q^d}[X]$ is an irreducible
+  Recall that the norm of a linear polynomial in $\mathbb{F}_{q^d}[X]$ is an irreducible
   polynomial of degree $d_1$ to the power $d_2$, with $d_1d_2 = d$.
   \emph{Thus, we expressed $\log Q$ as a linear combination of $O(q)$ $\log
   R_i$ where $\deg R_i | d$.}
