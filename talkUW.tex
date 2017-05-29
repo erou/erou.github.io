@@ -153,8 +153,8 @@
   This last problem is called the \emph{discrete logarithm problem}.
 \end{frame}
 
-\subsection{Historique}
-\begin{frame}{Historical background}
+\subsection{Terminology}
+\begin{frame}{Definitions}
   To express the hardness of a problem, we study its complexity and we use the
   notation
   \[
@@ -170,6 +170,19 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Definitions}
+  \begin{itemize}
+    \item We say that a finite field $\mathbb{F}_q=\mathbb{F}_{p^k}$ is of
+      \emph{small characteristic} when $p$ is small compared to $q$, it usually
+      means that $p$ is polynomial in $\log q$.
+    \item Let $l = \log q$, the complexity is then said to be
+      \emph{quasi-polynomial} if it is
+  $l^{O(\log l)}$. This complexity is smaller that $L(\varepsilon)$ for any
+  $\varepsilon>0$ but greater than any polynomial in $l$.
+  \end{itemize}
+\end{frame}
+
+\subsection{Historical background}
 \begin{frame}{Historical background}
   \begin{itemize}
     \item First appearance in ``New directions in cryptography'' (Diffie, Hellman; 1976)
@@ -240,167 +253,146 @@
 \end{frame}
 
 \begin{frame}{An example}
-  \emph{Step 2 : linear algebra.} Une fois qu'on a assez de relations, \ie au
-  moins $|F|$, on résout le système linéaire obtenu dans
-  $\mathbb{Z}/N\mathbb{Z}$ pour obtenir tous les $\log_g(f)$ pour $f\in F$.
-
-  \emph{Étape 3 : exprimer $h$ en fonction des éléments de $F$ :}
+  \emph{Step 2 : linear algebra.} Once we have enough relations, \ie at least
+  $|F|$, we solve the linear system in $\mathbb{Z}/N\mathbb{Z}$ in order to
+  obtain the $\log_g(f)$ for all $f\in F$.
+  
+  \emph{Step 3 : express $h$ in function of the elements in $F$ :}
   \begin{itemize}
-    \item On choisi $e\in \mathbb{Z}/N\mathbb{Z}$ aléatoirement
-    \item On calcule $hg^e$
-    \item On teste si $hg^e$ est $B$-friable
-    \item Si c'est le cas, on a une relation
-      \[
+     \item We randomly choose $e\in \mathbb{Z}/N\mathbb{Z}$
+    \item We compute $hg^e$
+    \item We test if $hg^e$ is $B$-smooth
+    \item If it is the case, it yields a relation  :
+     \[
       \log_g(h) = \sum_{f\in F}e_f\log_g(f) - e
       \]
   \end{itemize}
 
 \end{frame}
 
-\begin{frame}{Un exemple}
-  Cet algorithme dépend du choix de $B$ :
+\begin{frame}{An example}
+  This algorithm depends on the choice of $B$ :
   \begin{itemize}
-    \item Lorsque $B$ est grand, $\left\langle F \right\rangle$ est plus grand
-      donc il est plus simple de trouver des relations
-    \item Mais quand $|F|$ est grand, il faut résoudre un système linéaire plus
-      grand également.
+    \item The larger $B$ is, the larger $\left\langle F \right\rangle$ is, qnd
+      the easier it is to find relations
+    \item But when $|F|$ is large, we need to solve a large linear system
   \end{itemize}
-  In fine, avec un choix judicieux de $B$, on trouve une complexité en
-  $L(1/2)$.
+  In the end, we can choose $B$ to obtain a $L(1/2)$ complexity.
 \end{frame}
 
-\section{\scshape Algorithmes quasi-polynomiaux}
-\subsection{Terminologie}
-\begin{frame}{Définitions}
-  Avant d'entrer dans le cœur du sujet, revenons sur quelques points de
-  terminologie. Lorsque l'on considère le problème du logarithme discret dans
-  une famille de corps finis $\mathbb{F}_{q}$, où $q=p^n$ et $q\to\infty$, les
-  algorithmes dépendent de la grandeur relative de $p$ et $n$, si
-  $p=L_q(\alpha)$ :
+\section{\scshape Quasi-polynomial algorithms} 
+\subsection{Barbulescu, Gaudry, Joux and Thomé algorithm}
+
+\begin{frame}{Barbulescu, Gaudry, Joux et Thomé algorithm}
+  We denote by $\mathbb{K}$ the finite field where we want to compute discrete
+  logarithms.
   \begin{itemize}
-    \item Si $\alpha>\frac{2}{3}$, on parle de \emph{grande caractéristique}
-    \item Si $\frac{1}{3} <\alpha<\frac{2}{3}$, on parle de \emph{moyenne caractéristique}
-    \item Si $0 <\alpha<\frac{1}{3}$, on parle de \emph{petite-moyenne caractéristique}
-    \item Si $\alpha = 0$, on parle de \emph{petite caractéristique}
-  \end{itemize}
-\end{frame}
-
-
-\begin{frame}{Définitions}
- Toujours dans le cadre d'une famille de corps finis $F_q$, un algorithme dont
- la complexité est  $\log q^{O(\log\log q)}$ est dit \emph{quasi-polynomial}. Cette
- complexité est plus petite que toutes les complexités $L(\varepsilon)$ pour
- $\varepsilon>0$ mais plus grande que tout polynôme en $\log q$.
-\end{frame}
-
-\subsection{Algorithme de Barbulescu, Gaudry, Joux et Thomé}
-
-\begin{frame}{Algorithme de Barbulescu, Gaudry, Joux et Thomé}
-  On note $\mathbb{K}$ le corps fini dans lequel on veut travailler.
-  \begin{itemize}
-    \item On suppose $\mathbb{K}=\mathbb{F}_{q^{2k}}$ et on on représente
-  $\mathbb{K}$ par $\mathbb{F}_{q^2}[X]/(I_X)$ où $I_X$ est un polynôme
-  irréductible de degré $k$ divisant $h_1X^q-h_0$ et $\deg h_i\leq 2$
-  (l'existence des $h_i$ est heuristique).
-    \item L'ensemble $F$ est l'ensemble des polynômes de degré $1$.
+    \item We assume that $\mathbb{K}=\mathbb{F}_{q^{2k}}$ and we represent
+      $\mathbb{K}$ by $\mathbb{F}_{q^2}[X]/(I_X)$ where $I_X$ is an irreducible
+      polynomial od degree $k$ dividing $h_1X^q-h_0$ and $\deg h_i\leq 2$.
+      \begin{itemize}
+        \item The existence of suitable $h_i$ is heuristic
+      \end{itemize}
+    \item The set $F$ is the set of the degree one polynomials.
 \end{itemize}
 
-    L'algorithme se base sur une \emph{descente} : on exprime le logarithme d'un
-    polynôme en fonction de $O(q^2k)$ logarithmes de polynômes de degré deux
-    fois plus petit, jusqu'à n'obtenir que des polynômes dans $F$.
+The algorithm is based on a descent process: we express the logarithm of a
+polynomial in function of $O(q^2k)$ logarithms of polynomials of degree two
+times smaller, until we have only polynomials in $F$.
     \begin{itemize}
-      \item Complexité : $(q^2k)^{O(\log k)}$.
+      \item Complexity : $(q^2k)^{O(\log k)}$.
     \end{itemize}
 
 \end{frame}
 
-\begin{frame}{La descente}
- On va utiliser l'équation 
+\begin{frame}{The descent}
+  We will use the \emph{systematic equation}
  \[
    X^q - X = \prod_{a\in\mathbb{F}_q}(X-a)
  \]
- qu'on transorme en
+ that we transform in
  \begin{equation}
    X^qY - XY^q = \prod_{(\alpha, \beta)\in\mathcal S}(\beta X - \alpha Y)
    \label{keyeq}
  \end{equation}
- où $\mathcal S$ est un ensemble de représentants des $q+1$ points de la droite
- projective $\mathbb{P}^1(\mathbb{F}_q)$ choisi tel que l'équation
- (\ref{keyeq}) soit vraie.
+ where $\mathcal S$ is a set of representatives of the $q+1$ points of the
+ projective line $\mathbb{P}^1(\mathbb{F}_q)$ chosen such that the equality
+ $\ref{keyeq}$ is true.
 \end{frame}
 
-\begin{frame}{La descente}
-  Supposons qu'on souhaite appliquer l'algorithme à un élément $P$. On va
-  générer des relations en substituant $aP + b$ à $X$ et $cP + d$ à $Y$ dans l'équation
-  (\ref{keyeq}), avec $a, b, c, d \in \mathbb{F}_{q^2}$, on obtient une nouvelle
-  équation $(E_{a, b, c, d})$. Il vient 
+\begin{frame}{The descent}
+  Assume that we want to find the logarithm of an element $P$. We will create
+  relations by substituting $X$ by $aP + b$ and $Y$ by $cP + d$ in Equation
+  (\ref{keyeq}), with $a, b, c, d \in \mathbb{F}_{q^2}$. We obtain a new
+  Equation $(E_{a, b, c, d})$. It follows that
   \begin{eqnarray*}
     \frac{1}{h_1^D}\mathcal L_{a, b, c, d} &=& \lambda \prod_{(\alpha, \beta)\in\mathcal S}(P-\mu_{\alpha, \beta})
   \end{eqnarray*}
-  où $\lambda, \mu_{\alpha, \beta}\in\mathbb{F}_{q^2}$ et $\mathcal L_{a, b, c,
-  d}$ est un polynôme de degré $D\leq 3\deg P$, obtenu en utilisant l'égalité $X^q =
+  where $\lambda, \mu_{\alpha, \beta}\in\mathbb{F}_{q^2}$ and $\mathcal L_{a, b, c,
+  d}$ is a polynomial of degree $D\leq 3\deg P$, obtained using the equality $X^q =
   \frac{h_0}{h_1}\mod I_X$.
   
 \end{frame}
 
-\begin{frame}{La descente}
-  On garde seulement les équations $(E_{a, b, c, d})$ dont le côté gauche
-  $\mathcal L_{a, b, c, d}$ est
-  $\left\lceil \frac{\deg P}{2}\right\rceil$-friable et on combine ces équations
-  pour que le côté droit, composé des translatés de $P$, ne fasse intervenir que
-  $P$.
+\begin{frame}{The descent}
+  We keep only the equations $(E_{a, b, c, d})$ where
+  $\mathcal L_{a, b, c, d}$ is
+  $\left\lceil \frac{\deg P}{2}\right\rceil$-smooth and we combine these equations
+  in order to keep only $P$ in that the right hand side.
 
-  La combinaison de ces équations donne alors un côté gauche composé seulement
-  de polynômes $\mathcal L_{a, b, c, d}$ de degré au plus $\left\lceil \frac{\deg P}{2}\right\rceil$.
+  The left hand side is then composed of polynomials $\mathcal L_{a, b, c, d}$
+  of degree at most $\left\lceil \frac{\deg P}{2}\right\rceil$.
+
   \begin{itemize}
-    \item Certaines hypothèses sont heuristiques !
+    \item There are also heuristics
       \begin{itemize}
-        \item Existence de la combinaison
-        \item Friabilité des polynômes $\mathcal L_{a, b, c, d}$
+        \item The existence of the combination
+        \item The smoothmess of the polynomials $\mathcal L_{a, b, c, d}$
       \end{itemize}
   \end{itemize}
 \end{frame}
 
 
-\subsection{Algorithme de Granger, Kleinjung et Zumbrägel}
+\subsection{Granger, Kleinjung and Zumbrägel algorithme}
 
-\begin{frame}{Algorithme de Granger, Kleinjung et Zumbrägel}
-  Ici $\mathbb{K}=\mathbb{F}_{q^k}$ et on voit $\mathbb{K}$ comme
-  $\mathbb{F}_q[X]/(I_X)$ où $I_X$ est un polynôme de degré $k$ qui divise
-  $h_1X^q-h_0$. L'algorithme suit le même principe que juste avant mais la phase
-  de descente est différente. 
+\begin{frame}{Granger, Kleinjung and Zumbrägel algorithm}
+  Here $\mathbb{K}=\mathbb{F}_{q^k}$ and we see $\mathbb{K}$ as
+  $\mathbb{F}_q[X]/(I_X)$ where $I_X$ is q polynomial of degree $k$ dividing
+  $h_1X^q-h_0$. The algorithm follows the same steps as the latter, but the
+  descent is different.
 \end{frame}
 
-\begin{frame}{Élimination ``à la volée''}
-  Supposons $Q\in \mathbb{F}_{q^m}[X]$ et $\deg Q = 2$. Cette élimination se base
-  sur le fait que le polynôme $P = X^{q+1}+aX^q+bX+c$ se scinde complètement
-  dans $\mathbb{F}_{q^m}[X]$ pour
-  environ $q^{m-3}$ triplets $(a, b, c)$. Or 
+\begin{frame}{``On the fly'' elimination}
+  Assume that $Q\in \mathbb{F}_{q^m}[X]$ and $\deg Q = 2$. This elimination is
+  based on the fact that the polynomial $P = X^{q+1}+aX^q+bX+c$ splits completly
+  in $\mathbb{F}_{q^m}[X]$ for approximately $q^{m-3}$ triplets $(a, b, c)$. But
+  
   \[
     P = \frac{1}{h_1}((X+a)h_0 + (bX+c)h_1)\mod I_X
   \]
-  Donc si $Q| (X+a)h_0 + (bX+c)h_1$ (polynôme de degré $3$), on a 
+  So if $Q| (X+a)h_0 + (bX+c)h_1$ (polynomial of degree $3$), we have 
   \[
     h_1P=QL \mod I_X
   \]
-  où $L$ est de degré $1$ et $P$ se scinde complètement.
+  where $L$ is of degree $1$ and $P$ splits completly.
 
 \end{frame}
 
-\begin{frame}{Descente}
-  Supposons maintenant $Q\in\mathbb{F}_{q}[X]$, irreductible et de degré $2d$.
+\begin{frame}{The descent}
+  Assume now that $Q\in\mathbb{F}_{q}[X]$ is irreducible of degree $2d$. Then we
+  have
   \[
     Q=\prod_{i=1}^d Q_i
   \]
-  où les $Q_i$ sont des polynômes irreductibles de degré $2$ dans
-  $\mathbb{F}_{q^d}[X]$ et sont tous conjugués. On applique alors
-  l'élimination ``à la volée'' avec $Q_1$ pour obtenir $\log Q_1$ en fonction
-  de $O(q)$ $\log P_i$ où les $P_i\in \mathbb{F}_{q^d}[X]$ sont de degré $1$.
+  where the $Q_i$'s are irreducible polynomial od degree $2$ in
+  $\mathbb{F}_{q^d}[X]$ and are all conjugates. We then apply the ``on the fly''
+  elimination to $Q_1$ to obtain $\log Q_1$ as a linear combination of 
+  $O(q)$ $\log P_i$ where the $P_i\in \mathbb{F}_{q^d}[X]$ are all of degree $1$.
   
-  La norme d'un polynôme linéaire dans $\mathbb{F}_{q^d}[X]$ est un polynôme
-  irréductible de degré $d_1$ à la puissance $d_2$, avec $d_1d_2 = d$.
-  \emph{On a ainsi exprimé $\log Q$ en fonction de $O(q)$ $\log R_i$, où $\deg
-  R_i | d$}
+  Recall that The norm of a linear polynomial in $\mathbb{F}_{q^d}[X]$ is an irreducible
+  polynomial of degree $d_1$ to the power $d_2$, with $d_1d_2 = d$.
+  \emph{Thus, we expressed $\log Q$ as a linear combination of $O(q)$ $\log
+  R_i$ where $\deg R_i | d$.}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
