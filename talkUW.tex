@@ -365,19 +365,29 @@ times smaller, until we have only polynomials in $F$.
   Assume now that $Q\in\mathbb{F}_{q}[X]$ is irreducible of degree $2d$. Then we
   have
   \[
-    Q=\prod_{i=1}^d Q_i
+    Q=\prod_{i=0}^{d-1} Q_i = \prod_{i=0}^{d-1}Q_0^{[i]}
   \]
   where the $Q_i$'s are irreducible polynomials of degree $2$ in
-  $\mathbb{F}_{q^d}[X]$ and are all conjugates. We then apply the ``on the fly''
-  elimination to $Q_1$ to obtain $\log Q_1$ as a linear combination of 
-  $O(q)$ $\log P_i$ where the $P_i\in \mathbb{F}_{q^d}[X]$ are all of degree $1$.
+  $\mathbb{F}_{q^d}[X]$ and are all conjugates, in the sense that
+  $Q_i=Q_0^{[i]}$ denotes the polynomial obtained by raising all coefficients to
+  the power $q^i$.
 \end{frame}
   
 \begin{frame}{The descent}
+  \begin{itemize}
+    \item We then apply the ``on the fly''
+      elimination to $Q_0^{[i]}$ to obtain $Q_0^{[i]}$ as a product of 
+      $O(q)$ $P_j^{[i]}$ where the $P_j\in \mathbb{F}_{q^d}[X]$ are all of degree $1$
+    \item Hence, $Q$ is expressed as a product of $O(q)$ norms of linear polynomial
+      $\prod_{i=0}^{d-1}P_j^{[i]}$
+  \end{itemize}
+  
   Recall that the norm of a linear polynomial in $\mathbb{F}_{q^d}[X]$ is an irreducible
   polynomial of degree $d_1$ to the power $d_2$, with $d_1d_2 = d$.
-  \emph{Thus, we expressed $\log Q$ as a linear combination of $O(q)$ $\log
-  R_i$ where $\deg R_i | d$.}
+  \begin{itemize}
+    \item \emph{Thus, we expressed $\log Q$ as a linear combination of $O(q)$ $\log
+        R_i$ where $\deg R_i | d$. The complexity obtained is $q^{O(\log q)}$}.
+  \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
