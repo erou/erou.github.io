@@ -145,7 +145,7 @@
 
 \begin{frame}{The discrete logarithm problem}
   \begin{itemize}
-    \item In practice, given an iteger $n$, we have efficient algorithms
+    \item In practice, given an integer $n$, we have efficient algorithms
       to compute $g^n$
     \item Given $x = g^n \in G$, we \emph{do not} hace efficient algorithm
       to compute $n$.
@@ -158,13 +158,15 @@
   To express the hardness of a problem, we study its complexity and we use the
   notation
   \[
-    L_N(\alpha, c) = \exp((c+o(1))(\log N)^\alpha(\log\log N)^{1-\alpha}).
+    \textcolor{purple}{L_N(\alpha, c) = \exp((c+o(1))(\log N)^\alpha(\log\log
+      N)^{1-\alpha})}.
   \]
-  We also note $L_N(\alpha)$ when we do not want to deal with the constant.
+  We also note $\textcolor{purple}{L_N(\alpha)}$ when we do not want to deal with the constant.
 
   There are two families of algorithms :
   \begin{itemize}
-    \item The \emph{generic} algorithms (with complexity $O(\sqrt N)$)
+    \item The \emph{generic} algorithms (with complexity
+      $\textcolor{purple}{O(\sqrt N)}$)
     \item The \emph{index calculus} algorithms, which use the structure
       of groups coming from finite fields : $\mathbb{F}_{q}^\times$
   \end{itemize}
@@ -177,7 +179,8 @@
       means that $p$ is polynomial in $\log q$.
     \item Let $l = \log q$, the complexity is then said to be
       \emph{quasi-polynomial} if it is
-  $l^{O(\log l)}$. This complexity is smaller that $L(\varepsilon)$ for any
+      $\textcolor{purple}{l^{O(\log l)}}$. This complexity is smaller that
+      $\textcolor{purple}{L(\varepsilon)}$ for any
   $\varepsilon>0$ but greater than any polynomial in $l$.
   \end{itemize}
 \end{frame}
@@ -185,22 +188,24 @@
 \subsection{Historical background}
 \begin{frame}{Historical background}
   \begin{itemize}
-    \item First appearance in [DH76]
-    \item First sub-exponential algorithm [A79] : $L(1/2)$
-    \item Between 1984 and 2006 : algorithms in $L(1/3)$
+    \item First appearance in \textcolor{blue}{[DH76]}
+    \item First sub-exponential algorithm \textcolor{blue}{[A79]} :
+      $\textcolor{purple}{L(1/2)}$
+    \item Between 1984 and 2006 : algorithms in $\textcolor{purple}{L(1/3)}$
 \end{itemize}
  And more recently, in finite fields of small characteristic :
   \begin{itemize}
-    \item New algorithm with $L(1/4)$ complexity [Joux13]
-    \item \emph{Quasi-polynomial} algorithm [BGJT14]
-    \item Second quasi-polynomial algorithm [GKZ14]
+    \item New algorithm with $\textcolor{purple}{L(1/4)}$ complexity
+      \textcolor{blue}{[Joux13]}
+    \item \emph{Quasi-polynomial} algorithm \textcolor{blue}{[BGJT14]}
+    \item Second quasi-polynomial algorithm \textcolor{blue}{[GKZ14]}
   \end{itemize}
 \end{frame}
 
 \section{\scshape Index calculus}
 \subsection{Overview}
 \begin{frame}{Overview}
-  Assume that we want to find $log_g(h)$ with $h\in G$. We fist choose $F\subset
+  Assume that we want to find $log_g(h)$ with $h\in G$. We first choose $F\subset
   G$ such that $\left\langle F \right\rangle = G$. Then
   \begin{enumerate}
     \item We find multiplicative relations between the elements in $F$
@@ -266,13 +271,13 @@
       the easier it is to find relations
     \item But when $|F|$ is large, we need to solve a large linear system
   \end{itemize}
-  In the end, we can choose $B$ to obtain a $L(1/2)$ complexity.
+  In the end, we can choose $B$ to obtain a $\textcolor{purple}{L(1/2)}$ complexity.
 \end{frame}
 
 \section{\scshape Quasi-polynomial algorithms} 
 \subsection{Barbulescu, Gaudry, Joux and Thomé algorithm}
 
-\begin{frame}{Barbulescu, Gaudry, Joux et Thomé algorithm}
+\begin{frame}{Barbulescu, Gaudry, Joux and Thomé algorithm}
   \emph{Context :} we denote by $\mathbb{K}$ the finite field where we want to
   compute discrete logarithms. 
   \begin{itemize}
@@ -286,12 +291,12 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Barbulescu, Gaudry, Joux et Thomé algorithm}
+\begin{frame}{Barbulescu, Gaudry, Joux and Thomé algorithm}
 The algorithm is based on a descent process: we express the logarithm of a
 polynomial as a linear combination of $O(q^2k)$ logarithms of polynomials of degree two
 times smaller, until we have only polynomials in $F$.
     \begin{itemize}
-      \item Complexity : $(q^2k)^{O(\log k)}$.
+      \item Complexity : $\textcolor{purple}{(q^2k)^{O(\log k)}}$.
     \end{itemize}
     The descent process is based on the equation :
  \begin{equation}
@@ -336,7 +341,7 @@ times smaller, until we have only polynomials in $F$.
 \end{frame}
 
 
-\subsection{Granger, Kleinjung and Zumbrägel algorithme}
+\subsection{Granger, Kleinjung and Zumbrägel algorithm}
 
 \begin{frame}{Granger, Kleinjung and Zumbrägel algorithm}
   \emph{Context :} here $\mathbb{K}=\mathbb{F}_{q^k}$ and we see $\mathbb{K}$ as
@@ -348,7 +353,7 @@ times smaller, until we have only polynomials in $F$.
 \begin{frame}{``On the fly'' elimination}
   Assume that $Q\in \mathbb{F}_{q^m}[X]$ and $\deg Q = 2$. This elimination is
   based on the fact that the polynomial $P = X^{q+1}+aX^q+bX+c$ splits completly
-  in $\mathbb{F}_{q^m}[X]$ for approximately $q^{m-3}$ triplets $(a, b, c)$. But
+  in $\mathbb{F}_{q^m}[X]$ for approximately $q^{m-3}$ triples $(a, b, c)$. But
   
   \[
     P = \frac{1}{h_1}((X+a)h_0 + (bX+c)h_1)\mod I_X
@@ -379,14 +384,15 @@ times smaller, until we have only polynomials in $F$.
       elimination to $Q_0^{[i]}$ to obtain $Q_0^{[i]}$ as a product of 
       $O(q)$ $P_j^{[i]}$ where the $P_j\in \mathbb{F}_{q^d}[X]$ are all of degree $1$
     \item Hence, $Q$ is expressed as a product of $O(q)$ norms of linear polynomial
-      $\prod_{i=0}^{d-1}P_j^{[i]}$
+      $R_j=\prod_{i=0}^{d-1}P_j^{[i]}$
   \end{itemize}
   
   Recall that the norm of a linear polynomial in $\mathbb{F}_{q^d}[X]$ is an irreducible
   polynomial of degree $d_1$ to the power $d_2$, with $d_1d_2 = d$.
   \begin{itemize}
     \item \emph{Thus, we expressed $\log Q$ as a linear combination of $O(q)$ $\log
-        R_i$ where $\deg R_i | d$. The complexity obtained is $q^{O(\log q)}$}.
+        R_j$ where $\deg R_j | d$. The complexity obtained is
+        $\textcolor{purple}{q^{O(\log q)}}$}.
   \end{itemize}
 \end{frame}
 
