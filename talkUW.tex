@@ -165,7 +165,7 @@
   There are two families of algorithms :
   \begin{itemize}
     \item The \emph{generic} algorithms (with complexity $O(\sqrt N)$)
-    \item The \emph{index calculus} alorithms, which use the structure
+    \item The \emph{index calculus} algorithms, which use the structure
       of groups coming from finite fields : $\mathbb{F}_{q}^\times$
   \end{itemize}
 \end{frame}
@@ -185,26 +185,15 @@
 \subsection{Historical background}
 \begin{frame}{Historical background}
   \begin{itemize}
-    \item First appearance in ``New directions in cryptography'' (Diffie, Hellman; 1976)
-    \item First sub-exponential algorithm (Adleman; 1979) with complexity
-      $L(1/2)$
-  \item First algorithm in $L(1/3)$ in binary finite fields
-    (Coppersmith; 1984)
-  \item Number field sieve in prime fields in 1993,
-    $L(1/3)$
-  \item Function field sieve in small characteristic in 1994,
-    generalisations in 1999, 2002, 2006; $L(1/3)$
-  \item Generalisation of the number field sieve in 2006, every finite
-    field is now covered by a $L(1/3)$ algorithm
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Historical background}
-  And more recently, in finite fields of small characteristic :
+    \item First appearance in [DH76]
+    \item First sub-exponential algorithm [A79] : $L(1/2)$
+    \item Between 1984 and 2006 : algorithms in $L(1/3)$
+\end{itemize}
+ And more recently, in finite fields of small characteristic :
   \begin{itemize}
-    \item New algorithm with $L(1/4)$ complexity (Joux; 2013)
-    \item \emph{Quasi-polynomial} algorithm (Barbulescu, Gaudry, Joux, Thomé; 2014)
-    \item Second quasi-polynomial algorithm (Granger, Kleinjung, Zumbrägel; 2014)
+    \item New algorithm with $L(1/4)$ complexity [Joux13]
+    \item \emph{Quasi-polynomial} algorithm [BGJT14]
+    \item Second quasi-polynomial algorithm [GKZ14]
   \end{itemize}
 \end{frame}
 
@@ -284,8 +273,8 @@
 \subsection{Barbulescu, Gaudry, Joux and Thomé algorithm}
 
 \begin{frame}{Barbulescu, Gaudry, Joux et Thomé algorithm}
-  We denote by $\mathbb{K}$ the finite field where we want to compute discrete
-  logarithms.
+  \emph{Context :} we denote by $\mathbb{K}$ the finite field where we want to
+  compute discrete logarithms. 
   \begin{itemize}
     \item We assume that $\mathbb{K}=\mathbb{F}_{q^{2k}}$ and we represent
       $\mathbb{K}$ by $\mathbb{F}_{q^2}[X]/(I_X)$ where $I_X$ is an irreducible
@@ -295,29 +284,22 @@
       \end{itemize}
     \item The set $F$ is the set of the degree one polynomials.
 \end{itemize}
+\end{frame}
 
+\begin{frame}{Barbulescu, Gaudry, Joux et Thomé algorithm}
 The algorithm is based on a descent process: we express the logarithm of a
-polynomial in function of $O(q^2k)$ logarithms of polynomials of degree two
+polynomial as a linear combination of $O(q^2k)$ logarithms of polynomials of degree two
 times smaller, until we have only polynomials in $F$.
     \begin{itemize}
       \item Complexity : $(q^2k)^{O(\log k)}$.
     \end{itemize}
-
-\end{frame}
-
-\begin{frame}{The descent}
-  We will use the \emph{systematic equation}
- \[
-   X^q - X = \prod_{a\in\mathbb{F}_q}(X-a)
- \]
- that we transform in
+    The descent process is based on the equation :
  \begin{equation}
-   X^qY - XY^q = \prod_{(\alpha, \beta)\in\mathcal S}(\beta X - \alpha Y)
+   X^qY - XY^q = Y\prod_{a\in\mathbb{F}_q}(X - aY) =
+   \prod_{\alpha\in\mathbb{P}^1(\mathbb{F}_q)}(X-\alpha Y)
    \label{keyeq}
  \end{equation}
- where $\mathcal S$ is a set of representatives of the $q+1$ points of the
- projective line $\mathbb{P}^1(\mathbb{F}_q)$ chosen such that the equality
- (\ref{keyeq}) is true.
+ 
 \end{frame}
 
 \begin{frame}{The descent}
@@ -326,9 +308,10 @@ times smaller, until we have only polynomials in $F$.
   (\ref{keyeq}), with $a, b, c, d \in \mathbb{F}_{q^2}$. We obtain a new
   Equation $(E_{a, b, c, d})$. It follows that
   \begin{eqnarray*}
-    \frac{1}{h_1^D}\mathcal L_{a, b, c, d} &=& \lambda \prod_{(\alpha, \beta)\in\mathcal S}(P-\mu_{\alpha, \beta})
+    \frac{1}{h_1^D}\mathcal L_{a, b, c, d} &=& \lambda
+    \prod_{\alpha\in\mathbb{P}^1(\mathbb{F}_q)}(P-\mu_\alpha)
   \end{eqnarray*}
-  where $\lambda, \mu_{\alpha, \beta}\in\mathbb{F}_{q^2}$ and $\mathcal L_{a, b, c,
+  where $\lambda, \mu_\alpha\in\mathbb{F}_{q^2}$ and $\mathcal L_{a, b, c,
   d}$ is a polynomial of degree $D\leq 3\deg P$, obtained using the equality $X^q =
   \frac{h_0}{h_1}\mod I_X$.
   
@@ -340,7 +323,7 @@ times smaller, until we have only polynomials in $F$.
   $\left\lceil \frac{\deg P}{2}\right\rceil$-smooth and we combine these equations
   in order to keep only $P$ in the right hand side.
 
-  The left hand side is then composed of polynomials $\mathcal L_{a, b, c, d}$
+  The left hand side is then composed of irreducible polynomials 
   of degree at most $\left\lceil \frac{\deg P}{2}\right\rceil$.
 
   \begin{itemize}
@@ -356,7 +339,7 @@ times smaller, until we have only polynomials in $F$.
 \subsection{Granger, Kleinjung and Zumbrägel algorithme}
 
 \begin{frame}{Granger, Kleinjung and Zumbrägel algorithm}
-  Here $\mathbb{K}=\mathbb{F}_{q^k}$ and we see $\mathbb{K}$ as
+  \emph{Context :} here $\mathbb{K}=\mathbb{F}_{q^k}$ and we see $\mathbb{K}$ as
   $\mathbb{F}_q[X]/(I_X)$ where $I_X$ is a polynomial of degree $k$ dividing
   $h_1X^q-h_0$. The algorithm follows the same steps as the latter, but the
   descent is different.
@@ -384,11 +367,13 @@ times smaller, until we have only polynomials in $F$.
   \[
     Q=\prod_{i=1}^d Q_i
   \]
-  where the $Q_i$'s are irreducible polynomial of degree $2$ in
+  where the $Q_i$'s are irreducible polynomials of degree $2$ in
   $\mathbb{F}_{q^d}[X]$ and are all conjugates. We then apply the ``on the fly''
   elimination to $Q_1$ to obtain $\log Q_1$ as a linear combination of 
   $O(q)$ $\log P_i$ where the $P_i\in \mathbb{F}_{q^d}[X]$ are all of degree $1$.
+\end{frame}
   
+\begin{frame}{The descent}
   Recall that the norm of a linear polynomial in $\mathbb{F}_{q^d}[X]$ is an irreducible
   polynomial of degree $d_1$ to the power $d_2$, with $d_1d_2 = d$.
   \emph{Thus, we expressed $\log Q$ as a linear combination of $O(q)$ $\log
