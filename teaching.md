@@ -29,3 +29,4 @@ Fong. Je continuerai de publier les exercices de colle sur cette page.*
 10. [Produit scalaire](exoProduitScalaire.pdf).
 11. [Révisions 1](exoRev1.pdf)
 12. [Révisions 2](exoRev2.pdf)
+13. [Révisions 3](exoRev3.pdf)
