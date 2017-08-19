@@ -8,7 +8,7 @@ layout: default
 This site is mostly experimental, the real goal is just to share exercices
 with students.
 
-## About me
+## What I like
 
 Hi, I am Édouard, a master student in applied algebra at *Université de
 Versailles*. I am curious about almost everything related to mathematics,
@@ -21,5 +21,4 @@ If you want to know more, you can send me an
 
 ## Teaching
 
-I am an oral examiner in 
-[CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), you can look at it in the teaching section (in french).
+I try to gather informations about what I teach, or used to teach, in the [dedicated section](teaching). Be carefull, it might be in French.

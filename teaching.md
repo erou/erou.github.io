@@ -4,18 +4,21 @@ title: Teaching
 permalink: /teaching/
 visible: true
 ---
+# Teaching
 
-## Khôlles
+## Colles
 
-Je donne des khôlles (ou colles) au [lycée Jacques
-Prévert](http://bcpst.prevert.free.fr/) en classe de BCPST 2. Vous pouvez
+J'ai donné des colles au [lycée Jacques
+Prévert](http://bcpst.prevert.free.fr/) en classe de BCPST 2, pendant l'année
+2016-2017. Vous pouvez
 retrouver les exercices proposés, et même un peu plus, ci-dessous, ils sont
 regroupés par sujet. Si vous avez une question ou
 constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter par
 [e-mail](mailto:edouard.rousseau@u-psud.fr). Amusez-vous bien !
 
-*Les colles sont désomais assurées par Pascal
-Fong. Je continuerai de publier les exercices de colle sur cette page.*  
+*Merci à Pascal Fong d'avoir assuré les colles lorsque je n'étais pas
+disponible. En particulier les dernières séances ont toutes été confectionnées
+par Pascal.*
 
 1. [Rappels d'analyse](exoRappelsAnalyse.pdf).
 2. [Intégrales impropres](exoIntImpropres.pdf).
