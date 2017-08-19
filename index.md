@@ -21,4 +21,4 @@ If you want to know more, you can send me an
 
 ## Teaching
 
-I try to gather informations about what I teach, or used to teach, in the [dedicated section](teaching). Be carefull, it might be in French.
+I try to gather informations about what I teach, or used to teach, in the [dedicated section](teaching). Be careful, it might be in French.
