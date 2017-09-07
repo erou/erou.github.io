@@ -4,8 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-Here is my CV for my little sister that I
-[love](https://az616578.vo.msecnd.net/files/responsive/cover/main/desktop/2016/07/24/6360493048587078022008349599_love-01.jpg). There are also pdf versions in [french](cv_last.pdf) and [english](cv_last_en.pdf).
+There are also pdf versions in [french](cv_last.pdf) and [english](cv_last_en.pdf).
 
 # Curriculum vitæ
 
