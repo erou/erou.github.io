@@ -8,6 +8,8 @@ layout: default
 This site is mostly experimental, the real goal is just to share exercices
 with students.
 
+<img align="right" src="photo-10x15.jpg" alt="What I look like" width="100px">
+
 ## What I like
 
 Hi, I am Édouard, a master student in applied algebra at *Université de
