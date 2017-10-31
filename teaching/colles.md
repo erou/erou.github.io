@@ -11,7 +11,7 @@ Prévert](http://bcpst.prevert.free.fr/) en classe de BCPST 2, pendant l'année
 retrouver les exercices proposés, et même un peu plus, ci-dessous, ils sont
 regroupés par sujet. Si vous avez une question ou
 constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter par
-[e-mail](mailto:erousseau@enst.fr). Amusez-vous bien !
+[e-mail](mailto:{{site.email}}). Amusez-vous bien !
 
 *Merci à Pascal Fong d'avoir assuré les colles lorsque je n'étais pas
 disponible. En particulier les dernières séances ont toutes été confectionnées

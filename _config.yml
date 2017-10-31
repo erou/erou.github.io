@@ -17,10 +17,10 @@ title: erou.github.io
 author: Édouard Rousseau
 email: erousseau@enst.fr
 description: > # this means to ignore newlines until "baseurl:"
-        Personnal webpage based on Jekyll and hosted on GitHub.
+    Édouard Rousseau. PhD student in computer algebra.
 baseurl: # the subpath of your site, e.g. /blog
 url: "http://erou.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: edouardRousseau
+# twitter_username: edrou
 github_username: erou 
 
 # Build settings

@@ -15,7 +15,7 @@ algebra**, **algorithmic number theory**, and **cryptology**. On top of
 that, I like to spread the idea of free software and free licenses in general.
 
 If you want to know more, you can send me an
-[e-mail](mailto:erousseau@enst.fr) !
+[e-mail](mailto:{{ site.email }}) !
 
 ## Software
 
