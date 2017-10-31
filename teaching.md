@@ -8,7 +8,7 @@ visible: true
 
 I try to gather informations about what I teach or taught. Be careful, the material might be in French.
 
-## 2016--2017
+## 2016 -- 2017
 
 I was an oral examiner in maths for second-year students in biology ([BCPST2](https://en.wikipedia.org/wiki/Classe_préparatoire_aux_grandes_écoles#Scientific_CPGE)) in
 the French system
