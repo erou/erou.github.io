@@ -1,1 +1,3 @@
-Personnal webpage (mostly experimental) based on [Jekyll](http://jekyllrb.com/).
+# erou.github.io
+
+Webpage based on [Jekyll](http://jekyllrb.com/).
