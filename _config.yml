@@ -31,6 +31,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-
-# Page ranking
-google_analytics: true
