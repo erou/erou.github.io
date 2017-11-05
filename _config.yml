@@ -31,8 +31,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-plungins:
-  - jekyll-seo-tag
 
 # Page ranking
 google_analytics: true
