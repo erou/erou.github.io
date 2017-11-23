@@ -12,6 +12,8 @@ There are also pdf versions in [french](cv_last.pdf) and [english](cv_last_en.pd
 
 ### Studies
 
+2017 -- Télécom ParisTech, **PhD Thesis**
+
 2016 -- 2017 Université de Versailles, **Master 2 (research) Applied Algebra**,
 last year of magistère.
 
