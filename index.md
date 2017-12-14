@@ -42,6 +42,8 @@ You can find more details in the [dedicated section](teaching).
 
 ## Talks
 
+* [**Latices of compatibly embedded finite fields**](talk-gtbac.pdf) (December 2017, GT BAC,
+  Télécom ParisTech), [code demo](gtbac.ipynb)
 * **Discrete logarithm in finite field of small characteristic** (October
   2017, Magistère, Université Paris-Sud)
 * **Discrete logarithm in finite field of small characteristic** (September
