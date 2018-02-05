@@ -6,7 +6,7 @@ visible: false
 ---
 
 J'ai donné quelques Travaux Dirigés (TD) de cryptographie à l'université de
-Versailles, en M1 d'informatique. Les cours étaient assurés par Louis Goubin. Les différentes
+Versailles, en M1 d'informatique. Les cours étaient assurés par [Louis Goubin](http://www.goubin.fr/). Les différentes
 feuilles de TP sont disponibles ici. N'hésitez pas à m'envoyer un
 [email](mailto:{{site.email}}) si vous avez une question.
 
