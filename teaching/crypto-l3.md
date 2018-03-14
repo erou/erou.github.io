@@ -14,6 +14,8 @@ mesure de l'avancement de l'année. Si vous avez une question, vous pouvez me co
 2. [ENIGMA et chiffrement à flot](td2.pdf)
 3. [One-Time-Pad et LFSR](td3.pdf)
 4. [Chiffrement par bloc et schémas de Feistel](td4.pdf)
+5. [DES et modes opératoires](td5.pdf)
+6. [Arithmétique modulaire](td6.pdf)
 
 # Une conjecture issue du TD sur les LFSR
 
