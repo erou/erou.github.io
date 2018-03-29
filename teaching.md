@@ -12,14 +12,16 @@ I try to gather informations about what I teach or taught. Be careful, the mater
 
 I taught cryptography at two different levels in Université de Versailles. I
 gave a few hours in M1 and some more in L3, the student were all in computer
-science. You can the exercices [here](crypto-l3) (L3) and [there](crypto-m1)
-(M1). 
+science.
+* [Cryptography (L3)](crypto-l3)
+* [Cryptography (M1)](crypto-m1)
 
 ## 2016 -- 2017
 
 I was an oral examiner in maths for second-year students in biology ([BCPST2](https://en.wikipedia.org/wiki/Classe_préparatoire_aux_grandes_écoles#Scientific_CPGE)) in
 the French system
-[CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles). You can find the exercices [here](colles).
+[CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles). 
+* [Exercices](colles)
 
 ## 2013 -- 2014
 

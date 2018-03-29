@@ -35,8 +35,8 @@ fields.
 You can find more details in the [dedicated section](teaching).
 
 2017 -- 2018
-: [Cryptography](teaching/crypto-l3) (Université de Versailles, 30h)
-: [Cryptography](teaching/crypto-m1) (Université de Versailles, 10h)
+: [Cryptography (L3)](teaching/crypto-l3) (Université de Versailles, 30h)
+: [Cryptography (M1)](teaching/crypto-m1) (Université de Versailles, 10h)
 
 2016 -- 2017
 : [Oral examiner in mathematics](teaching/colles) (Lycée Jacques Prévert, 36h)
