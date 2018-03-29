@@ -16,6 +16,8 @@ mesure de l'avancement de l'année. Si vous avez une question, vous pouvez me co
 4. [Chiffrement par bloc et schémas de Feistel](td4.pdf)
 5. [DES et modes opératoires](td5.pdf)
 6. [Arithmétique modulaire](td6.pdf)
+7. [RSA](td7.pdf)
+8. [Tests de primalité et cryptographie à clé publique](td8.pdf)
 
 # Une conjecture issue du TD sur les LFSR
 
