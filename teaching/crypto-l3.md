@@ -18,6 +18,8 @@ mesure de l'avancement de l'année. Si vous avez une question, vous pouvez me co
 6. [Arithmétique modulaire](td6.pdf)
 7. [RSA](td7.pdf)
 8. [Tests de primalité et cryptographie à clé publique](td8.pdf)
+9. [Protocole Diffie-Hellman](td9.pdf)
+10. [Chiffrement Elgamal](td10.pdf)
 
 # Une conjecture issue du TD sur les LFSR
 
