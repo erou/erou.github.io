@@ -20,6 +20,8 @@ mesure de l'avancement de l'année. Si vous avez une question, vous pouvez me co
 8. [Tests de primalité et cryptographie à clé publique](td8.pdf)
 9. [Protocole Diffie-Hellman](td9.pdf)
 10. [Chiffrement Elgamal](td10.pdf)
+11. [Signatures numériques](td11.pdf)
+12. [OpenSSL](td12.pdf)
 
 # Une conjecture issue du TD sur les LFSR
 
