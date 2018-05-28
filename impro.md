@@ -5,7 +5,7 @@ permalink: /impro/
 visible: false
 ---
 
-# Entraînements à la Keith Johnstone
+# Entraînements à la [Keith Johnstone](https://en.wikipedia.org/wiki/Keith_Johnstone)
 
 ## Jeux sur les status
 
@@ -29,7 +29,7 @@ visible: false
     - des status qui descendent
     - un status qui monte, l'autre qui descend
     - des status qui s'inversent (?)
-  où les status doivent être juste au-dessus ou en dessous des autres status
+où les status doivent être juste au-dessus ou en dessous des autres status
 - tour de status à 4 où chaque personne est juste au-dessus ou en-dessous des
   autres
     * politiciens : ministre, porte-parole, maire, élu municipal en visite dans
@@ -46,9 +46,37 @@ visible: false
 
 ## Jeux sur la spontanéïté
 
+Une [référence
+sympa](http://improvencyclopedia.org/categories/Spontaneity.html).
+
 ### Échauffement
 
 - association d'idées spontanées (i.e. très rapide)
 - oufball
+- [Barney](http://improvencyclopedia.org/games//Barney.html)
+- essayer de dire des phrases le plus rapidement possible
+    - chacun son tour 
+    - un mot chacun pour faire une phrase de groupe
 
 ### Partie principale
+
+- [gardien de but](http://www.dramaction.qc.ca/fr/le-gardien-de-but/)
+- clap position (avec status en arrière plan)
+- donner la définition des mots suivants (inventés)
+    * hornage
+    * voitre 
+    * baleutre
+    * serpion
+    * tantre
+    * souiffrer
+    * pijule
+    * amabrication
+    * erissole
+    * tire-ladon
+- le jeu de la Comedia, pour travailler une forme spontanée
+- le cadeau
+    - quand le receveur choisit ce qu'il reçoit
+    - quand le donner choisit
+- le jeu de la boite (What's in the box ?)
+- Redis moi-ça mais pas avec "des réponses funs", juste des réponses normales et
+  spontanées.
