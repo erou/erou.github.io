@@ -46,6 +46,13 @@ où les status doivent être juste au-dessus ou en dessous des autres status
 
 ## Jeux sur la spontanéïté
 
+### Objectifs
+
+- ne pas essayer d'être original
+- ne pas essayer de faire au mieux, juste faire
+- accepter voire aimer l'échec
+- laisser parler / accepter les premières idées
+
 Une [référence
 sympa](http://improvencyclopedia.org/categories/Spontaneity.html).
 
@@ -53,13 +60,19 @@ sympa](http://improvencyclopedia.org/categories/Spontaneity.html).
 
 - association d'idées spontanées (i.e. très rapide)
 - oufball
-- [Barney](http://improvencyclopedia.org/games//Barney.html)
+- [Barney](http://improvencyclopedia.org/games//Barney.html) (les trois mots en
+  B à la suite)
 - essayer de dire des phrases le plus rapidement possible
     - chacun son tour 
     - un mot chacun pour faire une phrase de groupe
 
 ### Partie principale
 
+- marcher dans l'espace sans but et 
+    * prendre des objets un peu au hasard et définir une fois dans la main ce
+      qu'ils ont pros
+    * commencer un geste, un son, ce qu'ils veulent et définir au fur et à
+      mesure ce qu'ils sont
 - [gardien de but](http://www.dramaction.qc.ca/fr/le-gardien-de-but/)
 - clap position (avec status en arrière plan)
 - donner la définition des mots suivants (inventés)
@@ -76,7 +89,10 @@ sympa](http://improvencyclopedia.org/categories/Spontaneity.html).
 - le jeu de la Comedia, pour travailler une forme spontanée
 - le cadeau
     - quand le receveur choisit ce qu'il reçoit
-    - quand le donner choisit
+    - quand le donneur choisit
 - le jeu de la boite (What's in the box ?)
 - Redis moi-ça mais pas avec "des réponses funs", juste des réponses normales et
   spontanées.
+- jeu où si on utilise une certaine lettre, notre personnage meurt
+- phrases de trois mots
+- le jeu de la sur-acceptation "It's Tuesday"
