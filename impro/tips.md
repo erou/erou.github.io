@@ -1,5 +1,5 @@
 ---
-title: Keith 
+title: TIPS
 layout: default
 permalink: /impro/tips
 visible: false
