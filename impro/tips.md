@@ -14,6 +14,12 @@ visible: false
     - acceptation des propositions (*«on dit oui»*)
     - écoute
     - etc, etc...
+    - une liste :
+        1. assume
+        2. écoute
+        3. sois spontané
+        4. amuse-toi
+        5. ose
 - c'est fun
 - retour à l'enfance
 - acceptation de l'échec / prise de risque
@@ -39,7 +45,7 @@ visible: false
 - [le cafteur](https://www.dramaction.qc.ca/fr/le-cafteur/) (cool pour la notion
   d'échec, amusement)
 - tableaux (annonce d'un lieu (*e.g.* la piscine, le marché, etc.) qui doit être
-  mis en scène par les participants.
+  mis en scène par les participants)
 - définition de mots imaginaires (en file, trois syllabes, etc.)
 - [impro à contraintes ?](https://www.dramaction.qc.ca/fr/impro-a-contraintes/)
 - des impro type match (trop tôt peut-être ?)
