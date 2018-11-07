@@ -34,6 +34,9 @@ fields.
 
 You can find more details in the [dedicated section](teaching).
 
+2018 -- 2019
+: [Cryptography (M1)](teaching/crypto-m1) (Université de Versailles)
+
 2017 -- 2018
 : [Cryptography (L3)](teaching/crypto-l3) (Université de Versailles, 30h)
 : [Cryptography (M1)](teaching/crypto-m1) (Université de Versailles, 10h)
@@ -46,7 +49,8 @@ You can find more details in the [dedicated section](teaching).
 
 ## Talks
 
-* [**Latices of compatibly embedded finite fields**](talk-gtbac.pdf) (December 2017, GT BAC,
+* [**Latices of compatibly embedded finite fields in Nemo/Flint**](https://mybinder.org/v2/gh/erou/Nemo-embeddings-demo/master?filepath=demo.ipynb) (July 2018, ISSAC 2018)
+* [**Lattices of compatibly embedded finite fields**](talk-gtbac.pdf) (December 2017, GT BAC,
   Télécom ParisTech), [code demo](gtbac.ipynb)
 * **Discrete logarithm in finite field of small characteristic** (October
   2017, Magistère, Université Paris-Sud)
