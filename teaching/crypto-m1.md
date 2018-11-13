@@ -12,7 +12,8 @@ feuilles de TP sont disponibles ici. N'hésitez pas à m'envoyer un
 
 1. [Rappels de mathématiques](Sujet_TD1.pdf)
 2. [Introduction à la cryptographie](Sujet_TD2.pdf)
-3. [Cryptnalyse du chiffrement DES](Sujet_TD3.pdf)
+3. [Cryptanalyse du chiffrement DES](Sujet_TD3.pdf)
+    * [Détails au sujet du DES](des.pdf)
 4. [Attaques génériques](Sujet_TD4.pdf)
 5. [Advanced Encryption Standard (AES)](Sujet_TD5.pdf)
 6. [Message Authentication Codes (MAC)](Sujet_TD6.pdf)
