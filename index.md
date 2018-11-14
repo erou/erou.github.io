@@ -49,6 +49,7 @@ You can find more details in the [dedicated section](teaching).
 
 ## Talks
 
+* [**Informal presentation of my thesis**](talk-dim.pdf) (November 2018, Math Innov' day)
 * [**Latices of compatibly embedded finite fields in Nemo/Flint**](https://mybinder.org/v2/gh/erou/Nemo-embeddings-demo/master?filepath=demo.ipynb) (July 2018, ISSAC 2018)
 * [**Lattices of compatibly embedded finite fields**](talk-gtbac.pdf) (December 2017, GT BAC,
   Télécom ParisTech), [code demo](gtbac.ipynb)
