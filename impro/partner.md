@@ -7,6 +7,9 @@ visible: false
 
 # Make your partner look good
 
+Cette page est en cours de rédaction, des choses sont susceptibles de
+changer.
+
 ## Topo introductif
 
 Entraînements réalisés à l'aide du livre de **Nabla LEVISTE**, *La fabuleuse
