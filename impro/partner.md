@@ -59,6 +59,7 @@ partenaire. On déplace le travail sur quelqu'un d'autre, et ce faisant on dimin
 - "Et voici"; *mettre en valeur son partenaire*
 - "Et voici" v2 : en cercle, on se donne un prénom en désignant, puis on fait
   "Et voici"; *perdre avec force et grâce*, *mettre en valeur son partenaire*
+- «Pan !»
 
 ### Plât principal
 
