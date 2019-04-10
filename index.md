@@ -61,3 +61,8 @@ You can find more details in the [dedicated section](teaching).
   2017, Soutenance de M2, Université de Versailles)
 * **Discrete logarithm in finite field of small characteristic** (September
   2017, University of Waterloo)
+
+## Other interests
+
+I also practice and teach **improvisation theatre**, that is why you can also
+find [ressources](impro) (in French) about some "lessons" I gave.

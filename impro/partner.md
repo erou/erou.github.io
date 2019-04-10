@@ -39,10 +39,35 @@ l'improvisateur, c'est la base, du coup on va revenir aux bases.
         - en valorisant ses propositions 
         - en facilitant ses propositions
 
-## Exercices
+## Pourquoi fait-on ça ?
 
+L'objectif un peu en arrière plan c'est toujours d'être dans une démarche où on
+a pas peur. L'année dernière on avait attaqué le problème en étant spontané et
+en ayant des techniques pour ne pas trop réfléchir, comme les status.
+
+Cette fois on va prendre le problème sous un autre angle, on ne va plus essayer
+d'être "bon·ne·s" (ce qui met la pression), mais on va rendre bon son
+partenaire. On déplace le travail sur quelqu'un d'autre, et ce faisant on diminue la pression.
+
+## Jeux
+
+### Échauffement 
+
+- Transfert de prénom; perdre avec force et grâce
+- Samouraï; *perdre avec force et grâce*
 - Le dauphin (si on a le temps); *attitude*
+- "Et voici"; *mettre en valeur son partenaire*
+- "Et voici" v2 : en cercle, on se donne un prénom en désignant, puis on fait
+  "Et voici"; *perdre avec force et grâce*, *mettre en valeur son partenaire*
+
+### Plât principal
+
+- associations d'idées en avant et en arrière; *rendre son partenaire bon;
+  perdre avec force et grâce*
 - Du oofball; *perdre avec force et grace*
 - Des jeux de coordination assez durs; *perdre avec force et grace*
 - Des jeux de type "oui et" ou "c'est très important pour moi ce que tu dis là";
   *écoute, logique chemin*
+- "le naïf", une personne sort et les autres préparent l'histoire; *rendre son
+  partenaire bon, logique chemin*
+- conte à trous; *perdre avec force et grâce, logique chemin*
