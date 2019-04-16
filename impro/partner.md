@@ -60,6 +60,7 @@ partenaire. On déplace le travail sur quelqu'un d'autre, et ce faisant on dimin
 - "Et voici" v2 : en cercle, on se donne un prénom en désignant, puis on fait
   "Et voici"; *perdre avec force et grâce*, *mettre en valeur son partenaire*
 - «Pan !»
+- [Proverbes](http://improvencyclopedia.org/games//Word_at_a_time_proverb.html), un mot à la fois; *perdre avec force et grâce*
 
 ### Plât principal
 
@@ -69,6 +70,10 @@ partenaire. On déplace le travail sur quelqu'un d'autre, et ce faisant on dimin
 - Des jeux de coordination assez durs; *perdre avec force et grace*
 - Des jeux de type "oui et" ou "c'est très important pour moi ce que tu dis là";
   *écoute, logique chemin*
+    - [C'est vrai que ?](https://www.dramaction.qc.ca/fr/cest-vrai-que-2/)
+    - C'est mardi
+    - des propositions 0/0
+    - des propositions 50/50
 - "le naïf", une personne sort et les autres préparent l'histoire; *rendre son
   partenaire bon, logique chemin*
 - conte à trous; *perdre avec force et grâce, logique chemin*
