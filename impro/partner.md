@@ -72,7 +72,7 @@ partenaire. On déplace le travail sur quelqu'un d'autre, et ce faisant on dimin
   *écoute, logique chemin*
     - [C'est vrai que ?](https://www.dramaction.qc.ca/fr/cest-vrai-que-2/)
     - C'est mardi
-    - des propositions 0/0
+    - des propositions 0/100
     - des propositions 50/50
 - "le naïf", une personne sort et les autres préparent l'histoire; *rendre son
   partenaire bon, logique chemin*
