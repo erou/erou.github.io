@@ -6,7 +6,7 @@ visible: false
 ---
 
 J'ai donné des Travaux Dirigés (TD) de cryptographie à l'université de Versailles en licence 3
-d'informatique en 2017-2018. Le cours était assuré par [Christina Boura](http://christina-boura.info/en). Les feuilles d'exercices sont sur cette page. Si vous avez une question, vous pouvez me contacter par
+d'informatique en 2017-2018 puis 2018-2019. Le cours était assuré par [Christina Boura](http://christina-boura.info/en) puis [Léo Perrin](https://who.paris.inria.fr/Leo.Perrin/). Les feuilles d'exercices sont sur cette page. Si vous avez une question, vous pouvez me contacter par
 [e-mail](mailto:{{site.email}}).
 
 1. [Chiffrements historiques](td1.pdf)
@@ -20,7 +20,7 @@ d'informatique en 2017-2018. Le cours était assuré par [Christina Boura](http:
 9. [Protocole Diffie-Hellman](td9.pdf)
 10. [Chiffrement Elgamal](td10.pdf)
 11. [Signatures numériques](td11.pdf)
-12. [OpenSSL](td12.pdf)
+12. [OpenSSL](TD12.zip)
 
 # Une conjecture issue du TD sur les LFSR
 
