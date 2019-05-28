@@ -47,7 +47,7 @@ en ayant des techniques pour ne pas trop réfléchir, comme les status.
 
 Cette fois on va prendre le problème sous un autre angle, on ne va plus essayer
 d'être "bon·ne·s" (ce qui met la pression), mais on va rendre bon son
-partenaire. On déplace le travail sur quelqu'un d'autre, et ce faisant on diminue la pression.
+partenaire. On déplace le travail sur quelqu'un d'autre, et se faisant on diminue la pression.
 
 ## Jeux
 
