@@ -49,7 +49,8 @@ You can find more details in the [dedicated section](teaching).
 
 ## Talks
 
-* [Talk uvsq](talk-uvsq.pdf)
+* [**Standard lattices of compatibly embedded finite fields**](talk-uvsq.pdf)
+  (May 2019, UVSQ)
 * [**Standard lattices of compatibly embedded finite fields**](talk-jncf.pdf)
   (February 2019, JNCF)
 * [**Informal presentation of my thesis**](talk-dim.pdf) (November 2018, Math Innov' day)
