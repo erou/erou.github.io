@@ -17,14 +17,23 @@ that, I like to spread the idea of free software and free licenses in general.
 If you want to know more, you can send me an
 [e-mail](mailto:{{ site.email }}) !
 
+## Papers
+
+**[Standard Lattices of Compatibly Embedded Finite Fields](https://hal.archives-ouvertes.fr/hal-02136976)**
+: ISSAC 2019
+: *with [Luca De Feo](http://defeo.lu/) and [Hugues Randriam](http://perso.telecom-paristech.fr/~randriam/).*
+
 ## Software
 
 I like to play with [Sage](http://www.sagemath.org/) or
 [Nemo](http://nemocas.org/)/[Flint](http://flintlib.org/), and I developped
 some software using it. Details can be found in my [GitHub repositories](https://github.com/erou?tab=repositories).
 
+[**LatticeGFH90**](https://github.com/erou/LatticeGFH90.jl)
+: A Julia/Nemo library to make lattices of compatibly embedded finite fields. 
+
 [**DlogGF**](https://github.com/erou/DlogGF.jl)
-: Library containing algorithms for computing discrete logarithms in finite
+: A Julia/Nemo library containing algorithms for computing discrete logarithms in finite
 fields.
 
 [**normalBases**](https://github.com/erou/normalBases)
