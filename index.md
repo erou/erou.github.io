@@ -58,12 +58,15 @@ You can find more details in the [dedicated section](teaching).
 
 ## Talks
 
+* [**Standard lattices of compatibly embedded finite
+  fields**](talk-issac2019.pdf)
+  (July 2019, ISSAC'19)
 * [**Standard lattices of compatibly embedded finite fields**](talk-uvsq.pdf)
   (May 2019, UVSQ)
 * [**Standard lattices of compatibly embedded finite fields**](talk-jncf.pdf)
   (February 2019, JNCF)
 * [**Informal presentation of my thesis**](talk-dim.pdf) (November 2018, Math Innov' day)
-* [**Latices of compatibly embedded finite fields in Nemo/Flint**](https://mybinder.org/v2/gh/erou/Nemo-embeddings-demo/master?filepath=demo.ipynb) (July 2018, ISSAC 2018)
+* [**Latices of compatibly embedded finite fields in Nemo/Flint**](https://mybinder.org/v2/gh/erou/Nemo-embeddings-demo/master?filepath=demo.ipynb) (July 2018, ISSAC'18)
 * [**Lattices of compatibly embedded finite fields**](talk-gtbac.pdf) (December 2017, GT BAC,
   Télécom ParisTech), [code demo](gtbac.ipynb)
 * **Discrete logarithm in finite field of small characteristic** (October
