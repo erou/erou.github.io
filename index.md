@@ -15,7 +15,7 @@ algebra**, **algorithmic number theory**, and **cryptology**. On top of
 that, I like to spread the idea of free software and free licenses in general.
 
 If you want to know more, you can send me an
-[e-mail](mailto:{{ site.email }}) !
+[e-mail](mailto:{{ site.email }})!
 
 ## Papers
 
@@ -43,12 +43,17 @@ fields.
 
 You can find more details in the [dedicated section](teaching).
 
+2019 -- 2020
+: [Cryptography (L3)](teaching/crypto-l3) (Université de Versailles)
+: [IN200](teaching/in200) (Université de Versailles)
+
 2018 -- 2019
+: [Cryptography (L3)](teaching/crypto-l3) (Université de Versailles)
 : [Cryptography (M1)](teaching/crypto-m1) (Université de Versailles)
 
 2017 -- 2018
-: [Cryptography (L3)](teaching/crypto-l3) (Université de Versailles, 30h)
-: [Cryptography (M1)](teaching/crypto-m1) (Université de Versailles, 10h)
+: [Cryptography (L3)](teaching/crypto-l3) (Université de Versailles)
+: [Cryptography (M1)](teaching/crypto-m1) (Université de Versailles)
 
 2016 -- 2017
 : [Oral examiner in mathematics](teaching/colles) (Lycée Jacques Prévert, 36h)
