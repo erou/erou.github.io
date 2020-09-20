@@ -3,7 +3,6 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
-indexid: index
 ---
 
 <a href="{{ site.url | append: "index" }}"><img src="/fr32.png" alt="fr"></a>
@@ -11,7 +10,17 @@ indexid: index
 
 <img align="right" src="/photo-10x15.jpg" alt="What I look like" width="100px">
 
-Hi, I am Édouard, a PhD student in computer algebra in the teams [MIC2](https://www.infres.telecom-paristech.fr/wp/mic2/) ([INFRES](https://www.infres.telecom-paristech.fr/wp/) - [Télécom ParisTech](https://www.telecom-paristech.fr/)) and [CRYPTO](http://lmv.math.cnrs.fr/teams/crypto/) ([LMV](http://lmv.math.cnrs.fr/) - [Université de Versailles](http://www.uvsq.fr/)). I started my PhD in 2017, under the supervison of [Luca De Feo](http://defeo.lu/), [Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/) and [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
+Hi, I am Édouard, I hold a teaching position ([ATER](https://en.wikipedia.org/wiki/Attach%C3%A9_Temporaire_d%27Enseignement_et_de_Recherche))
+in the mathematics department of Université de Versailles since September 2020.
+Before that, I was a PhD student in computer algebra in the teams
+[MIC2](https://www.infres.telecom-paristech.fr/wp/mic2/)
+([INFRES](https://www.infres.telecom-paristech.fr/wp/) -
+[Télécom ParisTech](https://www.telecom-paristech.fr/)) and
+[CRYPTO](http://lmv.math.cnrs.fr/teams/crypto/)
+([LMV](http://lmv.math.cnrs.fr/) - [Université de Versailles](http://www.uvsq.fr/)).
+I started my PhD in 2017, under the supervison of [Luca De Feo](http://defeo.lu/),
+[Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/) and
+[Éric Schost](https://cs.uwaterloo.ca/~eschost/).
 
 I  am curious about almost everything related to mathematics,
 computer science, and teaching. My main domains of interest are **computer
@@ -22,6 +31,11 @@ If you want to know more, you can send me an
 [e-mail](mailto:{{ site.email }})!
 
 ## Papers
+
+**Trisymmetric multiplication formulae in finite fields**
+: WAIFI 2020
+: *with [Hugues Randriam](http://perso.telecom-paristech.fr/~randriam/).*
+
 
 **[Standard Lattices of Compatibly Embedded Finite Fields](https://hal.archives-ouvertes.fr/hal-02136976)**
 : ISSAC 2019
@@ -47,15 +61,12 @@ fields.
 
 You can find more details in the [dedicated section](teaching).
 
-2019 -- 2020
-: [Cryptography (L3)](/teaching/crypto-l3) (Université de Versailles)
-: [IN200](/teaching/in200) (Université de Versailles)
+2020 -- 2021
+: Calculus (Université de Versailles)
+: [Oral examiner in mathematics](/teaching/colles) (Lycée Robert Doisneau and Parc des loges)
 
-2018 -- 2019
-: [Cryptography (L3)](/teaching/crypto-l3) (Université de Versailles)
-: [Cryptography (M1)](/teaching/crypto-m1) (Université de Versailles)
-
-2017 -- 2018
+2017 -- 2020
+: Introduction to programming (Université de Versailles)
 : [Cryptography (L3)](/teaching/crypto-l3) (Université de Versailles)
 : [Cryptography (M1)](/teaching/crypto-m1) (Université de Versailles)
 

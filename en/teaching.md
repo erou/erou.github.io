@@ -9,6 +9,15 @@ visible: false
 I try to gather informations about what I teach or taught. The pages are all in
 French.
 
+## 2020 -- 2021
+
+Since September 2020, I teach for the mathematics department of Université de
+Versailles and I am an oral examiner in maths for students in
+[CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles)
+in [Lycée Robert Doisneau](/teaching/colles/doisneau) and lycée du
+[Parc des Loges](/teaching/colles/parcdesloges).
+* [Calculus](/teaching/ma100)
+
 ## 2017 -- 2020
 
 I was "moniteur" at Université de Versailles during my PhD

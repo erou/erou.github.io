@@ -69,12 +69,12 @@ corps finis.
 Vous trouverez plus de détails sur la [page dédiée](teaching).
 
 2020 -- 2021
-: [Analyse](teaching/ma100) (L1) (Université de Versailles, 108h)
+: Analyse (L1) (Université de Versailles, 108h)
 : [Colleur](teaching/colles) (Lycée Robert Doisneau et lycée du parc des Loges)
 
 2019 -- 2020
 : [Cryptographie (L3)](teaching/crypto-l3) (Université de Versailles, 36h)
-: [Introduction à la programmation (L1)](teaching/in200) (Université de Versailles, 30h)
+: Introduction à la programmation (L1) (Université de Versailles, 30h)
 
 2017 -- 2019
 : [Cryptographie (L3)](teaching/crypto-l3) (Université de Versailles, 72h)
