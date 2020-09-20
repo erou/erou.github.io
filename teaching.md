@@ -1,38 +1,40 @@
 ---
 layout: default
-title: Teaching
+title: Enseignement
 permalink: /teaching/
 visible: true
 ---
-# Teaching
+# Enseignement
 
-I try to gather informations about what I teach or taught. Be careful, the material might be in French.
+J'essaye de rassembler ici les informations au sujet des cours que j'enseigne,
+ou que j'ai enseigné.
 
-## 2018 -- 2020
+## 2020 -- 2021
 
-I am "moniteur" at Université de Versailles since 2018.
-* [IN200](in200)
-* [Cryptography (L3)](crypto-l3)
-* [Cryptography (M1)](crypto-m1)
+Depuis Septembre 2020, j'enseigne pour le département de mathématiques de l'université de
+Versailles. Je donne également des [colles](colles) au lycée [Robert Doisneau](colles/doisneau), à
+Corbeil-Essonne, et au lycée du [parc des Loges](colles/parcdesloges) d'Évry, respectivement en classe
+d'ATS (Adaptation Technicien Supérieur) et MP (Mathématiques Physique).
 
-## 2017 -- 2018
+## 2017 -- 2020
 
-I taught cryptography at two different levels in Université de Versailles. I
-gave a few hours in M1 and some more in L3, the student were all in computer
-science.
+Pendant mon doctorat, j'ai donné des cours en tant que vacataire puis "moniteur" à l'université
+de Versailles, au sein du département d'informatique. Voici les différents cours
+que j'ai eu l'occasion de donner:
+* Introduction à la programmation en C
 * [Cryptography (L3)](crypto-l3)
 * [Cryptography (M1)](crypto-m1)
 
 ## 2016 -- 2017
 
-I was an oral examiner in maths for second-year students in biology ([BCPST2](https://en.wikipedia.org/wiki/Classe_préparatoire_aux_grandes_écoles#Scientific_CPGE)) in
-the French system
-[CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles). 
+J'ai donné des colles de mathématiques en classe préparatoire pendant ma
+dernière année de Master, en deuxième année BCPST (Biologie Chimie Physique
+Science de la Terre). Vous pouvez retrouver les exercices proposés sur la page
+dédiée.
 * [Exercices](colles)
 
 ## 2013 -- 2014
 
-I was a tutor for first-year student in physics
-([PCSI](https://en.wikipedia.org/wiki/
-Classe_préparatoire_aux_grandes_écoles#Scientific_CPGE)) in Université
+J'ai été tuteur en mathématiques pour des étudiants en première année de classe
+préparatoire, en PCSI (Physique Chimie Science de l'Ingénieur), via l'université
 Paris-Sud.

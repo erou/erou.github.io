@@ -3,85 +3,108 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
+indexid: index
 ---
 
 <img align="right" src="photo-10x15.jpg" alt="What I look like" width="100px">
 
-Hi, I am Édouard, a PhD student in computer algebra in the teams [MIC2](https://www.infres.telecom-paristech.fr/wp/mic2/) ([INFRES](https://www.infres.telecom-paristech.fr/wp/) - [Télécom ParisTech](https://www.telecom-paristech.fr/)) and [CRYPTO](http://lmv.math.cnrs.fr/teams/crypto/) ([LMV](http://lmv.math.cnrs.fr/) - [Université de Versailles](http://www.uvsq.fr/)). I started my PhD in 2017, under the supervison of [Luca De Feo](http://defeo.lu/), [Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/) and [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
+Depuis Septembre 2020, je suis **Attaché Temporaire d'Enseignement et de Recherche**
+(ATER) dans le département de mathématiques de l'[université de Versailles](http://www.uvsq.fr/).
+Avant cela, je travaillais comme doctorant dans les équipes
+[MIC2](https://www.infres.telecom-paristech.fr/wp/mic2/)
+([INFRES](https://www.infres.telecom-paristech.fr/wp/) -
+[Télécom Paris](https://www.telecom-paristech.fr/))
+et [CRYPTO](http://lmv.math.cnrs.fr/teams/crypto/) ([LMV](http://lmv.math.cnrs.fr/) -
+[Université de Versailles](http://www.uvsq.fr/)). J'ai commencé mon doctorat
+en 2017, sous la supervision de [Luca De Feo](http://defeo.lu/),
+[Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/)
+et [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
 
-I  am curious about almost everything related to mathematics,
-computer science, and teaching. My main domains of interest are **computer
-algebra**, **algorithmic number theory**, and **cryptology**. On top of
-that, I like to spread the idea of free software and free licenses in general.
+Mon domaine de recherche se situe entre l'informatique et les mathématiques,
+plus précisément à l'intersection entre
+l'[**algorithmique**](https://fr.wikipedia.org/wiki/Algorithmique), la
+[**cryptologie**](https://fr.wikipedia.org/wiki/Cryptologie), la 
+[**théorie des nombres**](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_nombres
+), et le [**calcul formel**](https://fr.wikipedia.org/wiki/Calcul_formel).
+J'aime particulièrement
+l'enseignement, que ce soit de l'informatique ou des mathématiques, et j'ai un
+intérêt particulier pour les disciplines qui mêlent les deux.
 
-If you want to know more, you can send me an
-[e-mail](mailto:{{ site.email }})!
+N'hésitez pas à m'envoyer un [e-mail](mailto:{{ site.email }}) si vous
+voulez en savoir plus !
 
-## Papers
+## Articles
+
+**Trisymmetric multiplication formulae in finite fields**
+: WAIFI 2020
+: *avec [Hugues Randriam](http://perso.telecom-paristech.fr/~randriam/).*
 
 **[Standard Lattices of Compatibly Embedded Finite Fields](https://hal.archives-ouvertes.fr/hal-02136976)**
 : ISSAC 2019
-: *with [Luca De Feo](http://defeo.lu/) and [Hugues Randriam](http://perso.telecom-paristech.fr/~randriam/).*
+: *avec [Luca De Feo](http://defeo.lu/) et [Hugues Randriam](http://perso.telecom-paristech.fr/~randriam/).*
 
-## Software
+## Logiciels
 
-I like to play with [Sage](http://www.sagemath.org/) or
-[Nemo](http://nemocas.org/)/[Flint](http://flintlib.org/), and I developped
-some software using it. Details can be found in my [GitHub repositories](https://github.com/erou?tab=repositories).
+J'aime jouer avec [Sage](http://www.sagemath.org/) et
+[Nemo](http://nemocas.org/)/[Flint](http://flintlib.org/) et j'ai développé
+quelques logiciels basés sur ces bibliothèques. Vous trouverez plus de
+détails, dont le code source, sur [Github](https://github.com/erou?tab=repositories).
 
 [**LatticeGFH90**](https://github.com/erou/LatticeGFH90.jl)
-: A Julia/Nemo library to make lattices of compatibly embedded finite fields. 
+: Une bibliothèque Julia/Nemo pour calculer des réseaux d'extensions compatibles
+de corps finis.
 
 [**DlogGF**](https://github.com/erou/DlogGF.jl)
-: A Julia/Nemo library containing algorithms for computing discrete logarithms in finite
-fields.
+: Une bibliothèque Julia/Nemo pour calculer des logarithmes discrets dans les
+corps finis.
 
 [**normalBases**](https://github.com/erou/normalBases)
-: Library for computing normal bases based on Flint.
+: Une bibliothèque basée sur Flint pour calculer des bases normales dans les
+corps finis.
 
-## Teaching
+## Enseignement
 
-You can find more details in the [dedicated section](teaching).
+Vous trouverez plus de détails sur la [page dédiée](teaching).
+
+2020 -- 2021
+: [Analyse](teaching/ma100) (L1) (Université de Versailles, 108h)
+: [Colleur](teaching/colles) (Lycée Robert Doisneau et lycée du parc des Loges)
 
 2019 -- 2020
-: [Cryptography (L3)](teaching/crypto-l3) (Université de Versailles)
-: [IN200](teaching/in200) (Université de Versailles)
+: [Cryptographie (L3)](teaching/crypto-l3) (Université de Versailles, 36h)
+: [Introduction à la programmation (L1)](teaching/in200) (Université de Versailles, 30h)
 
-2018 -- 2019
-: [Cryptography (L3)](teaching/crypto-l3) (Université de Versailles)
-: [Cryptography (M1)](teaching/crypto-m1) (Université de Versailles)
-
-2017 -- 2018
-: [Cryptography (L3)](teaching/crypto-l3) (Université de Versailles)
-: [Cryptography (M1)](teaching/crypto-m1) (Université de Versailles)
+2017 -- 2019
+: [Cryptographie (L3)](teaching/crypto-l3) (Université de Versailles, 72h)
+: [Cryptographie (M1)](teaching/crypto-m1) (Université de Versailles, 72h)
 
 2016 -- 2017
-: [Oral examiner in mathematics](teaching/colles) (Lycée Jacques Prévert, 36h)
+: [Colleur](teaching/colles) (Lycée Jacques Prévert, 36h)
 
 2013 -- 2014
-: Tutor in mathematics (Université Paris-Sud, 30h)
+: Tuteur en mathématiques (Université Paris-Sud, 30h)
 
-## Talks
+## Exposés
 
 * [**Standard lattices of compatibly embedded finite
   fields**](talk-issac2019.pdf)
-  (July 2019, ISSAC'19)
+  (Juillet 2019, ISSAC'19)
 * [**Standard lattices of compatibly embedded finite fields**](talk-uvsq.pdf)
-  (May 2019, UVSQ)
+  (Mai 2019, UVSQ)
 * [**Standard lattices of compatibly embedded finite fields**](talk-jncf.pdf)
-  (February 2019, JNCF)
-* [**Informal presentation of my thesis**](talk-dim.pdf) (November 2018, Math Innov' day)
-* [**Latices of compatibly embedded finite fields in Nemo/Flint**](https://mybinder.org/v2/gh/erou/Nemo-embeddings-demo/master?filepath=demo.ipynb) (July 2018, ISSAC'18)
-* [**Lattices of compatibly embedded finite fields**](talk-gtbac.pdf) (December 2017, GT BAC,
-  Télécom ParisTech), [code demo](gtbac.ipynb)
-* **Discrete logarithm in finite field of small characteristic** (October
+  (Février 2019, JNCF)
+* [**Présentation informelle de ma thèse**](talk-dim.pdf) (Novembre 2018, Math Innov' day)
+* [**Latices of compatibly embedded finite fields in Nemo/Flint**](https://mybinder.org/v2/gh/erou/Nemo-embeddings-demo/master?filepath=demo.ipynb) (Juillet 2018, ISSAC'18)
+* [**Lattices of compatibly embedded finite fields**](talk-gtbac.pdf) (Decembre 2017, GT BAC,
+  Télécom Paris)
+* **Discrete logarithm in finite field of small characteristic** (Octobre
   2017, Magistère, Université Paris-Sud)
-* **Discrete logarithm in finite field of small characteristic** (September
+* **Discrete logarithm in finite field of small characteristic** (Septembre
   2017, Soutenance de M2, Université de Versailles)
-* **Discrete logarithm in finite field of small characteristic** (September
+* **Discrete logarithm in finite field of small characteristic** (Septembre
   2017, University of Waterloo)
 
-## Other interests
+## Intérêts divers
 
-I also practice and teach **improvisation theatre**, that is why you can also
-find [ressources](impro) (in French) about some "lessons" I gave.
+Je pratique aussi le **théâtre d'improvisation**, c'est pourquoi vous
+trouverez des [ressources](impro) à propos de cours que j'ai donné.
