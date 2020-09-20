@@ -4,7 +4,7 @@
 
     <!--<a class="site-title" href="{{ "/" | relative_url}}">{{ site.title |
 	    escape }}</a> -->
-    <a class="site-title" href="{{ "/index" | relative_url}}"><img src="/house.png"
+    <a class="site-title" href="{{ "index" | prepend: page.baseurl }}"><img src="/house.png"
         alt="Home" style="width:40px;height:40px"></a>
 
     <nav class="site-nav">
@@ -17,12 +17,18 @@
       </span>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
+          <a class="page-link" href={{ "impro" | prepend: page.baseurl }}>
+              {{ site.impro[page.lang] }} </a>
+          <a class="page-link" href={{ "teaching" | prepend: page.baseurl }}>
+              {{ site.teaching[page.lang] }}</a>
+
+<!--        {% for my_page in site.pages %}
           {% if my_page.visible %}
           <a class="page-link" href="{{ my_page.url | relative_url }}">{{
 		  my_page.title | escape }}</a>
           {% endif %}
         {% endfor %}
+-->
       </div>
     </nav>
 

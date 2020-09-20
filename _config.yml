@@ -32,16 +32,23 @@ exclude:
   - Gemfile
   - Gemfile.lock
 # Multi-langage feature
-#defaults:
-#    -
-#scope:
-#    path: en
-#    values:
-#        lang: fr
-#        base-url: "/"
-#    -
-#scope:
-#    path: en
-#    values:
-#        lang: en
-#        base-url: "/en/"
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: "fr"
+      baseurl: "/"
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
+      baseurl: "/en/"
+
+teaching:
+  fr: "Enseignement"
+  en: "Teaching"
+impro:
+  fr: "Impro"
+  en: "improv"
