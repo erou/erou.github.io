@@ -14,4 +14,4 @@ une erreur, n'hésitez pas à me contacter par [e-mail](mailto:{{ site.email }})
 Amusez-vous bien !
 
 1. [Calculs algébriques, raisonnements logiques, quantificateurs,
-   ensembles]({{ page.url | append: "exoCalculs.pdf" }})
+   ensembles]({{ page.url | append: "/exoCalculs.pdf" }})
