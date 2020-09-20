@@ -16,7 +16,7 @@ Versailles and I am an oral examiner in maths for students in
 [CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles)
 in [Lycée Robert Doisneau](/teaching/colles/doisneau) and lycée du
 [Parc des Loges](/teaching/colles/parcdesloges).
-* [Calculus](/teaching/ma100)
+* Calculus
 
 ## 2017 -- 2020
 

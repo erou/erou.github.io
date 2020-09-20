@@ -11,7 +11,8 @@ indexid: index
 <img align="right" src="photo-10x15.jpg" alt="What I look like" width="100px">
 
 Depuis Septembre 2020, je suis **Attaché Temporaire d'Enseignement et de Recherche**
-(ATER) dans le département de mathématiques de l'[université de Versailles](http://www.uvsq.fr/).
+([ATER](https://fr.wikipedia.org/wiki/Attach%C3%A9_temporaire_d%27enseignement_et_de_recherche))
+dans le département de mathématiques de l'[université de Versailles](http://www.uvsq.fr/).
 Avant cela, je travaillais comme doctorant dans les équipes
 [MIC2](https://www.infres.telecom-paristech.fr/wp/mic2/)
 ([INFRES](https://www.infres.telecom-paristech.fr/wp/) -
