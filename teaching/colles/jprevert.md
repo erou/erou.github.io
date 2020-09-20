@@ -17,7 +17,7 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
 disponible. En particulier les dernières séances ont toutes été confectionnées
 par Pascal.*
 
-1. [Rappels d'analyse](exoRappelsAnalyse.pdf).
+1. [Rappels d'analyse]({{ page.url | append: "/exoRappelsAnalyse.pdf" }}).
 2. [Intégrales impropres](exoIntImpropres.pdf).
 3. [Espaces vectoriels](exoEspacesVectoriels.pdf).
 4. [Variables aléatoires à densité](exoVariablesDensite.pdf).
