@@ -5,8 +5,8 @@
 layout: default
 indexid: index
 ---
-<a href="{{ site.url | append: "/index" }}"><img src="/fr32.png" alt="fr"></a>
-<a href="{{ site.url | append: "/en/index" }}"><img src="/uk32.png" alt="en"></a>
+<a href="{{ site.url | append: "index" }}"><img src="/fr32.png" alt="fr"></a>
+<a href="{{ site.url | append: "en/index" }}"><img src="/uk32.png" alt="en"></a>
 
 <img align="right" src="photo-10x15.jpg" alt="What I look like" width="100px">
 
