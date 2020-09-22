@@ -31,7 +31,7 @@ J'ai donné des colles de mathématiques en classe préparatoire pendant ma
 dernière année de Master, en deuxième année BCPST (Biologie Chimie Physique
 Science de la Terre). Vous pouvez retrouver les exercices proposés sur la page
 dédiée.
-* [Exercices](colles)
+* [Exercices](colles/jprevert)
 
 ## 2013 -- 2014
 
