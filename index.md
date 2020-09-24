@@ -53,6 +53,10 @@ J'aime jouer avec [Sage](http://www.sagemath.org/) et
 quelques logiciels basés sur ces bibliothèques. Vous trouverez plus de
 détails, dont le code source, sur [Github](https://github.com/erou?tab=repositories).
 
+[**TriSym**](https://github.com/erou/TriSym.jl)
+: Une bibliothèque Julia/Nemo pour calculer des formules 
+trisymmétriques pour la multiplication dans les corps finis.
+
 [**LatticeGFH90**](https://github.com/erou/LatticeGFH90.jl)
 : Une bibliothèque Julia/Nemo pour calculer des réseaux d'extensions compatibles
 de corps finis.
@@ -89,6 +93,8 @@ Vous trouverez plus de détails sur la [page dédiée](teaching).
 
 ## Exposés
 
+* [Trisymmetric multiplication formulae in finite fields](talk-waifi.pdf)
+  (Juillet 2020, WAIFI 2020)
 * [**Standard lattices of compatibly embedded finite
   fields**](talk-issac2019.pdf)
   (Juillet 2019, ISSAC'19)

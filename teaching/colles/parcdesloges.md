@@ -11,3 +11,6 @@ Physique). Vous pouvez retrouver les exercices proposés, et même un peu plus,
 ci-dessous, ils sont regroupés par sujet. Si vous avez une question ou
 constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter par
 [e-mail](mailto:{{site.email}}). Amusez-vous bien !
+
+1. [Structures algébriques]({{ page.url | append:
+   "/exoStructuresAlgebriques.pdf" }})

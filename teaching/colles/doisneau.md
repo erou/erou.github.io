@@ -15,3 +15,4 @@ Amusez-vous bien !
 
 1. [Calculs algébriques, raisonnements logiques, quantificateurs,
    ensembles]({{ page.url | append: "/exoCalculs.pdf" }})
+2. [Étude de fonction]({{ page.url | append: "/exoEtudeFonction.pdf" }})

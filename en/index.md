@@ -47,6 +47,10 @@ I like to play with [Sage](http://www.sagemath.org/) or
 [Nemo](http://nemocas.org/)/[Flint](http://flintlib.org/), and I developped
 some software using it. Details can be found in my [GitHub repositories](https://github.com/erou?tab=repositories).
 
+[**TriSym**](https://github.com/erou/TriSym.jl)
+: A Julia/Nemo library to compute trisymmetric decompositions for the
+multiplication in finite fields.
+
 [**LatticeGFH90**](https://github.com/erou/LatticeGFH90.jl)
 : A Julia/Nemo library to make lattices of compatibly embedded finite fields. 
 
@@ -78,6 +82,8 @@ You can find more details in the [dedicated section](teaching).
 
 ## Talks
 
+* [Trisymmetric multiplication formulae in finite fields](/talk-waifi.pdf)
+  (July 2020, WAIFI 2020)
 * [**Standard lattices of compatibly embedded finite
   fields**](/talk-issac2019.pdf)
   (July 2019, ISSAC'19)
