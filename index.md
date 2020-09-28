@@ -93,7 +93,7 @@ Vous trouverez plus de détails sur la [page dédiée](teaching).
 
 ## Exposés
 
-* [Trisymmetric multiplication formulae in finite fields](talk-waifi.pdf)
+* [**Trisymmetric multiplication formulae in finite fields**](talk-waifi.pdf)
   (Juillet 2020, WAIFI 2020)
 * [**Standard lattices of compatibly embedded finite
   fields**](talk-issac2019.pdf)
