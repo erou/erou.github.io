@@ -14,3 +14,5 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
 
 1. [Structures algébriques]({{ page.url | append:
    "/exoStructuresAlgebriques.pdf" }})
+2. [Réduction d'endomorphismes]({{ page.url | append:
+   "/exoReduction.pdf" }})
