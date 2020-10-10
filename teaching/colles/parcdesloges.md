@@ -16,3 +16,5 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
    "/exoStructuresAlgebriques.pdf" }})
 2. [Réduction d'endomorphismes]({{ page.url | append:
    "/exoReduction.pdf" }})
+3. [Réduction d'endomorphismes 2]({{ page.url | append:
+   "/exoReduction2.pdf" }})

@@ -17,3 +17,4 @@ Amusez-vous bien !
    ensembles]({{ page.url | append: "/exoCalculs.pdf" }})
 2. [Étude de fonction]({{ page.url | append: "/exoEtudeFonction.pdf" }})
 3. [Étude de fonction 2]({{ page.url | append: "/exoEtudeFonction2.pdf" }})
+4. [Étude de fonction, fonctions trigonométriques]({{ page.url | append: "/exoFonctionsTrigo.pdf" }})
