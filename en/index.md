@@ -82,6 +82,8 @@ You can find more details in the [dedicated section](teaching).
 
 ## Talks
 
+* [**Trisymmetric multiplication formulas in finite
+  fields**](/talk-crypto.pdf)(October 2020, Cryptography seminar, Versailles)
 * [**Trisymmetric multiplication formulae in finite fields**](/talk-waifi.pdf)
   (July 2020, WAIFI 2020)
 * [**Standard lattices of compatibly embedded finite
