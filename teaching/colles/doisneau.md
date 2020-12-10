@@ -18,3 +18,7 @@ Amusez-vous bien !
 2. [Étude de fonction]({{ page.url | append: "/exoEtudeFonction.pdf" }})
 3. [Étude de fonction 2]({{ page.url | append: "/exoEtudeFonction2.pdf" }})
 4. [Étude de fonction, fonctions trigonométriques]({{ page.url | append: "/exoFonctionsTrigo.pdf" }})
+5. [Fonctions trigonométriques, nombres complexes]({{ page.url | append: "/exoTrigoComplexes.pdf" }})
+6. [Nombres complexes 2]({{ page.url | append: "/exoComplexes2.pdf" }})
+7. [Nombres complexes, sommes et produits]({{ page.url | append:
+   "/exoComplexesSommesProduits.pdf" }})

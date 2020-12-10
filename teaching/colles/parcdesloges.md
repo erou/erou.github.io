@@ -18,3 +18,15 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
    "/exoReduction.pdf" }})
 3. [Réduction d'endomorphismes 2]({{ page.url | append:
    "/exoReduction2.pdf" }})
+4. [Réduction d'endomorphismes 3]({{ page.url | append:
+   "/exoReduction3.pdf" }})
+5. [Topologie des espaces vectoriels normés]({{ page.url | append:
+   "/exoTopologieEVN.pdf" }})
+6. [Topologie des espaces vectorels normés 2]({{ page.url | append:
+   "/exoTopologieEVN2.pdf" }})
+7. [Topologie des espaces vectoriels normés, séries]({{ page.url | append:
+   "/exoTopologieEVNSéries.pdf" }})
+8. [Séries numériques]({{ page.url | append:
+   "/exoSériesNumériques.pdf" }})
+9. [Suite et série de fonctions]({{ page.url | append:
+   "/exoSuitesSériesFonctions.pdf" }})
