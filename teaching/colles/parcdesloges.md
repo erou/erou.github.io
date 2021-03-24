@@ -30,3 +30,21 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
    "/exoSériesNumériques.pdf" }})
 9. [Suite et série de fonctions]({{ page.url | append:
    "/exoSuitesSériesFonctions.pdf" }})
+10. [Séries entières]({{ page.url | append:
+   "/exoSériesEntières.pdf" }})
+11. [Séries entières et espaces euclidiens]({{ page.url | append:
+   "/exoSériesEntièresEspacesEuclidiens.pdf" }})
+12. [Espaces préhilbertiens réels, endomorphismes des espaces euclidiens]({{ page.url | append:
+   "/exoPrehilbEucli.pdf" }})
+13. [Endomorphismes des espaces euclidiens, familles sommables.]({{ page.url | append:
+   "/exoEucliFamillesSommables.pdf" }})
+14. [Intégration sur un intervalle quelconque]({{ page.url | append:
+   "/exoIntégration.pdf" }})
+15. [Intégration sur un intervalle quelconque 2]({{ page.url | append:
+   "/exoIntégration2.pdf" }})
+16. [Convexité et intégration sur un intervalle quelconque]({{ page.url | append:
+   "/exoConvexité.pdf" }})
+17. [Espaces probabilisés]({{ page.url | append:
+   "/exoEspacesProbabilisés.pdf" }})
+18. [Variables aléatoires discrètes]({{ page.url | append:
+   "/exoVAD.pdf" }})
