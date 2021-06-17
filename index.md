@@ -74,7 +74,10 @@ corps finis.
 Vous trouverez plus de détails sur la [page dédiée](teaching).
 
 2020 -- 2021
-: Analyse (L1) (Université de Versailles, 108h)
+: Introduction à la théorie de l'information (Université de Versailles, 30h)
+: Mathématiques Approfondies en L1 (Université de Versailles, 18h)
+: Mathématiques Assistées par Ordinateur en L2 (Université de Versailles, 36h)
+: Analyse en L1 (Université de Versailles, 108h)
 : [Colleur](teaching/colles) (Lycée Robert Doisneau et lycée du parc des Loges)
 
 2019 -- 2020

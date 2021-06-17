@@ -12,9 +12,16 @@ ou que j'ai enseigné.
 ## 2020 -- 2021
 
 Depuis Septembre 2020, j'enseigne pour le département de mathématiques de l'université de
-Versailles. Je donne également des [colles](colles) au lycée [Robert Doisneau](colles/doisneau), à
+Versailles. Les cours que j'ai donné cette année sont les suivants.
+
+* Introduction à la théorie de l'information
+* Mathématiques Assistées par Ordinateur
+* Mathématiques approfondies
+* Analyse
+
+Je donne également des [colles](colles) au lycée [Robert Doisneau](colles/doisneau), à
 Corbeil-Essonne, et au lycée du [parc des Loges](colles/parcdesloges) d'Évry, respectivement en classe
-d'ATS (Adaptation Technicien Supérieur) et MP (Mathématiques Physique).
+d'[ATS](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_adaptation_technicien_sup%C3%A9rieur) et [MP](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_math%C3%A9matiques_et_physique).
 
 ## 2017 -- 2020
 
