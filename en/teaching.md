@@ -12,11 +12,17 @@ French.
 ## 2020 -- 2021
 
 Since September 2020, I teach for the mathematics department of Université de
-Versailles and I am an oral examiner in maths for students in
+Versailles. The courses I taught are the following.
+
+* In-depth mathematics
+* Scientific computing (Université de Versailles)
+* Introduction to Information Theory (Université de Versailles)
+* Calculus
+
+I am also an oral examiner in maths for students in
 [CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles)
 in [Lycée Robert Doisneau](/teaching/colles/doisneau) and lycée du
 [Parc des Loges](/teaching/colles/parcdesloges).
-* Calculus
 
 ## 2017 -- 2020
 

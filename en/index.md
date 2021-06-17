@@ -66,6 +66,9 @@ fields.
 You can find more details in the [dedicated section](teaching).
 
 2020 -- 2021
+: In-depth mathematics
+: Scientific computing (Université de Versailles)
+: Introduction to Information Theory (Université de Versailles)
 : Calculus (Université de Versailles)
 : [Oral examiner in mathematics](/teaching/colles) (Lycée Robert Doisneau and Parc des loges)
 
