@@ -37,7 +37,7 @@ thèse, nous généralisons les résultats connus pour la complexité bilinéair
 nouveau type de complexité, qualifiée d'hypersymétrique. Nous fournissons un
 algorithme pour calculer la complexité hypersymétrique de la multiplication dans
 l'extension $$\mathbb F_{p^k}$$, ainsi qu'une implémentation et son analyse. Nous
-généralisons également aux cas hypersymétrique et multilinéaires des résultats
+généralisons également aux cas hypersymétrique et multilinéaire des résultats
 asymptotiques connus dans le cas de la complexité bilinéaire classique.
 
 Dans la seconde partie, notre but est de construire une structure de donnée
