@@ -39,12 +39,11 @@ l’arithmétique d’une unique extension de corps fini $$\mathbb F_{p^k}$$. Un
 manière d'estimer la complexité d'un algorithme dans une extension est de
 compter le nombre de multiplications effectuées dans le corps de base $$\mathbb
 F_p$$. Ce modèle est connu sous le nom de complexité bilinéaire. Dans cette
-thèse, nous généralisons les résultats connus pour la complexité bilinéaire à un
-nouveau type de complexité, qualifiée d'hypersymétrique. Nous fournissons un
+thèse, nous généralisons les résultats connus pour la complexité bilinéaire à de 
+nouveaux types de complexités, qualifiées de complexité hypersymmétrique et de
+complexité multilinéaire. Nous fournissons également un
 algorithme pour calculer la complexité hypersymétrique de la multiplication dans
-l'extension $$\mathbb F_{p^k}$$, ainsi qu'une implémentation et son analyse. Nous
-généralisons également aux cas hypersymétrique et multilinéaire des résultats
-asymptotiques connus dans le cas de la complexité bilinéaire classique.
+l'extension $$\mathbb F_{p^k}$$, ainsi qu'une implémentation et son analyse.
 
 Dans la seconde partie, notre but est de construire une structure de donnée
 efficace pour représenter plusieurs extensions simultanément, ainsi que les
