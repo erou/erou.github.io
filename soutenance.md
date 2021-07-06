@@ -19,6 +19,12 @@ permalink: /soutenance/
 | M. Hugues RANDRIAMBOLOLONA | ANSSI et Télécom Paris                                           | Invité                |
 | M. Eric SCHOST             | University of Waterloo                                           | Co-directeur de thèse |
 
+**Lien pour la vidéo-conférence :** [https://telecom-paris.zoom.us/j/94444588132?pwd=ai9RcWRBckVIcDc5RXdzQlZhZjErdz09](https://telecom-paris.zoom.us/j/94444588132?pwd=ai9RcWRBckVIcDc5RXdzQlZhZjErdz09)
+
+**ID de réunion :** 944 4458 8132
+
+**Code secret :** 562151
+
 **Mots-clés :** calcul formel, corps finis, extensions
 
 **Résumé :** Les corps finis sont omniprésents en cryptographie et en théorie
