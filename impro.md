@@ -2,7 +2,7 @@
 title: Impro
 layout: default
 permalink: /impro/
-visible: true 
+visible: true
 ---
 
 # Ressources liées à l'impro
