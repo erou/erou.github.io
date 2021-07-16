@@ -13,15 +13,6 @@ indexid: index
 Depuis Septembre 2020, je suis **Attaché Temporaire d'Enseignement et de Recherche**
 ([ATER](https://fr.wikipedia.org/wiki/Attach%C3%A9_temporaire_d%27enseignement_et_de_recherche))
 dans le département de mathématiques de l'[université de Versailles](http://www.uvsq.fr/).
-Avant cela, je travaillais comme doctorant dans les équipes
-[MIC2](https://www.infres.telecom-paristech.fr/wp/mic2/)
-([INFRES](https://www.infres.telecom-paristech.fr/wp/) -
-[Télécom Paris](https://www.telecom-paristech.fr/))
-et [CRYPTO](http://lmv.math.cnrs.fr/teams/crypto/) ([LMV](http://lmv.math.cnrs.fr/) -
-[Université de Versailles](http://www.uvsq.fr/)). J'ai commencé mon doctorat
-en 2017, sous la supervision de [Luca De Feo](http://defeo.lu/),
-[Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/)
-et [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
 
 Mon domaine de recherche se situe entre l'informatique et les mathématiques,
 plus précisément à l'intersection entre
@@ -36,9 +27,18 @@ intérêt particulier pour les disciplines qui mêlent les deux.
 N'hésitez pas à m'envoyer un [e-mail](mailto:{{ site.email }}) si vous
 voulez en savoir plus !
 
+## Doctorat
+
+**Arithmétique efficace des extensions de corps finis**
+: encadré par [Luca De Feo](http://defeo.lu/),
+[Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/)
+et [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
+: [Manuscrit](thesis-off.pdf), [slides](talk-defense.pdf)
+
+
 ## Articles
 
-**Trisymmetric multiplication formulae in finite fields**
+**[Trisymmetric multiplication formulae in finite fields](tri-sym.pdf)**
 : WAIFI 2020
 : *avec [Hugues Randriam](http://perso.telecom-paristech.fr/~randriam/).*
 
@@ -96,6 +96,8 @@ Vous trouverez plus de détails sur la [page dédiée](teaching).
 
 ## Exposés
 
+* [**Efficient Arithmetic of Finite Field Extensions**](talk-defense.pdf)
+  (Juillet 2021, soutenance de thèse)
 * [**Trisymmetric multiplication formulas in finite
   fields**](talk-crypto.pdf)(Octobre 2020, Séminaire de cryptographie de
 Versailles)

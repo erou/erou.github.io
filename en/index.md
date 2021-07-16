@@ -12,27 +12,26 @@ layout: default
 
 Hi, I am Édouard, I hold a teaching position ([ATER](https://en.wikipedia.org/wiki/Attach%C3%A9_Temporaire_d%27Enseignement_et_de_Recherche))
 in the mathematics department of Université de Versailles since September 2020.
-Before that, I was a PhD student in computer algebra in the teams
-[MIC2](https://www.infres.telecom-paristech.fr/wp/mic2/)
-([INFRES](https://www.infres.telecom-paristech.fr/wp/) -
-[Télécom ParisTech](https://www.telecom-paristech.fr/)) and
-[CRYPTO](http://lmv.math.cnrs.fr/teams/crypto/)
-([LMV](http://lmv.math.cnrs.fr/) - [Université de Versailles](http://www.uvsq.fr/)).
-I started my PhD in 2017, under the supervison of [Luca De Feo](http://defeo.lu/),
-[Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/) and
-[Éric Schost](https://cs.uwaterloo.ca/~eschost/).
 
-I  am curious about almost everything related to mathematics,
-computer science, and teaching. My main domains of interest are **computer
-algebra**, **algorithmic number theory**, and **cryptology**. On top of
+I am curious about almost everything related to mathematics,
+computer science, and teaching. My main domains of interest are [**computer
+algebra**](https://en.wikipedia.org/wiki/Computer_algebra), [**algorithmic number theory**](https://en.wikipedia.org/wiki/Computational_number_theory), and [**cryptology**](https://en.wikipedia.org/wiki/Cryptography). On top of
 that, I like to spread the idea of free software and free licenses in general.
 
 If you want to know more, you can send me an
 [e-mail](mailto:{{ site.email }})!
 
+## PhD
+
+**Efficient Arithmetic of Finite Field Extensions**
+: Advisors: [Luca De Feo](http://defeo.lu/),
+[Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/)
+and [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
+: [Manuscript](/thesis-off.pdf), [slides](/talk-defense.pdf)
+
 ## Papers
 
-**Trisymmetric multiplication formulae in finite fields**
+**[Trisymmetric multiplication formulae in finite fields](/tri-sym.pdf)**
 : WAIFI 2020
 : *with [Hugues Randriam](http://perso.telecom-paristech.fr/~randriam/).*
 
@@ -85,6 +84,8 @@ You can find more details in the [dedicated section](teaching).
 
 ## Talks
 
+* [**Efficient Arithmetic of Finite Field Extensions**](/talk-defense.pdf)
+  (July 2021, PhD defense)
 * [**Trisymmetric multiplication formulas in finite
   fields**](/talk-crypto.pdf)(October 2020, Cryptography seminar, Versailles)
 * [**Trisymmetric multiplication formulae in finite fields**](/talk-waifi.pdf)
