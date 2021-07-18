@@ -98,6 +98,8 @@ Vous trouverez plus de détails sur la [page dédiée](teaching).
 
 * [**Efficient Arithmetic of Finite Field Extensions**](talk-defense.pdf)
   (Juillet 2021, soutenance de thèse)
+* [**The mathematics of secrets**](talk-msp.pdf)
+  (Juillet 2021, École d'été *Mathematical Summer in Paris*)
 * [**Trisymmetric multiplication formulas in finite
   fields**](talk-crypto.pdf)(Octobre 2020, Séminaire de cryptographie de
 Versailles)
