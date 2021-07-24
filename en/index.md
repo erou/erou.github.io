@@ -27,7 +27,7 @@ If you want to know more, you can send me an
 : Advisors: [Luca De Feo](http://defeo.lu/),
 [Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/)
 and [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
-: [Manuscript](/thesis-off.pdf), [slides](/talk-defense.pdf)
+: [**Manuscript**](/thesis-off.pdf), [slides](/talk-defense.pdf)
 
 ## Papers
 

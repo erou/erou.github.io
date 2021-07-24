@@ -33,7 +33,7 @@ voulez en savoir plus !
 : encadré par [Luca De Feo](http://defeo.lu/),
 [Hugues Randriambololona](http://perso.telecom-paristech.fr/~randriam/)
 et [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
-: [Manuscrit](thesis-off.pdf), [slides](talk-defense.pdf)
+: [**Manuscrit**](thesis-off.pdf), [slides](talk-defense.pdf)
 
 
 ## Articles
