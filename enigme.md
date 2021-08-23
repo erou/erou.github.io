@@ -16,7 +16,7 @@ permalink: /enigme
 
 *O*rnant ces quelques lignes
 
-*R*éfléchissez et le chiffre suivant
+*R*éfléchissez et le nombre suivant
 
 *G*uidera vos pas
 
