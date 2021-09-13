@@ -87,7 +87,8 @@ You can find more details in the [dedicated section](teaching).
 * [**Efficient Arithmetic of Finite Field Extensions**](/talk-defense.pdf)
   (July 2021, PhD defense)
  * [**The mathematics of secrets**](/talk-msp.pdf)
-  (July 2021, Mathematical Summer in Paris)
+  (July 2021, Mathematical Summer in Paris),
+[video](https://www.mathematicalsummerinparis.fr/wp-content/uploads/2021/07/MSP2021Rousseaufinal.mp4)
 * [**Trisymmetric multiplication formulas in finite
   fields**](/talk-crypto.pdf)(October 2020, Cryptography seminar, Versailles)
 * [**Trisymmetric multiplication formulae in finite fields**](/talk-waifi.pdf)
