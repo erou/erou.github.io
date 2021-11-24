@@ -9,18 +9,20 @@ visible: false
 I try to gather informations about what I teach or taught. The pages are all in
 French.
 
-## 2020 -- 2021
+## 2020 -- 2022
 
 Since September 2020, I teach for the mathematics department of Université de
 Versailles. The courses I taught are the following.
 
-* In-depth mathematics
-* Scientific computing (Université de Versailles)
-* Introduction to Information Theory (Université de Versailles)
+* Introduction to Information Theory
+* Scientific computing
+* Advanced mathematics
 * Calculus
+* Algebraic structures
 
 I am also an oral examiner in maths for students in
-[CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles)
+[CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles).
+In 2020 -- 2021, I was teaching
 in [Lycée Robert Doisneau](/teaching/colles/doisneau) and lycée du
 [Parc des Loges](/teaching/colles/parcdesloges).
 
