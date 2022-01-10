@@ -22,9 +22,8 @@ Versailles. The courses I taught are the following.
 
 I am also an oral examiner in maths for students in
 [CPGE](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles).
-In 2020 -- 2021, I was teaching
-in [Lycée Robert Doisneau](/teaching/colles/doisneau) and lycée du
-[Parc des Loges](/teaching/colles/parcdesloges).
+Since 2020, I am teaching in lycée du
+[Parc des Loges](/teaching/colles/parcdesloges), and I also taught in [Lycée Robert Doisneau](/teaching/colles/doisneau) in 2020 -- 2021.
 
 ## 2017 -- 2020
 

@@ -29,7 +29,7 @@ If you want to know more, you can send me an
 and [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
 : [**Manuscript**](/thesis-off.pdf), [slides](/talk-defense.pdf)
 
-## Papers
+## Publications
 
 **[Trisymmetric multiplication formulae in finite fields](/tri-sym.pdf)**
 : WAIFI 2020
@@ -39,6 +39,11 @@ and [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
 **[Standard Lattices of Compatibly Embedded Finite Fields](https://hal.archives-ouvertes.fr/hal-02136976)**
 : ISSAC 2019
 : *with [Luca De Feo](http://defeo.lu/) and [Hugues Randriam](http://perso.telecom-paristech.fr/~randriam/).*
+
+**[Lattices of compatibly embedded finite fields in Nemo/Flint](/software-abstract.pdf)**
+: ISSAC 2018
+: *avec [Luca De Feo](http://defeo.lu/) et [Hugues Randriam](http://perso.telecom-paristech.fr/          ~randriam/).*
+
 
 ## Software
 
