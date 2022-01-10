@@ -14,5 +14,5 @@ ci-dessous. Si vous avez une question ou
 constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter par
 [e-mail](mailto:{{site.email}}). Amusez-vous bien !
 
-* [**Exercices en MPSI**](mpsi)
-* [**Exercices en MP**](mp)
+* [**Exercices en MPSI**]({{page.url | append: "/mpsi"}})
+* [**Exercices en MP**]({{page.url | append: "/mp"}})

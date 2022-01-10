@@ -42,7 +42,7 @@ and [Éric Schost](https://cs.uwaterloo.ca/~eschost/).
 
 **[Lattices of compatibly embedded finite fields in Nemo/Flint](/software-abstract.pdf)**
 : ISSAC 2018
-: *avec [Luca De Feo](http://defeo.lu/) et [Hugues Randriam](http://perso.telecom-paristech.fr/          ~randriam/).*
+: *with [Luca De Feo](http://defeo.lu/) et [Hugues Randriam](http://perso.telecom-paristech.fr/          ~randriam/).*
 
 
 ## Software
