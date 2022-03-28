@@ -53,5 +53,5 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
    "/DeveloppementsLimites.pdf" }})
 20. [Matrices]({{ page.url | append:
    "/Matrices.pdf" }})
-<!-- 21. [Représentation matricielle]({{ page.url | append:
-   "/RepresentationMatricielle.pdf" }})!-->
+21. [Représentation matricielle]({{ page.url | append:
+   "/RepresentationMatricielle.pdf" }})
