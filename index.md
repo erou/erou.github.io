@@ -78,11 +78,12 @@ corps finis.
 
 Vous trouverez plus de détails sur la [page dédiée](teaching).
 
-2020 -- 2021
-: Introduction à la théorie de l'information (Université de Versailles, 30h)
+2020 -- 2022
+: Introduction à la théorie de l'information en M1 (Université de Versailles, 60h)
+: Structures algébriques en L3 (Université de Versailles, 36h)
 : Mathématiques Approfondies en L1 (Université de Versailles, 18h)
 : Mathématiques Assistées par Ordinateur en L2 (Université de Versailles, 36h)
-: Analyse en L1 (Université de Versailles, 108h)
+: Analyse en L1 (Université de Versailles, 216h)
 : [Colleur](teaching/colles) (Lycée Robert Doisneau et lycée du parc des Loges)
 
 2019 -- 2020
@@ -105,7 +106,7 @@ Vous trouverez plus de détails sur la [page dédiée](teaching).
   (Juillet 2021, soutenance de thèse)
 * [**The mathematics of secrets**](talk-msp.pdf)
   (Juillet 2021, École d'été *Mathematical Summer in Paris*),
-[video](https://www.mathematicalsummerinparis.fr/wp-content/uploads/2021/07/MSP2021Rousseaufinal.mp4)
+[video](https://www.youtube.com/watch?v=QIjFARp9F20&list=PLbq-TeAWSXhNyKYPFb-oNZ4O9o6srYZzG&index=11)
 * [**Trisymmetric multiplication formulas in finite
   fields**](talk-crypto.pdf)(Octobre 2020, Séminaire de cryptographie de
 Versailles)

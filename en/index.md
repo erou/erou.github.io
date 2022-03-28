@@ -69,7 +69,8 @@ fields.
 
 You can find more details in the [dedicated section](teaching).
 
-2020 -- 2021
+2020 -- 2022
+: Algebraic structures
 : In-depth mathematics
 : Scientific computing (Université de Versailles)
 : Introduction to Information Theory (Université de Versailles)

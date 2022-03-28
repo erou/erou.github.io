@@ -37,3 +37,21 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
    "/EspacesVectoriels.pdf" }})
 12. [Espaces vectoriels de dimension finie]({{ page.url | append:
    "/DimensionFinie.pdf" }})
+13. [Applications linéaires]({{ page.url | append:
+   "/AppliLin.pdf" }})
+14. [Limites et continuité]({{ page.url | append:
+   "/LimitesCont.pdf" }})
+15. [Dérivabilité et convexité]({{ page.url | append:
+   "/Derivable.pdf" }})
+16. [Arithmétique]({{ page.url | append:
+   "/Arithmetique.pdf" }})
+17. [Polynômes]({{ page.url | append:
+   "/Polynomes.pdf" }})
+18. [Polynômes 2]({{ page.url | append:
+   "/Polynomes2.pdf" }})
+19. [Analyse asymptotique et développements limités]({{ page.url | append:
+   "/DeveloppementsLimites.pdf" }})
+20. [Matrices]({{ page.url | append:
+   "/Matrices.pdf" }})
+<!-- 21. [Représentation matricielle]({{ page.url | append:
+   "/RepresentationMatricielle.pdf" }})!-->
