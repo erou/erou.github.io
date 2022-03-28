@@ -94,7 +94,7 @@ You can find more details in the [dedicated section](teaching).
   (July 2021, PhD defense)
  * [**The mathematics of secrets**](/talk-msp.pdf)
   (July 2021, Mathematical Summer in Paris),
-[video](https://www.mathematicalsummerinparis.fr/wp-content/uploads/2021/07/MSP2021Rousseaufinal.mp4)
+[video](https://www.youtube.com/watch?v=QIjFARp9F20&list=PLbq-TeAWSXhNyKYPFb-oNZ4O9o6srYZzG&index=11)
 * [**Trisymmetric multiplication formulas in finite
   fields**](/talk-crypto.pdf)(October 2020, Cryptography seminar, Versailles)
 * [**Trisymmetric multiplication formulae in finite fields**](/talk-waifi.pdf)
