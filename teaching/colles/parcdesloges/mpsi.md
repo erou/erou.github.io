@@ -55,3 +55,17 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
    "/Matrices.pdf" }})
 21. [Représentation matricielle]({{ page.url | append:
    "/RepresentationMatricielle.pdf" }})
+22. [Systèmes linéaires]({{ page.url | append:
+   "/SystemesLineaires.pdf" }})
+23. [Dénombrement]({{ page.url | append:
+   "/Denombrement.pdf" }})
+24. [Groupe symétrique]({{ page.url | append:
+   "/GroupeSymetrique.pdf" }})
+25. [Déterminant]({{ page.url | append:
+   "/Determinant.pdf" }})
+26. [Intégration 1]({{ page.url | append:
+   "/Integration1.pdf" }})
+27. [Intégration 2]({{ page.url | append:
+   "/Integration2.pdf" }})
+28. [Séries]({{ page.url | append:
+   "/Series.pdf" }})
