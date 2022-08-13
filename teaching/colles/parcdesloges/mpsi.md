@@ -69,3 +69,7 @@ constatez qu'il y a une erreur (et/ou imprécision), vous pouvez me contacter pa
    "/Integration2.pdf" }})
 28. [Séries]({{ page.url | append:
    "/Series.pdf" }})
+29. [Familles sommables]({{ page.url | append:
+   "/FamillesSommables.pdf" }})
+30. [Espaces Préhilbertiens]({{ page.url | append:
+   "/EspacePrehilb.pdf" }})
