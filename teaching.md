@@ -14,11 +14,11 @@ ou que j'ai enseigné.
 Depuis Septembre 2020, j'enseigne pour le département de mathématiques de l'université de
 Versailles. Les cours que j'ai donné ces deux années sont les suivants.
 
-* Introduction à la théorie de l'information
-* Mathématiques Assistées par Ordinateur
-* Mathématiques approfondies
-* Analyse
-* Structures algébriques
+* Introduction à la théorie de l'information (M1, 60h)
+* Mathématiques Assistées par Ordinateur (L2, 36h)
+* Mathématiques approfondies (L1, 18h)
+* Analyse (L1, 216h)
+* Structures algébriques (L3, 36h)
 
 En 2020 -- 2021, je donnais des [colles](colles) au lycée [Robert Doisneau](colles/doisneau), à
 Corbeil-Essonne, et au lycée du [parc des Loges](colles/parcdesloges) d'Évry, respectivement en classe
