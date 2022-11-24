@@ -9,9 +9,19 @@ visible: true
 J'essaye de rassembler ici les informations au sujet des cours que j'enseigne,
 ou que j'ai enseigné.
 
+## 2022 --
+
+Depuis Septembre 2022, j'enseigne au lycée Jean-Baptiste Corot, à
+Savigny-sur-Orge.
+
+* [Seconde](corot-seconde)
+* [Première (spécialité)](corot-premiere)
+* [Première (maths spécifiques)](corot-mathspe)
+* [Terminale (enseignement scientifique)](corot-term-enssci)
+
 ## 2020 -- 2022
 
-Depuis Septembre 2020, j'enseigne pour le département de mathématiques de l'université de
+De Septembre 2020 à Août 2022, j'ai enseigné pour le département de mathématiques de l'université de
 Versailles. Les cours que j'ai donné ces deux années sont les suivants.
 
 * Introduction à la théorie de l'information (M1, 60h)
