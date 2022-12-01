@@ -13,3 +13,5 @@ Voici les différents fichiers (cours et exercices) utilisés en Seconde.
   et [feuille 2](exos-géométrie-plan.pdf))
 * *Calcul littéral* : [cours](cours-calcul.pdf) /
   [exercices](exos-calcul.pdf)
+* *Généralités sur les fonctions* : [cours](cours-generalites-fonctions.pdf) /
+  [exercices](exos-generalites-fonctions.pdf)
