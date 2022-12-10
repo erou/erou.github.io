@@ -92,3 +92,10 @@ Versailles)
   2017, Soutenance de M2, Université de Versailles)
 * **Discrete logarithm in finite field of small characteristic** (Septembre
   2017, University of Waterloo)
+
+## Divers
+
+**[Mémoire de magistère](memoire-mag.pdf)**
+: Université Paris-Sud, 2013--2017
+: *Mémoire résumant mon parcours à l'université, contenant
+l'ensemble de mes productions écrites.*
