@@ -14,3 +14,5 @@ enseignement de spécialité.
 * *Probabilités conditionnelles* : [cours](cours-probas-cond.pdf) /
   [exercices](exos-probas-cond.pdf)
 * *Trigonométrie* : [cours](cours-trigo.pdf)
+* *Applications de la dérivation* : [cours](cours-application-derivation.pdf) /
+  [exercices](exos-application-derivation.pdf)
