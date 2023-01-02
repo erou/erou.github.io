@@ -15,3 +15,5 @@ Voici les différents fichiers (cours et exercices) utilisés en Seconde.
   [exercices](exos-calcul.pdf)
 * *Généralités sur les fonctions* : [cours](cours-generalites-fonctions.pdf) /
   [exercices](exos-generalites-fonctions.pdf)
+* *Information chiffrée* : [cours](cours-information-chiffree.pdf) /
+  [exercices](exos-information-chiffree.pdf)
