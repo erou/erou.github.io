@@ -16,3 +16,4 @@ enseignement de spécialité.
 * *Trigonométrie* : [cours](cours-trigo.pdf)
 * *Applications de la dérivation* : [cours](cours-application-derivation.pdf) /
   [exercices](exos-application-derivation.pdf)
+* *Suites* : [cours](cours-suites.pdf) / [exercices](exos-suites.pdf)
