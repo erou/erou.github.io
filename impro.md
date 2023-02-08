@@ -10,3 +10,4 @@ visible: true
 - [Entraînements à la Keith Johnstone](keith)
 - [Début d'année à la TIPS](tips)
 - [Make your partner look good](partner)
+- [Narratologie en *short form*](shortform)
