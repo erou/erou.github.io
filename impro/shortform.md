@@ -43,7 +43,7 @@ Jeux
 
 ### Échauffement 
 
-+ *Une histoire un mot à la fois*. Exercice difficile de narration où on peut
++ *Une histoire un mot à la fois*. Jeu difficile de narration où on peut
   arrêter l'histoire en criant "ENCORE !" et où le but est de trouver un
   consensus quand l'histoire est terminée.
   + **À observer :** réticence pour tuer l'histoire, réactions quand une
@@ -95,7 +95,7 @@ pendant la plateforme qu'on donne des éléments qui pourront être réincorpor�
   comédien⋅nes doivent remarquer le "quelque chose" en observant leur⋅e
   partenaire. **Objectif :** être attentif aux propositions.
 
-+ *Remarquer et interpréter*. Exercire par paires. Il n'y a pas de contexte
++ *Remarquer et interpréter*. Jeu par paires. Il n'y a pas de contexte
   précis, peut-être juste une indication de lieu. Le but est que chacune fois
   qu'une personne prend la parole, elle doit faire une remarque sur quelque
   chose de physique que sa partenaire est en train de faire et l'interpréter en
@@ -120,7 +120,7 @@ veut construire.
 
 ### Montagnes russes
 
-Une fois que la bascule a été trouvé, le changement est amorcé par une suite de
+Une fois que la bascule a été trouvée, le changement est amorcé par une suite de
 péripéties : événements positifs ou négatifs. Le but du jeu maintenant est de
 maintenir l'intérêt du public pour l'histoire, et de gagner en intensité
 dramatique.
@@ -135,7 +135,7 @@ dramatique.
        scènes pour qu'elles puissent continuer l'histoire.
 
 Il y a plusieurs buts à cet exercice : faire de supers histoires, mettre les
-improvisateur dans la position du public et les aider à identifier ce qui ne va
+improvisateurs dans la position du public et les aider à identifier ce qui ne va
 pas dans une histoire, savoir proposer des indications de jeu.
 
 + *Les mains en l'air 2.0*. On peut ensuite proposer le même jeu mais avec trois
