@@ -1,5 +1,5 @@
 ---
-title: Cours de Seconde
+title: Cours de Première
 layout: default
 permalink: /teaching/corot-premiere/
 visible: false
@@ -17,3 +17,4 @@ enseignement de spécialité.
 * *Applications de la dérivation* : [cours](cours-application-derivation.pdf) /
   [exercices](exos-application-derivation.pdf)
 * *Suites* : [cours](cours-suites.pdf) / [exercices](exos-suites.pdf)
+* *Produit scalaire* : [cours](cours-produit-scalaire.pdf) / [exercices](exos-produit-scalaire.pdf)
