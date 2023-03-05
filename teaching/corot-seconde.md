@@ -18,3 +18,4 @@ Voici les différents fichiers (cours et exercices) utilisés en Seconde.
 * *Information chiffrée* : [cours](cours-information-chiffree.pdf) /
   [exercices](exos-information-chiffree.pdf)
 * *Vecteurs* : [cours](cours-vecteurs.pdf) / [exercices](exos-vecteurs.pdf)
+* *Fonctions affines* : [cours](cours-fonctions-affines.pdf) / [exercices](exos-fonctions-affines.pdf)
