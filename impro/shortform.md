@@ -158,3 +158,61 @@ pas dans une histoire, savoir proposer des indications de jeu.
     + Phrases en « je » : augmenter l'émotionnel
     + Action : faire des choses au lieu de les dire
     + Fais-en plus : accentuer un trait de l'histoire
+
+# Deuxième séance
+
+## Outils du changement
+
+Pendant les montagnes russes, on veut voir un (ou des) personnages changer,
+principalement relationnellement. Voici quelques outils pour accompagner ces
+changements :
+
++ Changement de *status* (dont je parlais [ici](/impro/keith))
++ Changement physique
++ Changement émotionnel
+
+Parfois pour rendre une scène intéressante il faut *provoquer* le changement.
+
+## Malice et provocation du changement
+
+Pour pimenter un peu une scène / provoquer un changement, on peut parfois être
+un peu malicieux / taquin. L'idée générale n'est pas uniquement de faire tourner
+en bourrique son ou sa partenaire, mais de trouver des enjeux plus forts pour la
+scène. Voici quelques exercices pour travailler la notion de malice.
+
+**Échauffement.**
+
++ Chaises avec un traître : l'exercice où la personne debout doit aller
+  s'asseoir simplement, sauf qu'une des personnes dans le jeu a le but de mettre
+  son équipe dans la merde
++ Histoire racontée collectivement : on raconte une histoire chacun son tour. On
+  peut s'arrêter de conter à n'importe quel moment et la personne suivante doit
+  continuer l'histoire. L'idée est de "piéger" les personnes suivantes pour que
+  ça soit un peu plus amusant.
+
+**Jeux plus longs.**
+
++ Série d'exercices AAAAAAAH : le but est d'identifier les moments de
+  panique/peur/je ne sais pas ce que je fais/etc dans une scène, puis de les
+  provoquer, car ce sont ces moments de doutes/risques qui sont intéressants.
+    + Histoire avec AAAAAAAH 
+    + Scènes avec AAAAAAAH 
+    + Provoquer les AAAAAAAH 
++ Propositions faibles & fortes
+    + 100% faible
+    + 100% forte
+    + à la volonté du coach
++ Oui, Je suis d'accord, On y va : deux personnes sur scènes. A doit communiquer
+  uniquement en disant ces trois choses.
++ Résistance : on dit « non » à une action que veut faire une personne. Pas un
+  « non » débutant qui a peur de prendre des risques, mais un « non » qui va
+  augmenter les enjeux / provoquer un changement. L'idée est que si un
+  personnage refuse de faire quelque chose, on ne peut pas l'ignorer et on doit
+  proposer autre chose. On peut résister à beaucoup de choses.
+    + Sortir
+    + Rester
+    + S'asseoir
+    + N'importe quelle action
++ Résistance physique : même chose mais uniquement physique avec un personnage
+  qui doit faire traverser la scène à un autre personnage. Peut-être à faire
+  avant, ou dans le travail du corps.
