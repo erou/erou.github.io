@@ -12,3 +12,5 @@ enseignement scientifique.
   [exercices](exo-echantillonnage.pdf)
 * *Équilibre de Hardy-Weinberg* : [cours](cours-hardy-weinberg.pdf) /
   [exercices](exos-hardy-weinberg.pdf)
+* *Modèles démographiques* : [cours](cours-modèles-démographiques.pdf) /
+  [exercices](exos-modèles-démographiques.pdf)
