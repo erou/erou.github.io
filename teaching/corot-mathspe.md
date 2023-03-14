@@ -12,4 +12,4 @@ cours de mathématiques spécifiques.
 * *Information chiffrée* : [cours](cours-information-chiffree.pdf) / exercices ([feuille 1](exos-information-chiffree1.pdf) et [feuille 2](exos-information-chiffree.pdf))
 * *Croissance exponentielle* : [cours](cours-croissance-exponentielle.pdf) /
   [exercices](exos-croissance-exponentielle.pdf)
-* *Probabilités* : [cours](cours-proba.pdf)
+* *Probabilités* : [cours](cours-proba.pdf) / [exercices](exos-proba.pdf)
