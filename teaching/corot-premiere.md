@@ -17,4 +17,4 @@ enseignement de spécialité.
 * *Applications de la dérivation* : [cours](cours-application-derivation.pdf) /
   [exercices](exos-application-derivation.pdf)
 * *Suites* : [cours](cours-suites.pdf) / [exercices](exos-suites.pdf)
-* *Produit scalaire* : [cours](cours-produit-scalaire.pdf) / [exercices](exos-produit-scalaire.pdf)
+* *Produit scalaire* : [cours](cours-produit-scalaire.pdf) / [exercices](exos-produit-scalaire.pdf) / [problèmes](problemes-produit-scalaire.pdf)
