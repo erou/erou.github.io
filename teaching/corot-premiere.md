@@ -18,4 +18,4 @@ enseignement de spécialité.
   [exercices](exos-application-derivation.pdf)
 * *Suites* : [cours](cours-suites.pdf) / [exercices](exos-suites.pdf)
 * *Produit scalaire* : [cours](cours-produit-scalaire.pdf) / [exercices](exos-produit-scalaire.pdf) / [problèmes](problemes-produit-scalaire.pdf)
-* *Variables aléatoires* : [activité](activite-produit-scalaire.pdf) / [cours](cours-variables-aléatoires.pdf) / [exercices](exos-variables-aléatoires.pdf)
+* *Variables aléatoires* : [activité](activite-variables-aléatoires.pdf) / [cours](cours-variables-aléatoires.pdf) / [exercices](exos-variables-aléatoires.pdf)
