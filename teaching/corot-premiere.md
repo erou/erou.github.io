@@ -19,3 +19,4 @@ enseignement de spécialité.
 * *Suites* : [cours](cours-suites.pdf) / [exercices](exos-suites.pdf)
 * *Produit scalaire* : [cours](cours-produit-scalaire.pdf) / [exercices](exos-produit-scalaire.pdf) / [problèmes](problemes-produit-scalaire.pdf)
 * *Variables aléatoires* : [activité](activite-variables-aléatoires.pdf) / [cours](cours-variables-aléatoires.pdf) / [exercices](exos-variables-aléatoires.pdf)
+* *Suites arithmétiques et géométriques* : [cours](cours-suites-arith-geom.pdf) / [exercices](exos-suites-arith-geom.pdf)
