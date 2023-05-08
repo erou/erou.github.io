@@ -34,7 +34,7 @@ secondaires* :
 
 - demander aux membres qui souhaitent faire des projets secondaires d'avoir
   participé aux spectacles des gibbons au moins autant que la médiane des
-  participations (calculée sur l'ensemble des spectacles officielles);
+  participations (calculée sur l'ensemble des spectacles officiels);
 
 Pour éviter d'éventuels *conflits d'intérêts* :
 
