@@ -20,3 +20,4 @@ Voici les différents fichiers (cours et exercices) utilisés en Seconde.
 * *Vecteurs* : [cours](cours-vecteurs.pdf) / [exercices](exos-vecteurs.pdf)
 * *Fonctions affines* : [cours](cours-fonctions-affines.pdf) / [exercices](exos-fonctions-affines.pdf)
 * *Probabilités* : [cours](cours-probas.pdf) / [exercices](exos-probas.pdf)
+* *Équations de droites* : [cours](cours-equations-droites.pdf) / [exercices](exos-equations-droites.pdf)
