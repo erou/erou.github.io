@@ -20,3 +20,4 @@ enseignement de spécialité.
 * *Produit scalaire* : [cours](cours-produit-scalaire.pdf) / [exercices](exos-produit-scalaire.pdf) / [problèmes](problemes-produit-scalaire.pdf)
 * *Variables aléatoires* : [activité](activite-variables-aléatoires.pdf) / [cours](cours-variables-aléatoires.pdf) / [exercices](exos-variables-aléatoires.pdf)
 * *Suites arithmétiques et géométriques* : [cours](cours-suites-arith-geom.pdf) / [exercices](exos-suites-arith-geom.pdf)
+* *Fonction exponentielle* : [cours](cours-expo.pdf) / [exercices](exos-expo.pdf)
