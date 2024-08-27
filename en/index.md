@@ -8,7 +8,7 @@ layout: default
 <a href="{{ site.url | append: "index" }}"><img src="/fr32.png" alt="fr"></a>
 <a href="{{ site.url | append: "en/index" }}"><img src="/uk32.png" alt="en"></a>
 
-<img align="right" src="/dessin-lena-mod.jpg" alt="What I look like" width="100px">
+<img align="right" src="/dessin-lena-mod.jpg" alt="What I look like" width="200px">
 
 Hi, I am Édouard, a high school teacher in mathematics at [lycée Pierre Mendès France](https://www.ert.tn/pmf/) in Tunis, Tunisia.
 
