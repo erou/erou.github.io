@@ -8,7 +8,7 @@ indexid: index
 <a href="{{ site.url | append: "index" }}"><img src="/fr32.png" alt="fr"></a>
 <a href="{{ site.url | append: "en/index" }}"><img src="/uk32.png" alt="en"></a>
 
-<img align="right" src="photo-lena-mod.jpg" alt="A drawing of me, teaching." width="200px">
+<img align="right" src="dessin-lena-mod.jpg" alt="A drawing of me, teaching." width="200px">
 
 Depuis Septembre 2024, je suis **professeur de mathématiques** au [lycée Pierre Mendès France](https://www.ert.tn/pmf/), à Tunis. J'ai aussi travaillé pendant deux ans au [lycée Jean-Baptiste Corot](http://www.lyc-corot-savigny.ac-versailles.fr/), en région parisienne.
 
