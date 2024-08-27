@@ -10,8 +10,7 @@ layout: default
 
 <img align="right" src="/photo-10x15.jpg" alt="What I look like" width="100px">
 
-Hi, I am Édouard, a high school teacher in mathematics at [lycée Jean-Baptiste
-Corot](http://www.lyc-corot-savigny.ac-versailles.fr/) in Savigny-sur-Orge, France.
+Hi, I am Édouard, a high school teacher in mathematics at [lycée Pierre Mendès France](https://www.ert.tn/pmf/) in Tunis, Tunisia.
 
 ## Academic experience
 

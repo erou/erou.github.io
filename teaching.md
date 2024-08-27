@@ -9,18 +9,28 @@ visible: true
 J'essaye de rassembler ici les informations au sujet des cours que j'enseigne,
 ou que j'ai enseigné.
 
-## 2022 --
+## 2024 --
 
-Depuis Septembre 2022, j'enseigne au lycée Jean-Baptiste Corot, à
-Savigny-sur-Orge. Mes nouveaux cours sont disponibles sur la forge de
-l'éducation nationale :
+Depuis Septembre 2024, j'enseigne au lycée Pierre Mendès France, à Tunis. Les
+cours que je donne (ou ai donné) sont sur la forge de l'éducation nationale.
 
-* [Seconde et professeur principal](https://erou.forge.aeif.fr/s11/)
-* [Première (spécialité)](https://erou.forge.aeif.fr/spe-1e/)
-* [SNT](https://erou.forge.aeif.fr/snt/)
-* [DNL Maths-anglais](https://erou.forge.aeif.fr/dnl/)
+* [Terminale (spécialité)](https://erou.forge.apps.education.fr/spe-term/)
+* Terminale (mathématiques complémentaires) : à venir
+* Sixième : à venir
 
-Mes cours de l'année dernière (pour archive) :
+## 2022 -- 2024
+
+Entre Septembre 2022 et Septembre 2024, j'ai enseigné au lycée Jean-Baptiste Corot, à
+Savigny-sur-Orge. Certains cours sont disponibles sur la forge de
+l'éducation nationale (la version consultée n'est peut-être pas exactement la
+même que celle que j'ai donnée aux élèves) :
+
+* [Seconde et professeur principal](https://erou.forge.apps.education.fr/s11/)
+* [Première (spécialité)](https://erou.forge.apps.education.fr/spe-1e/)
+* [SNT](https://erou.forge.apps.education.fr/snt/)
+* [DNL Maths-anglais](https://erou.forge.apps.education.fr/tdnl/)
+
+Des cours qui ne sont pas à jour, ou bien pas sur la forge (pour archive) :
 
 * [Seconde](corot-seconde)
 * [Première (spécialité)](corot-premiere)
@@ -40,7 +50,7 @@ Versailles. Les cours que j'ai donné ces deux années sont les suivants.
 
 En 2020 -- 2021, je donnais des [colles](colles) au lycée [Robert Doisneau](colles/doisneau), à
 Corbeil-Essonne, et au lycée du [parc des Loges](colles/parcdesloges) d'Évry, respectivement en classe
-d'[ATS](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_adaptation_technicien_sup%C3%A9rieur) et [MP](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_math%C3%A9matiques_et_physique). Je colle aujourd'hui pour les [MPSI](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_math%C3%A9matiques,_physique_et_sciences_de_l%27ing%C3%A9nieur), toujours au lycée du parc des Loges.
+d'[ATS](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_adaptation_technicien_sup%C3%A9rieur) et [MP](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_math%C3%A9matiques_et_physique). J'ai ensuite collé pour les [MPSI](https://fr.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_math%C3%A9matiques,_physique_et_sciences_de_l%27ing%C3%A9nieur), toujours au lycée du parc des Loges.
 
 ## 2017 -- 2020
 

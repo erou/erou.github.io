@@ -8,9 +8,9 @@ indexid: index
 <a href="{{ site.url | append: "index" }}"><img src="/fr32.png" alt="fr"></a>
 <a href="{{ site.url | append: "en/index" }}"><img src="/uk32.png" alt="en"></a>
 
-<img align="right" src="photo-10x15.jpg" alt="What I look like" width="100px">
+<img align="right" src="photo-lena-mod.jpg" alt="A drawing of me, teaching." width="200px">
 
-Depuis Septembre 2022, je suis **professeur de mathématiques** au [lycée Jean-Baptiste Corot](http://www.lyc-corot-savigny.ac-versailles.fr/), à [Savigny-sur-Orge](https://www.google.com/maps/place/91600+Savigny-sur-Orge/@48.6874633,2.3077096,12.83z/data=!4m5!3m4!1s0x47e5d8b278401069:0x40b82c3688b40d0!8m2!3d48.6851259!4d2.349282).
+Depuis Septembre 2024, je suis **professeur de mathématiques** au [lycée Pierre Mendès France](https://www.ert.tn/pmf/), à Tunis. J'ai aussi travaillé pendant deux ans au [lycée Jean-Baptiste Corot](http://www.lyc-corot-savigny.ac-versailles.fr/), en région parisienne.
 
 ## Expériences académiques
 
