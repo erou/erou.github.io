@@ -9,6 +9,8 @@ visible: false
 I try to gather informations about what I teach or taught. The pages are all in
 French.
 
+For my teaching activites since 2022, please the French version of the website.
+
 ## 2020 -- 2022
 
 Since September 2020, I teach for the mathematics department of Université de

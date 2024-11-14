@@ -15,8 +15,8 @@ Depuis Septembre 2024, j'enseigne au lycée Pierre Mendès France, à Tunis. Les
 cours que je donne (ou ai donné) sont sur la forge de l'éducation nationale.
 
 * [Terminale (spécialité)](https://erou.forge.apps.education.fr/spe-term/)
-* Terminale (mathématiques complémentaires) : à venir
-* Sixième : à venir
+* [Terminale (mathématiques complémentaires)](https://erou.forge.apps.education.fr/math-comp/)
+* [Sixième](https://erou.forge.apps.education.fr/sixieme/)
 
 ## 2022 -- 2024
 
