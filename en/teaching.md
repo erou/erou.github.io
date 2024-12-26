@@ -9,7 +9,7 @@ visible: false
 I try to gather informations about what I teach or taught. The pages are all in
 French.
 
-For my teaching activites since 2022, please the French version of the website.
+For my teaching activites since 2022, please visit the French version of the website.
 
 ## 2020 -- 2022
 
