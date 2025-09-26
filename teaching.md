@@ -14,6 +14,8 @@ ou que j'ai enseigné.
 Depuis Septembre 2024, j'enseigne au lycée Pierre Mendès France, à Tunis. Les
 cours que je donne (ou ai donné) sont sur la forge de l'éducation nationale.
 
+* [Terminale (spécialité) et professeur principal](https://erou.forge.apps.education.fr/t04)
+* [Terminale (mathématiques expertes)](https://erou.forge.apps.education.fr/maths-exp)
 * [Terminale (spécialité)](https://erou.forge.apps.education.fr/spe-term/)
 * [Terminale (mathématiques complémentaires)](https://erou.forge.apps.education.fr/math-comp/)
 * [Sixième](https://erou.forge.apps.education.fr/sixieme/)
