@@ -18,6 +18,8 @@ cours que je donne (ou ai donné) sont sur la forge de l'éducation nationale.
 * [Terminale (mathématiques expertes)](https://erou.forge.apps.education.fr/maths-exp)
 * [Terminale (spécialité)](https://erou.forge.apps.education.fr/spe-term/)
 * [Terminale (mathématiques complémentaires)](https://erou.forge.apps.education.fr/math-comp/)
+* [DNL Maths-anglais](https://erou.forge.apps.education.fr/tdnl/)
+* [SNT](https://erou.forge.apps.education.fr/snt/)
 * [Sixième](https://erou.forge.apps.education.fr/sixieme/)
 
 ## 2022 -- 2024
